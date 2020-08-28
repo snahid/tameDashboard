@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  background: #ffffff; }
+
+.sidebar-detail-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%; }
+  .sidebar-detail-wrapper .sidebar {
+    width: 272px;
+    background-color: #2464C6;
+    min-height: 100vh;
+    border-right: 1px solid #BED5FF; }
+    .sidebar-detail-wrapper .sidebar .sidebar-logo {
+      margin-top: 30px;
+      margin-bottom: 15px; }
+    .sidebar-detail-wrapper .sidebar h6 {
+      padding-left: 47px;
+      text-transform: uppercase;
+      color: white;
+      font-weight: 300;
+      font-size: 13px;
+      margin-bottom: 30px; }
+    .sidebar-detail-wrapper .sidebar .divider {
+      width: 100%;
+      height: 0.5px;
+      background: #BED5FF;
+      opacity: 24%; }
+    .sidebar-detail-wrapper .sidebar .sidebar-menu {
+      margin-left: 10px;
+      margin-top: 30px;
+      padding-bottom: 120px; }
+      .sidebar-detail-wrapper .sidebar .sidebar-menu .navbar-nav li.nav-item a.nav-link {
+        color: #BED5FF;
+        position: relative;
+        padding: 16px 12px;
+        font-size: 15px;
+        font-weight: 300; }
+        .sidebar-detail-wrapper .sidebar .sidebar-menu .navbar-nav li.nav-item a.nav-link:focus {
+          background: white;
+          border-radius: 34px 0 0 34px;
+          color: #216AC4;
+          font-weight: 400; }
+        .sidebar-detail-wrapper .sidebar .sidebar-menu .navbar-nav li.nav-item a.nav-link .icon-align {
+          font-size: 20px;
+          position: absolute;
+          left: 10px; }
+        .sidebar-detail-wrapper .sidebar .sidebar-menu .navbar-nav li.nav-item a.nav-link .align-inline {
+          padding-left: 30px; }
+      .sidebar-detail-wrapper .sidebar .sidebar-menu .navbar-nav li.nav-item .collaps-menu ul {
+        list-style-type: none;
+        padding-left: 55px; }
+        .sidebar-detail-wrapper .sidebar .sidebar-menu .navbar-nav li.nav-item .collaps-menu ul li a {
+          font-size: 13px;
+          font-weight: 300;
+          color: #BED5FF;
+          text-decoration: none; }
+          .sidebar-detail-wrapper .sidebar .sidebar-menu .navbar-nav li.nav-item .collaps-menu ul li a::before {
+            content: "\2022";
+            color: #BED5FF;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
+          .sidebar-detail-wrapper .sidebar .sidebar-menu .navbar-nav li.nav-item .collaps-menu ul li a:hover {
+            color: white; }
+            .sidebar-detail-wrapper .sidebar .sidebar-menu .navbar-nav li.nav-item .collaps-menu ul li a:hover::before {
+              content: "\2022";
+              color: white;
+              font-weight: bold;
+              display: inline-block;
+              width: 1em;
+              margin-left: -1em; }
+      .sidebar-detail-wrapper .sidebar .sidebar-menu .navbar-nav li.nav-item .nav-link[data-toggle=collapse]::after {
+        width: 1rem;
+        text-align: center;
+        float: right;
+        vertical-align: 0;
+        border: 0;
+        font-weight: 900;
+        content: '\f107';
+        font-family: 'Font Awesome 5 Free'; }
+      .sidebar-detail-wrapper .sidebar .sidebar-menu .navbar-nav li.nav-item .nav-link[data-toggle=collapse].collapsed::after {
+        width: 1rem;
+        text-align: center;
+        float: right;
+        vertical-align: 0;
+        border: 0;
+        font-weight: 900;
+        content: '\f105';
+        font-family: 'Font Awesome 5 Free'; }
+
+.main-content {
+  background-color: #F0F8FD;
+  width: calc(100% - 272px);
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .main-content .main-top .main-top-left .plus-btn {
+    background: #2365C6;
+    border-radius: 38px;
+    width: 139px;
+    height: 55px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    padding-left: 30px; }
+    .main-content .main-top .main-top-left .plus-btn .add-icon {
+      position: absolute;
+      left: 25px; }
+
+.login1-background {
+  background: url(../assets/images/login-background.png);
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+  .login1-background .signin-form {
+    max-width: 636px;
+    margin-left: 100px;
+    padding-top: 100px; }
+    .login1-background .signin-form .sign-in-top {
+      position: relative;
+      padding: 50px;
+      z-index: 999; }
+      .login1-background .signin-form .sign-in-top::after {
+        position: absolute;
+        content: "";
+        background: white;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        opacity: 80%;
+        border-radius: 7px; }
+      .login1-background .signin-form .sign-in-top .form h2 {
+        color: #0A72A1;
+        font-weight: 500;
+        font-size: 36px;
+        margin: 30px 0px; }
+      .login1-background .signin-form .sign-in-top .form form .mb-30 {
+        margin-bottom: 40px; }
+      .login1-background .signin-form .sign-in-top .form form .form-group label {
+        color: #203459;
+        font-weight: 500;
+        font-size: 19px; }
+      .login1-background .signin-form .sign-in-top .form form .form-group input {
+        background: white !important;
+        opacity: 1 !important;
+        border: 1px solid #CEE4F5;
+        border-radius: 8px; }
+      .login1-background .signin-form .sign-in-top .form form .form-group ::placeholder {
+        font-size: 16px;
+        font-weight: 300;
+        color: #94A6C7; }
+      .login1-background .signin-form .sign-in-top .form form .form-group ::-webkit-input-placeholder {
+        /* Edge */
+        font-size: 16px;
+        font-weight: 300;
+        color: #94A6C7; }
+      .login1-background .signin-form .sign-in-top .form form .form-group :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        font-size: 16px;
+        font-weight: 300;
+        color: #94A6C7; }
+      .login1-background .signin-form .sign-in-top .form form .remember-forgot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        .login1-background .signin-form .sign-in-top .form form .remember-forgot .remember label {
+          font-size: 16px;
+          font-weight: 500;
+          color: #203459;
+          user-select: none; }
+        .login1-background .signin-form .sign-in-top .form form .remember-forgot .forgot a {
+          font-size: 16px;
+          font-weight: 500;
+          color: #203459; }
+      .login1-background .signin-form .sign-in-top .form form .login-button {
+        margin-top: 50px; }
+        .login1-background .signin-form .sign-in-top .form form .login-button .btn.login-btn {
+          background-color: #2464C7;
+          color: white;
+          font-size: 19px;
+          font-weight: 400;
+          padding: 12px 65px;
+          transition: 0.5s ease;
+          border-radius: 8px; }
+          .login1-background .signin-form .sign-in-top .form form .login-button .btn.login-btn:hover {
+            opacity: 80%; }
+    .login1-background .signin-form .sign-in-bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 100px;
+      padding-bottom: 30px; }
+      .login1-background .signin-form .sign-in-bottom .sign-in-bottom-left p {
+        color: white;
+        font-weight: 300;
+        font-size: 16px; }
+      .login1-background .signin-form .sign-in-bottom .sign-in-bottom-right ul {
+        list-style-type: none; }
+        .login1-background .signin-form .sign-in-bottom .sign-in-bottom-right ul li {
+          display: inline-block;
+          padding-left: 35px; }
+          .login1-background .signin-form .sign-in-bottom .sign-in-bottom-right ul li a {
+            color: white;
+            font-size: 16px;
+            font-weight: 300; }

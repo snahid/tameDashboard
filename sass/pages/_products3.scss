@@ -1,0 +1,176 @@
+.sidebar-detail-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .sidebar {
+        width: 272px;
+        background-color: #2464C6;
+        min-height: 100vh;
+        border-right: 1px solid #BED5FF;
+
+        .sidebar-logo {
+            margin-top: 30px;
+            margin-bottom: 15px;
+
+            a {}
+        }
+
+        h6 {
+            padding-left: 47px;
+            text-transform: uppercase;
+            color: $white;
+            font-weight: $mlight;
+            font-size: 13px;
+            margin-bottom: 30px;
+        }
+
+        .divider {
+            width: 100%;
+            height: 0.5px;
+            background: #BED5FF;
+            opacity: 24%;
+        }
+
+        .sidebar-menu {
+            margin-left: 10px;
+            margin-top: 30px;
+            padding-bottom: 120px;
+
+            .navbar-nav {
+
+                li.nav-item {
+                    a.nav-link {
+                        color: #BED5FF;
+                        position: relative;
+                        padding: 16px 12px;
+                        font-size: 15px;
+                        font-weight: $mlight;
+
+                        &:focus {
+                            background: $white;
+                            border-radius: 34px 0 0 34px;
+                            color: #216AC4;
+                            font-weight: $mregular;
+                        }
+
+                        .icon-align {
+                            font-size: 20px;
+                            position: absolute;
+                            left: 10px;
+                        }
+
+                        .align-inline {
+                            padding-left: 30px;
+                        }
+
+
+
+                    }
+
+                    .collaps-menu {
+                        ul {
+                            list-style-type: none;
+                            padding-left: 55px;
+
+                            li {
+
+
+                                a {
+                                    font-size: 13px;
+                                    font-weight: $mlight;
+                                    color: #BED5FF;
+                                    text-decoration: none;
+
+                                    &::before {
+                                        content: "\2022";
+                                        color: #BED5FF;
+                                        font-weight: bold;
+                                        display: inline-block;
+                                        width: 1em;
+                                        margin-left: -1em;
+
+                                    }
+
+                                    &:hover {
+                                        color: $white;
+
+                                        &::before {
+                                            content: "\2022";
+                                            color: $white;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .nav-link[data-toggle=collapse] {
+
+                        &::after {
+                            width: 1rem;
+                            text-align: center;
+                            float: right;
+                            vertical-align: 0;
+                            border: 0;
+                            font-weight: 900;
+                            content: '\f107';
+                            font-family: 'Font Awesome 5 Free';
+                        }
+                    }
+
+                    .nav-link[data-toggle=collapse].collapsed {
+                        &::after {
+                            width: 1rem;
+                            text-align: center;
+                            float: right;
+                            vertical-align: 0;
+                            border: 0;
+                            font-weight: 900;
+                            content: '\f105';
+                            font-family: 'Font Awesome 5 Free';
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+    }
+}
+
+.main-content {
+    background-color: #F0F8FD;
+    width: calc(100% - 272px);
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .main-top {
+
+
+        .main-top-left {
+            .plus-btn {
+                background: #2365C6;
+                border-radius: 38px;
+                width: 139px;
+                height: 55px;
+                font-size: 18px;
+                font-weight: $mregular;
+                position: relative;
+                padding-left: 30px;
+
+                .add-icon {
+                    position: absolute;
+                    left: 25px;
+                }
+            }
+        }
+    }
+}
