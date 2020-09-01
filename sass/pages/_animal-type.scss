@@ -1,0 +1,195 @@
+.animal-type-link-path {
+    background: $white;
+    height: 58px;
+    // max-width: 412px;
+    padding-top: 18px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 37px;
+
+    span {
+        font-size: 18px;
+        font-weight: $mregular !important;
+        color: #1E3E59 !important;
+    }
+}
+
+// Animal Type Section 
+.animal-type-section {
+    .animal-type-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        .animal-type-top-left {
+            padding-top: 12px;
+
+            h5 {
+                font-size: 25px;
+                color: #1E3E59;
+                font-weight: $mregular;
+                margin-bottom: 0;
+            }
+        }
+
+        .animal-type-top-right {
+            .plus-btn {
+                background: rgb(35, 101, 198);
+                background: linear-gradient(90deg, rgba(35, 101, 198, 1) 0%, rgba(35, 101, 198, 1) 35%, rgba(23, 131, 189, 1) 100%);
+                border-radius: 38px;
+                width: 183px;
+                height: 55px;
+                font-size: 18px;
+                font-weight: $mregular;
+                position: relative;
+                padding-left: 30px;
+
+                .add-icon {
+                    position: absolute;
+                    left: 25px;
+                }
+            }
+        }
+    }
+
+    .animal-list {
+        box-shadow: 0 3px 6px #707070;
+        border-radius: 13px;
+        overflow: hidden;
+        margin-top: 50px;
+
+        .animal-list-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: rgb(35, 101, 198);
+            background: linear-gradient(90deg, rgba(35, 101, 198, 1) 0%, rgba(35, 101, 198, 1) 35%, rgba(23, 131, 189, 1) 100%);
+            padding: 25px 35px;
+
+            height: 102px;
+
+            .animal-list-header-left {
+                h5 {
+                    margin-bottom: 0;
+                    padding-top: 12px;
+                    color: $white;
+                    font-size: 25px;
+                    font-weight: $mregular;
+                }
+            }
+
+            .animal-list-header-right {
+                .search-container {
+                    position: relative;
+                    height: 53px;
+
+                    .search-box {
+                        position: relative;
+                        margin-right: 70px;
+                        display: none;
+
+                        input {
+                            // background: red;
+                            width: inherit;
+
+
+                            // transform-origin: left;
+                            padding-right: 50px;
+                            padding: 12px 50px 12px 12px;
+                            border: 1px solid #707070;
+                            border-radius: 37px;
+                            outline: none;
+                            transition: 0.4s linear;
+                            font-size: 18px;
+                            font-weight: $mregular;
+                            color: #203459;
+
+                            ::-webkit-input-placeholder {
+                                /* Edge */
+                                color: #94A6C7;
+                                font-weight: $mlight;
+                            }
+
+                            :-ms-input-placeholder {
+                                /* Internet Explorer 10-11 */
+                                color: #94A6C7;
+                                font-weight: $mlight;
+                            }
+
+                            ::placeholder {
+                                color: #94A6C7;
+                                font-weight: $mlight;
+                            }
+
+                        }
+
+                        .search-inner {
+                            position: absolute;
+                            right: 30px;
+                            top: 50%;
+                            transform: translate(50%, -50%);
+                            transition: 0.4s linear;
+                        }
+                    }
+
+                    .search-show {
+                        position: absolute;
+                        right: 30px;
+                        top: 50%;
+                        transform: translate(50%, -50%);
+                        cursor: pointer;
+                    }
+
+                    .search-hide {
+                        position: absolute;
+                        font-size: 24px;
+                        color: $white;
+                        display: none;
+                        right: 30px;
+                        top: 50%;
+                        transform: translate(50%, -50%);
+                        cursor: pointer;
+                    }
+
+
+
+
+                }
+            }
+        }
+
+        .animal-list-body {
+
+            .table-bordered>tbody>tr>td,
+            .table-bordered>tbody>tr>th,
+            .table-bordered>thead>tr>td,
+            .table-bordered {
+                border-bottom: 0;
+                border-top: 0;
+                border-right: 1px solid #B8D5EC;
+            }
+
+            .table-bordered>thead>tr>th,
+            .bottomborder,
+            .table-bordered {
+                border-bottom: 1px solid #B8D5EC;
+                border-right: 1px solid #B8D5EC;
+            }
+
+            .table-bordered>thead>tr,
+            .borderleft,
+            .table-bordered {
+                border-left: 0;
+            }
+
+            .table-bordered>thead>tr,
+            .borderright,
+            .table-bordered {
+                border-right: 0;
+            }
+        }
+    }
+}
+
+// Animal Type Section 

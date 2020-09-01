@@ -1,0 +1,159 @@
+.add-vet-section {
+    margin-top: 50px;
+
+    .add-vets-form {
+        h5 {
+            font-size: 25px;
+            font-weight: $mregular;
+            color: #203459;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: $mlight;
+            color: #94A6C7;
+        }
+
+        form {
+            margin-top: 60px;
+
+            .save-btn-container {
+                margin-top: 60px;
+                margin-bottom: 200px;
+
+                .save-btn {
+                    background: #1D74C1;
+                    color: $white;
+                    width: 267px;
+                    height: 88px;
+                    font-size: 25px;
+                    font-weight: $mregular;
+                    border-radius: 21px;
+                    transition: 0.5s ease;
+
+                    &:hover {
+                        opacity: 80%;
+                    }
+                }
+            }
+
+
+            .form-inner-margin {
+                margin-bottom: 50px;
+            }
+
+            .padding-right {
+                padding-right: 20px;
+            }
+
+            label {
+                font-size: 22px;
+                font-weight: $mregular;
+                color: #94A6C7;
+                margin-bottom: 20px;
+            }
+
+            input {
+                font-size: 22px;
+                color: #94A6C7;
+                font-weight: $mlight;
+                height: 89px;
+                border: 1px solid #BEDAF1;
+                border-radius: 11px;
+            }
+
+            textarea {
+                font-size: 22px;
+                color: #94A6C7;
+                font-weight: $mlight;
+                border: 1px solid #BEDAF1;
+                border-radius: 11px;
+                resize: none;
+            }
+
+            // Placeholder 
+            ::-webkit-input-placeholder {
+                /* Edge */
+                font-size: 22px;
+                color: #94A6C7;
+                font-weight: $mlight;
+                opacity: 70%;
+            }
+
+            :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                font-size: 22px;
+                color: #94A6C7;
+                font-weight: $mlight;
+                opacity: 70%;
+            }
+
+            ::placeholder {
+                font-size: 22px;
+                color: #94A6C7;
+                font-weight: $mlight;
+                opacity: 70%;
+            }
+
+            // Placeholder 
+
+            // Price 
+            .input-group-prepend {
+                text-align: center;
+
+                .input-group-text {
+                    background: #1D73C2;
+                    width: 69px;
+                    justify-content: center;
+                    font-size: 22px;
+                    font-weight: $mregular;
+                    color: $white;
+                    border-top-left-radius: 11px;
+                    border-bottom-left-radius: 11px;
+                    max-height: 89px;
+                    border: 1px solid #1D73C2;
+                }
+            }
+
+            // Price 
+
+
+            .custom-file {
+                label {
+                    font-size: 22px;
+                    color: #94A6C7;
+                    font-weight: $mlight;
+                    height: 89px;
+                    border: 1px solid #BEDAF1 !important;
+                    border-radius: 11px !important;
+                    overflow: hidden;
+                    align-items: center;
+                    display: flex;
+                }
+
+                .custom-file-label {
+
+                    &::after {
+                        background: transparent;
+                        border-left: none;
+                        font-family: FontAwesome;
+                        content: "\f093";
+                        color: #94A6C7;
+                        top: 26%;
+                    }
+                }
+
+                input[type="file"] {
+                    font-size: 22px;
+                    color: #94A6C7;
+                    font-weight: $mlight;
+                    max-height: 89px;
+                    border: 1px solid #BEDAF1 !important;
+                    border-radius: 11px !important;
+                }
+            }
+
+
+        }
+    }
+}

@@ -1,491 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dashboard</title>
-    <!-- FavIcon-->
-    <link rel="shortcut icon" type="image/png" href="" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link rel="stylesheet" href="./css/fontAwesome.css" />
-    <!-- Bootstrap style-->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <!-- FontAwesome style-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- font  -->
-    <!-- <link
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Dashboard</title>
+  <!-- FavIcon-->
+  <link rel="shortcut icon" type="image/png" href="" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="./css/fontAwesome.css" />
+  <!-- Bootstrap style-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- FontAwesome style-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- font  -->
+  <!-- <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet"> -->
-    <!-- font  -->
-    <!--Owl Carouse css-->
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <!--AOS css-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!--Animate css-->
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <!-- Custom Style-->
-    <link rel="stylesheet" href="./css/checkbox.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-  </head>
+  <!-- font  -->
+  <!--Owl Carouse css-->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <!--AOS css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!--Animate css-->
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <!-- Custom Style-->
+  <link rel="stylesheet" href="./css/checkbox.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
 
-  <body>
-    <main>
-      <!-- Page Wrapper  -->
-      <div class="sidebar-detail-wrapper">
-        <!-- Sidebar Start -->
-        <div class="sidebar">
-          <div
-            class="sidebar-logo d-flex align-items-center justify-content-center"
-          >
-            <a href="#">
-              <img src="./assets/images/furever logo-01.png" alt="" />
-            </a>
-          </div>
-          <h6>Admin</h6>
-          <div class="divider"></div>
-          <div class="sidebar-menu">
-            <ul class="navbar-nav" id="mainsidebar">
-              <!-- Dashboard  -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"
-                  ><span class="material-icons icon-align"> dashboard </span
-                  ><span class="align-inline">Dashboard</span></a
-                >
-              </li>
-              <!-- Dashboard  -->
-              <!-- Categories  -->
-              <li class="nav-item">
-                <a
-                  class="nav-link collapsed"
-                  data-toggle="collapse"
-                  href="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  <span class="material-icons icon-align"> description </span
-                  ><span class="align-inline">Categories</span>
-                </a>
-                <div class="collapse collaps-menu" id="collapseOne">
-                  <ul>
-                    <li><a href="#">Product Categories</a></li>
-                    <li><a href="#">Brand Categories</a></li>
-                    <li><a href="#">Animal Type</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- Categories  -->
-              <!-- Shop Management  -->
-              <li class="nav-item">
-                <a
-                  class="nav-link collapsed"
-                  data-toggle="collapse"
-                  href="#collapseTwo"
-                  aria-expanded="true"
-                  aria-controls="collapseTwo"
-                >
-                  <span class="material-icons icon-align"> shopping_bag </span
-                  ><span class="align-inline">Shop Management</span>
-                </a>
-                <div class="collapse collaps-menu" id="collapseTwo">
-                  <ul>
-                    <li><a href="#">Product Categories</a></li>
-                    <li><a href="#">Brand Categories</a></li>
-                    <li><a href="#">Animal Type</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- Shop Management  -->
-              <!-- Product Management  -->
-              <li class="nav-item">
-                <a
-                  class="nav-link collapsed"
-                  data-toggle="collapse"
-                  href="#collapseThree"
-                  aria-expanded="true"
-                  aria-controls="collapseThree"
-                >
-                  <span class="material-icons icon-align"> shopping_bag </span
-                  ><span class="align-inline">Product Management</span>
-                </a>
-                <div class="collapse collaps-menu" id="collapseThree">
-                  <ul>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Products Details</a></li>
-                    <li>
-                      <a href="./products-3.html" class="submenu-active"
-                        >Add Products</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!-- Product Management  -->
-              <!-- Shelter Management  -->
-              <li class="nav-item">
-                <a
-                  class="nav-link collapsed"
-                  data-toggle="collapse"
-                  href="#collapseFour"
-                  aria-expanded="true"
-                  aria-controls="collapseFour"
-                >
-                  <span class="material-icons icon-align"> home </span
-                  ><span class="align-inline">Shelter Management</span>
-                </a>
-                <div class="collapse collaps-menu" id="collapseFour">
-                  <ul>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Products Details</a></li>
-                    <li><a href="#">Add Products</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- Shelter Management  -->
-              <!-- Animals  -->
-              <li class="nav-item">
-                <a
-                  class="nav-link collapsed"
-                  data-toggle="collapse"
-                  href="#collapseFive"
-                  aria-expanded="true"
-                  aria-controls="collapseFive"
-                >
-                  <span class="material-icons icon-align"> pets </span
-                  ><span class="align-inline">Animals</span>
-                </a>
-                <div class="collapse collaps-menu" id="collapseFive">
-                  <ul>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Products Details</a></li>
-                    <li><a href="#">Add Products</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- Animals  -->
-              <!-- Medical Assistance  -->
-              <li class="nav-item">
-                <a
-                  class="nav-link collapsed"
-                  data-toggle="collapse"
-                  href="#collapseSix"
-                  aria-expanded="true"
-                  aria-controls="collapseSix"
-                >
-                  <span class="material-icons icon-align">
-                    medical_services </span
-                  ><span class="align-inline">Medical Assistance</span>
-                </a>
-                <div class="collapse collaps-menu" id="collapseSix">
-                  <ul>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Products Details</a></li>
-                    <li><a href="#">Add Products</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- Medical Assistance  -->
-              <!-- pet Services  -->
-              <li class="nav-item">
-                <a
-                  class="nav-link collapsed"
-                  data-toggle="collapse"
-                  href="#collapseSeven"
-                  aria-expanded="true"
-                  aria-controls="collapseSeven"
-                >
-                  <span class="material-icons icon-align"> pets </span
-                  ><span class="align-inline">Pet Services</span>
-                </a>
-                <div class="collapse collaps-menu" id="collapseSeven">
-                  <ul>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Products Details</a></li>
-                    <li><a href="#">Add Products</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- pet Services  -->
-              <!-- Orders  -->
-              <li class="nav-item">
-                <a
-                  class="nav-link collapsed"
-                  data-toggle="collapse"
-                  href="#collapseEight"
-                  aria-expanded="true"
-                  aria-controls="collapseEight"
-                >
-                  <span class="material-icons icon-align"> shopping_cart </span
-                  ><span class="align-inline">Orders</span>
-                </a>
-                <div class="collapse collaps-menu" id="collapseEight">
-                  <ul>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Products Details</a></li>
-                    <li><a href="#">Add Products</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- Orders  -->
-              <!-- Users  -->
-
-              <li class="nav-item">
-                <a href="#" class="nav-link"
-                  ><span class="material-icons icon-align"> person </span
-                  ><span class="align-inline">Users</span></a
-                >
-              </li>
-              <!-- Users  -->
-
-              <!-- Roles  -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"
-                  ><span class="material-icons icon-align"> engineering </span
-                  ><span class="align-inline">Roles</span></a
-                >
-              </li>
-              <!-- Roles  -->
-              <!-- Settings  -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"
-                  ><span class="material-icons icon-align"> construction </span
-                  ><span class="align-inline">Settings</span></a
-                >
-              </li>
-              <!-- Settings  -->
-            </ul>
-          </div>
+<body>
+  <main>
+    <!-- Page Wrapper  -->
+    <div class="sidebar-detail-wrapper">
+      <!-- Sidebar Start -->
+      <div class="sidebar">
+        <div class="sidebar-logo d-flex align-items-center justify-content-center">
+          <a href="#">
+            <img src="./assets/images/furever logo-01.png" alt="" />
+          </a>
         </div>
-        <!-- Sidebar End  -->
-        <!-- Main Content Start -->
-        <div class="main-content">
-          <div class="main-top">
-            <div class="main-top-left">
-              <button
-                type="button"
-                class="btn btn-primary plus-btn"
-                data-toggle="modal"
-                data-target="#exampleModal"
-              >
-                <!-- <i class="fas fa-plus"></i> Add -->
-                <span class="material-icons add-icon"> add </span>Add
-              </button>
-            </div>
-            <div class="main-top-right">
-              <div class="search-and-notification">
-                <div class="search">
-                  <button>
-                    <img src="./assets/images/search.svg" alt="" />
-                  </button>
-                </div>
-                <div class="notification">
-                  <!-- <button>
+        <h6>Admin</h6>
+        <div class="divider"></div>
+        <div class="sidebar-menu">
+          <ul class="navbar-nav" id="mainsidebar">
+            <!-- Dashboard  -->
+            <li class="nav-item">
+              <a href="#" class="nav-link"><span class="material-icons icon-align"> dashboard </span><span
+                  class="align-inline">Dashboard</span></a>
+            </li>
+            <!-- Dashboard  -->
+            <!-- Categories  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne" data-target="#collapseOne">
+                <span class="material-icons icon-align"> description </span><span class="align-inline">Categories</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseOne">
+                <ul>
+                  <li><a href="#">Product Categories</a></li>
+                  <li><a href="#">Brand Categories</a></li>
+                  <li><a href="#">Animal Type</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Categories  -->
+            <!-- Shop Management  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseTwo"
+                aria-expanded="true" aria-controls="collapseTwo">
+                <span class="material-icons icon-align"> shopping_bag </span><span class="align-inline">Shop
+                  Management</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseTwo">
+                <ul>
+                  <li><a href="#">Shops</a></li>
+                  <li><a href="#">Shop Details</a></li>
+                  <li><a href="./add-shop.html">Add Shop</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Shop Management  -->
+            <!-- Product Management  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseThree"
+                aria-expanded="true" aria-controls="collapseThree">
+                <span class="material-icons icon-align"> shopping_bag </span><span class="align-inline">Product
+                  Management</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseThree">
+                <ul>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Products Details</a></li>
+                  <li>
+                    <a href="./products-3.html" class="submenu-active">Add Products</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- Product Management  -->
+            <!-- Shelter Management  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseFour"
+                aria-expanded="true" aria-controls="collapseFour">
+                <span class="material-icons icon-align"> home </span><span class="align-inline">Shelter
+                  Management</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseFour">
+                <ul>
+                  <li><a href="#">Shelters</a></li>
+                  <li><a href="#">Shelter Details</a></li>
+                  <li><a href="./add-shelter.html">Add Shelter</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Shelter Management  -->
+            <!-- Animals  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseFive"
+                aria-expanded="true" aria-controls="collapseFive">
+                <span class="material-icons icon-align"> pets </span><span class="align-inline">Animals</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseFive">
+                <ul>
+                  <li><a href="#">Animals</a></li>
+                  <li><a href="#">Animal Details</a></li>
+                  <li><a href="#">Add Animal</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Animals  -->
+            <!-- Medical Assistance  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseSix"
+                aria-expanded="true" aria-controls="collapseSix">
+                <span class="material-icons icon-align">
+                  medical_services </span><span class="align-inline">Medical Assistance</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseSix">
+                <ul>
+                  <li><a href="#">Vet Shops</a></li>
+                  <li><a href="#">Vet Shop Details</a></li>
+                  <li><a href="./add-vet-shop.html">Add Vet Shop</a></li>
+                  <li><a href="#">Vets</a></li>
+                  <li><a href="#">Vet Details</a></li>
+                  <li><a href="./add-vets.html">Add Vet</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Medical Assistance  -->
+            <!-- pet Services  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseSeven"
+                aria-expanded="true" aria-controls="collapseSeven">
+                <span class="material-icons icon-align"> pets </span><span class="align-inline">Pet Services</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseSeven">
+                <ul>
+                  <li><a href="#">Pet Services</a></li>
+                  <li><a href="./add-pet-services.html">Add Pet Services</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- pet Services  -->
+            <!-- Orders  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseEight"
+                aria-expanded="true" aria-controls="collapseEight">
+                <span class="material-icons icon-align"> shopping_cart </span><span class="align-inline">Orders</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseEight">
+                <ul>
+                  <li><a href="#">Order Overview</a></li>
+                  <li><a href="#">Order Details</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Orders  -->
+            <!-- Users  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseNine"
+                aria-expanded="true" aria-controls="collapseNine">
+                <span class="material-icons icon-align"> person </span><span class="align-inline">Users</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseNine">
+                <ul>
+                  <!-- <li><a href="#">Order Overview</a></li>
+                      <li><a href="#">Order Details</a></li> -->
+                </ul>
+              </div>
+            </li>
+            <!-- Users  -->
+
+            <!-- Roles  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseTen"
+                aria-expanded="true" aria-controls="collapseTen">
+                <span class="material-icons icon-align"> engineering </span><span class="align-inline">Roles</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseTen">
+                <ul>
+                  <li><a href="#">Roles</a></li>
+                  <li><a href="#">Permissions</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Roles  -->
+            <!-- Settings  -->
+            <li class="nav-item">
+              <a href="#" class="nav-link"><span class="material-icons icon-align"> construction </span><span
+                  class="align-inline">Settings</span></a>
+            </li>
+            <!-- Settings  -->
+          </ul>
+        </div>
+      </div>
+      <!-- Sidebar End  -->
+      <!-- Main Content Start -->
+      <div class="main-content">
+        <div class="main-top">
+          <div class="main-top-left">
+            <button type="button" class="btn btn-primary plus-btn" data-toggle="modal" data-target="#exampleModal">
+              <!-- <i class="fas fa-plus"></i> Add -->
+              <span class="material-icons add-icon"> add </span>Add
+            </button>
+          </div>
+          <div class="main-top-right">
+            <div class="search-and-notification">
+              <div class="search">
+                <button>
+                  <img src="./assets/images/search.svg" alt="" />
+                </button>
+              </div>
+              <div class="notification">
+                <!-- <button>
                        
                        <img src="./assets/images/notification.svg" alt="">
                        <span>4</span>
                     </button> -->
-                  <ul class="navbar-nav">
-                    <li class="nav-item dropdown mx-1 no-arrow">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="alertsDropdown"
-                        role="button"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        <img src="./assets/images/notification.svg" alt="" />
-                        <span class="notification-counter">4</span>
-                      </a>
-                      <!-- <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown mx-1 no-arrow">
+                    <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="./assets/images/notification.svg" alt="" />
+                      <span class="notification-counter">4</span>
+                    </a>
+                    <!-- <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                        
                       </div> -->
-                    </li>
-                  </ul>
-                </div>
+                  </li>
+                </ul>
               </div>
-              <div class="right-divider"></div>
-              <div class="user-profile">
-                <div class="menu-dropdown">
-                  <div class="dropdown">
-                    <button
-                      class="btn btn-secondary dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <img src="./assets/images/Ellipse 1.png" alt="" />
-                      Welcome, <span>Christina</span>
+            </div>
+            <div class="right-divider"></div>
+            <div class="user-profile">
+              <div class="menu-dropdown">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/images/Ellipse 1.png" alt="" />
+                    Welcome, <span>Christina</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Dashboard</a>
+                    <a class="dropdown-item" href="#">Dashboard</a>
+                    <a class="dropdown-item" href="#">Dashboard</a>
+                    <button type="button" class="btn btn-primary logout-btn">
+                      logout
                     </button>
-                    <div
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton"
-                    >
-                      <a class="dropdown-item" href="#">Dashboard</a>
-                      <a class="dropdown-item" href="#">Dashboard</a>
-                      <a class="dropdown-item" href="#">Dashboard</a>
-                      <button type="button" class="btn btn-primary logout-btn">
-                        logout
-                      </button>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="main-middle">
-            <div class="add-products">
-              <h3>Add Products</h3>
-            </div>
-            <div class="links-path">
-              <span>Furever Home/Products/Add Products</span>
-            </div>
-          </div>
-          <!-- Product page Tabs Section -->
-          <div class="product-tab-section">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  id="pills-home-tab"
-                  data-toggle="pill"
-                  href="#pills-home"
-                  role="tab"
-                  aria-controls="pills-home"
-                  aria-selected="true"
-                  >General</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  id="pills-profile-tab"
-                  data-toggle="pill"
-                  href="#pills-profile"
-                  role="tab"
-                  aria-controls="pills-profile"
-                  aria-selected="false"
-                  >Attributes</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  id="pills-contact-tab"
-                  data-toggle="pill"
-                  href="#pills-contact"
-                  role="tab"
-                  aria-controls="pills-contact"
-                  aria-selected="false"
-                  >Options</a
-                >
-              </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-              <div
-                class="tab-pane fade show active"
-                id="pills-home"
-                role="tabpanel"
-                aria-labelledby="pills-home-tab"
-              >
-                ...
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-profile"
-                role="tabpanel"
-                aria-labelledby="pills-profile-tab"
-              >
-                <div class="attribute-container">
-                  <form>
-                    <div class="form-group">
-                      <label for="exampleupc">UPC</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="upc-number"
-                        aria-describedby="upc"
-                        placeholder="3838495"
-                      />
-                    </div>
-
-                    <div class="save-btn-container text-right">
-                      <button type="submit" class="btn btn-primary save-btn">
-                        Save
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-contact"
-                role="tabpanel"
-                aria-labelledby="pills-contact-tab"
-              >
-                ...
-              </div>
-            </div>
-          </div>
-          <!-- Product page Tabs Section -->
-
-          <!-- Footer Start -->
-          <div class="dashboard-footer">
-            <p>Copyright 2020 | Furever Home.</p>
-          </div>
-          <!-- Footer End -->
         </div>
-        <!-- Main Content End -->
-      </div>
-      <!-- Page Wrapper  -->
-    </main>
+        <div class="main-middle">
+          <div class="add-products">
+            <h3>Add Products</h3>
+          </div>
+          <div class="links-path">
+            <span>Furever Home/Products/Add Products</span>
+          </div>
+        </div>
+        <!-- Product page Tabs Section -->
+        <div class="product-tab-section">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                aria-controls="pills-home" aria-selected="true">General</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                aria-controls="pills-profile" aria-selected="false">Attributes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                aria-controls="pills-contact" aria-selected="false">Options</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              ...
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="attribute-container">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleupc">UPC</label>
+                    <input type="text" class="form-control" id="upc-number" aria-describedby="upc"
+                      placeholder="3838495" />
+                  </div>
 
-    <!-- Jquery Js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Bootstrap Js-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <!-- counter up  -->
-    <script src="./js/jquery.counterup.min.js"></script>
-    <script src="./js/jquery.waypoints.min.js"></script>
-    <!-- counter up  -->
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <!--AOS Js-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!--Owl Carouse js-->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- Custom Js-->
-    <script src="js/custom.js"></script>
-  </body>
+                  <div class="save-btn-container text-right">
+                    <button type="submit" class="btn btn-primary save-btn">
+                      Save
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              ...
+            </div>
+          </div>
+        </div>
+        <!-- Product page Tabs Section -->
+
+        <!-- Footer Start -->
+        <div class="dashboard-footer">
+          <p>Copyright 2020 | Furever Home.</p>
+        </div>
+        <!-- Footer End -->
+      </div>
+      <!-- Main Content End -->
+    </div>
+    <!-- Page Wrapper  -->
+  </main>
+
+  <!-- Jquery Js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap Js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <!-- counter up  -->
+  <script src="./js/jquery.counterup.min.js"></script>
+  <script src="./js/jquery.waypoints.min.js"></script>
+  <!-- counter up  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <!--AOS Js-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--Owl Carouse js-->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- Custom Js-->
+  <script src="js/custom.js"></script>
+</body>
+
 </html>

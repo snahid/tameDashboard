@@ -1,0 +1,46 @@
+.add-bankDetail-text {
+    margin-top: 40px;
+}
+
+.payment-details {
+    h5 {
+        font-size: 25px;
+        font-weight: 400;
+        color: #203459;
+    }
+
+    p {
+        font-size: 25px !important;
+        font-weight: $mlight !important;
+        color: #98A9C9 !important;
+        margin-bottom: 50px;
+    }
+
+    .payment-inner {
+        position: relative;
+
+        label {
+            color: #203459 !important;
+            font-weight: $mregular;
+        }
+
+        .mycheck-key {
+            position: absolute;
+            top: 60%;
+            right: 40px;
+            color: #1ECB6F;
+            font-size: 23px;
+        }
+
+        .mycheck-id {
+            position: absolute;
+            top: 60%;
+            right: 20px;
+            color: #1ECB6F;
+            font-size: 23px;
+        }
+
+    }
+
+
+}

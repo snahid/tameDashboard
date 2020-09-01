@@ -8,13 +8,117 @@ body {
   font-family: "Montserrat", sans-serif;
   background: #ffffff; }
 
+.add-vet-section {
+  margin-top: 50px; }
+  .add-vet-section .add-vets-form h5 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #203459; }
+  .add-vet-section .add-vets-form p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #94A6C7; }
+  .add-vet-section .add-vets-form form {
+    margin-top: 60px; }
+    .add-vet-section .add-vets-form form .save-btn-container {
+      margin-top: 60px;
+      margin-bottom: 200px; }
+      .add-vet-section .add-vets-form form .save-btn-container .save-btn {
+        background: #1D74C1;
+        color: white;
+        width: 267px;
+        height: 88px;
+        font-size: 25px;
+        font-weight: 400;
+        border-radius: 21px;
+        transition: 0.5s ease; }
+        .add-vet-section .add-vets-form form .save-btn-container .save-btn:hover {
+          opacity: 80%; }
+    .add-vet-section .add-vets-form form .form-inner-margin {
+      margin-bottom: 50px; }
+    .add-vet-section .add-vets-form form .padding-right {
+      padding-right: 20px; }
+    .add-vet-section .add-vets-form form label {
+      font-size: 22px;
+      font-weight: 400;
+      color: #94A6C7;
+      margin-bottom: 20px; }
+    .add-vet-section .add-vets-form form input {
+      font-size: 22px;
+      color: #94A6C7;
+      font-weight: 300;
+      height: 89px;
+      border: 1px solid #BEDAF1;
+      border-radius: 11px; }
+    .add-vet-section .add-vets-form form textarea {
+      font-size: 22px;
+      color: #94A6C7;
+      font-weight: 300;
+      border: 1px solid #BEDAF1;
+      border-radius: 11px;
+      resize: none; }
+    .add-vet-section .add-vets-form form ::-webkit-input-placeholder {
+      /* Edge */
+      font-size: 22px;
+      color: #94A6C7;
+      font-weight: 300;
+      opacity: 70%; }
+    .add-vet-section .add-vets-form form :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      font-size: 22px;
+      color: #94A6C7;
+      font-weight: 300;
+      opacity: 70%; }
+    .add-vet-section .add-vets-form form ::placeholder {
+      font-size: 22px;
+      color: #94A6C7;
+      font-weight: 300;
+      opacity: 70%; }
+    .add-vet-section .add-vets-form form .input-group-prepend {
+      text-align: center; }
+      .add-vet-section .add-vets-form form .input-group-prepend .input-group-text {
+        background: #1D73C2;
+        width: 69px;
+        justify-content: center;
+        font-size: 22px;
+        font-weight: 400;
+        color: white;
+        border-top-left-radius: 11px;
+        border-bottom-left-radius: 11px;
+        max-height: 89px;
+        border: 1px solid #1D73C2; }
+    .add-vet-section .add-vets-form form .custom-file label {
+      font-size: 22px;
+      color: #94A6C7;
+      font-weight: 300;
+      height: 89px;
+      border: 1px solid #BEDAF1 !important;
+      border-radius: 11px !important;
+      overflow: hidden;
+      align-items: center;
+      display: flex; }
+    .add-vet-section .add-vets-form form .custom-file .custom-file-label::after {
+      background: transparent;
+      border-left: none;
+      font-family: FontAwesome;
+      content: "\f093";
+      color: #94A6C7;
+      top: 26%; }
+    .add-vet-section .add-vets-form form .custom-file input[type="file"] {
+      font-size: 22px;
+      color: #94A6C7;
+      font-weight: 300;
+      max-height: 89px;
+      border: 1px solid #BEDAF1 !important;
+      border-radius: 11px !important; }
+
 .sidebar-detail-wrapper {
   display: flex;
   flex-direction: row;
   width: 100%; }
   .sidebar-detail-wrapper .sidebar {
     width: 272px;
-    background-color: #2464c6;
+    background-image: linear-gradient(to bottom, #2365c6, #066ec6, #0075c4, #007dc1, #1783bd);
     min-height: 100vh;
     border-right: 1px solid #bed5ff; }
     .sidebar-detail-wrapper .sidebar .sidebar-logo {
@@ -36,6 +140,11 @@ body {
       margin-left: 10px;
       margin-top: 30px;
       padding-bottom: 100px; }
+      .sidebar-detail-wrapper .sidebar .sidebar-menu .navbar-nav li.nav-item .active {
+        background: white;
+        border-radius: 34px 0 0 34px;
+        color: #216ac4;
+        font-weight: 400; }
       .sidebar-detail-wrapper .sidebar .sidebar-menu .navbar-nav li.nav-item a.nav-link {
         color: #bed5ff;
         position: relative;
@@ -113,6 +222,7 @@ body {
     justify-content: space-between; }
     .main-content .main-top .main-top-left .plus-btn {
       background: #2365c6;
+      background: linear-gradient(90deg, #2365c6 0%, #2365c6 35%, #1783bd 100%);
       border-radius: 38px;
       width: 139px;
       height: 55px;
@@ -144,7 +254,8 @@ body {
           padding-top: 5px;
           margin-left: 30px; }
           .main-content .main-top .main-top-right .search-and-notification .notification .navbar-nav .nav-item .dropdown-toggle {
-            position: relative; }
+            position: relative;
+            background: none; }
             .main-content .main-top .main-top-right .search-and-notification .notification .navbar-nav .nav-item .dropdown-toggle::after {
               border: none; }
             .main-content .main-top .main-top-right .search-and-notification .notification .navbar-nav .nav-item .dropdown-toggle img {
@@ -179,7 +290,8 @@ body {
         font-weight: 600;
         font-weight: 700;
         border: 0px;
-        border-top: 0px solid; }
+        border-top: 0px solid;
+        z-index: 44; }
         .main-content .main-top .main-top-right .menu-dropdown .dropdown .dropdown-toggle img {
           width: 57px;
           height: 57px;
@@ -198,6 +310,7 @@ body {
           outline: 0px;
           box-shadow: 0px 0px 0px 0px; }
       .main-content .main-top .main-top-right .menu-dropdown .dropdown .dropdown-menu {
+        z-index: 33;
         border: 0px solid;
         width: 100%;
         padding: 20px;
@@ -253,7 +366,6 @@ body {
     .main-content .main-middle .links-path {
       background: white;
       height: 58px;
-      max-width: 412px;
       padding-top: 18px;
       padding-left: 35px;
       padding-right: 35px;
@@ -268,10 +380,11 @@ body {
       font-size: 25px;
       font-weight: 300;
       color: #94A6C7;
-      width: 196px;
+      min-width: 196px;
       height: 64px;
       text-align: center;
-      align-items: center; }
+      align-items: center;
+      padding-top: 12px; }
     .main-content .product-tab-section .nav .nav-item .active {
       background: #2268C5;
       color: white;
@@ -322,7 +435,7 @@ body {
   .main-content .dashboard-footer {
     position: absolute;
     right: 50px;
-    bottom: 50px; }
+    bottom: 70px; }
     .main-content .dashboard-footer p {
       color: #1D72C2;
       font-size: 22px;
@@ -355,6 +468,12 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.menu-active {
+  background: white;
+  border-radius: 34px 0 0 34px;
+  color: #216ac4 !important;
+  font-weight: 400 !important; }
 
 .login1-background {
   background: url(../assets/images/login-background.png);
@@ -456,3 +575,163 @@ body {
             color: white;
             font-size: 16px;
             font-weight: 300; }
+
+.add-bankDetail-text {
+  margin-top: 40px; }
+
+.payment-details h5 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #203459; }
+
+.payment-details p {
+  font-size: 25px !important;
+  font-weight: 300 !important;
+  color: #98A9C9 !important;
+  margin-bottom: 50px; }
+
+.payment-details .payment-inner {
+  position: relative; }
+  .payment-details .payment-inner label {
+    color: #203459 !important;
+    font-weight: 400; }
+  .payment-details .payment-inner .mycheck-key {
+    position: absolute;
+    top: 60%;
+    right: 40px;
+    color: #1ECB6F;
+    font-size: 23px; }
+  .payment-details .payment-inner .mycheck-id {
+    position: absolute;
+    top: 60%;
+    right: 20px;
+    color: #1ECB6F;
+    font-size: 23px; }
+
+.animal-type-link-path {
+  background: white;
+  height: 58px;
+  padding-top: 18px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 37px; }
+  .animal-type-link-path span {
+    font-size: 18px;
+    font-weight: 400 !important;
+    color: #1E3E59 !important; }
+
+.animal-type-section .animal-type-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px; }
+  .animal-type-section .animal-type-top .animal-type-top-left {
+    padding-top: 12px; }
+    .animal-type-section .animal-type-top .animal-type-top-left h5 {
+      font-size: 25px;
+      color: #1E3E59;
+      font-weight: 400;
+      margin-bottom: 0; }
+  .animal-type-section .animal-type-top .animal-type-top-right .plus-btn {
+    background: #2365c6;
+    background: linear-gradient(90deg, #2365c6 0%, #2365c6 35%, #1783bd 100%);
+    border-radius: 38px;
+    width: 183px;
+    height: 55px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    padding-left: 30px; }
+    .animal-type-section .animal-type-top .animal-type-top-right .plus-btn .add-icon {
+      position: absolute;
+      left: 25px; }
+
+.animal-type-section .animal-list {
+  box-shadow: 0 3px 6px #707070;
+  border-radius: 13px;
+  overflow: hidden;
+  margin-top: 50px; }
+  .animal-type-section .animal-list .animal-list-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #2365c6;
+    background: linear-gradient(90deg, #2365c6 0%, #2365c6 35%, #1783bd 100%);
+    padding: 25px 35px;
+    height: 102px; }
+    .animal-type-section .animal-list .animal-list-header .animal-list-header-left h5 {
+      margin-bottom: 0;
+      padding-top: 12px;
+      color: white;
+      font-size: 25px;
+      font-weight: 400; }
+    .animal-type-section .animal-list .animal-list-header .animal-list-header-right .search-container {
+      position: relative;
+      height: 53px; }
+      .animal-type-section .animal-list .animal-list-header .animal-list-header-right .search-container .search-box {
+        position: relative;
+        margin-right: 70px;
+        display: none; }
+        .animal-type-section .animal-list .animal-list-header .animal-list-header-right .search-container .search-box input {
+          width: inherit;
+          padding-right: 50px;
+          padding: 12px 50px 12px 12px;
+          border: 1px solid #707070;
+          border-radius: 37px;
+          outline: none;
+          transition: 0.4s linear;
+          font-size: 18px;
+          font-weight: 400;
+          color: #203459; }
+          .animal-type-section .animal-list .animal-list-header .animal-list-header-right .search-container .search-box input ::-webkit-input-placeholder {
+            /* Edge */
+            color: #94A6C7;
+            font-weight: 300; }
+          .animal-type-section .animal-list .animal-list-header .animal-list-header-right .search-container .search-box input :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #94A6C7;
+            font-weight: 300; }
+          .animal-type-section .animal-list .animal-list-header .animal-list-header-right .search-container .search-box input ::placeholder {
+            color: #94A6C7;
+            font-weight: 300; }
+        .animal-type-section .animal-list .animal-list-header .animal-list-header-right .search-container .search-box .search-inner {
+          position: absolute;
+          right: 30px;
+          top: 50%;
+          transform: translate(50%, -50%);
+          transition: 0.4s linear; }
+      .animal-type-section .animal-list .animal-list-header .animal-list-header-right .search-container .search-show {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translate(50%, -50%);
+        cursor: pointer; }
+      .animal-type-section .animal-list .animal-list-header .animal-list-header-right .search-container .search-hide {
+        position: absolute;
+        font-size: 24px;
+        color: white;
+        display: none;
+        right: 30px;
+        top: 50%;
+        transform: translate(50%, -50%);
+        cursor: pointer; }
+  .animal-type-section .animal-list .animal-list-body .table-bordered > tbody > tr > td,
+  .animal-type-section .animal-list .animal-list-body .table-bordered > tbody > tr > th,
+  .animal-type-section .animal-list .animal-list-body .table-bordered > thead > tr > td,
+  .animal-type-section .animal-list .animal-list-body .table-bordered {
+    border-bottom: 0;
+    border-top: 0;
+    border-right: 1px solid #B8D5EC; }
+  .animal-type-section .animal-list .animal-list-body .table-bordered > thead > tr > th,
+  .animal-type-section .animal-list .animal-list-body .bottomborder,
+  .animal-type-section .animal-list .animal-list-body .table-bordered {
+    border-bottom: 1px solid #B8D5EC;
+    border-right: 1px solid #B8D5EC; }
+  .animal-type-section .animal-list .animal-list-body .table-bordered > thead > tr,
+  .animal-type-section .animal-list .animal-list-body .borderleft,
+  .animal-type-section .animal-list .animal-list-body .table-bordered {
+    border-left: 0; }
+  .animal-type-section .animal-list .animal-list-body .table-bordered > thead > tr,
+  .animal-type-section .animal-list .animal-list-body .borderright,
+  .animal-type-section .animal-list .animal-list-body .table-bordered {
+    border-right: 0; }
