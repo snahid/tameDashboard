@@ -10,11 +10,11 @@
     span {
         font-size: 18px;
         font-weight: $mregular !important;
-        color: #1E3E59 !important;
+        color: #1e3e59 !important;
     }
 }
 
-// Animal Type Section 
+// Animal Type Section
 .animal-type-section {
     .animal-type-top {
         display: flex;
@@ -27,7 +27,7 @@
 
             h5 {
                 font-size: 25px;
-                color: #1E3E59;
+                color: #1e3e59;
                 font-weight: $mregular;
                 margin-bottom: 0;
             }
@@ -36,7 +36,10 @@
         .animal-type-top-right {
             .plus-btn {
                 background: rgb(35, 101, 198);
-                background: linear-gradient(90deg, rgba(35, 101, 198, 1) 0%, rgba(35, 101, 198, 1) 35%, rgba(23, 131, 189, 1) 100%);
+                background: linear-gradient(90deg,
+                        rgba(35, 101, 198, 1) 0%,
+                        rgba(35, 101, 198, 1) 35%,
+                        rgba(23, 131, 189, 1) 100%);
                 border-radius: 38px;
                 width: 183px;
                 height: 55px;
@@ -50,6 +53,158 @@
                     left: 25px;
                 }
             }
+
+            .modal {
+                .modal-dialog {
+                    .modal-content {
+                        border-radius: 20px;
+                        .modal-header {
+                            border-bottom: 1px solid #B8D5EC;
+
+                            h5 {
+                                font-size: 30px;
+                                font-weight: $mregular;
+                                color: #203459;
+                            }
+                            .close{
+                                &:focus{
+                                    outline: none;
+                                    border: none;
+                                    box-shadow: none;
+                                }
+                            }
+
+                        }
+
+                        .modal-body {
+                            h5 {
+                                color: #203459;
+                                font-size: 25px;
+                                font-weight: $mregular;
+                                margin-bottom: 0;
+                            }
+
+                            p {
+                                font-size: 18px;
+                                font-weight: $mlight;
+                                color: #94A6C7;
+                            }
+
+                            .animal-form {
+                                form {
+                                    .form-group {
+                                        label {
+                                            font-size: 16px;
+                                            color: #94A6C7;
+                                            font-weight: $mregular;
+                                            text-transform: capitalize;
+                                        }
+
+                                        textarea {
+                                            font-size: 16px;
+                                            color: #94A6C7;
+                                            font-weight: $mlight;
+                                            border: 1px solid #BEDAF1;
+                                            border-radius: 11px;
+                                            resize: none;
+                                            background: #F9FCFF;
+                                        }
+
+                                        input {
+                                            background: #F9FCFF;
+                                            border: 1px solid #BEDAF1;
+                                            border-radius: 11px;
+                                            font-size: 16px;
+                                            color: #94A6C7;
+                                            font-weight: $mlight;
+                                        }
+
+                                        ::-webkit-input-placeholder {
+                                            /* Edge */
+                                            font-size: 16px;
+                                            color: #94A6C7;
+                                            font-weight: $mlight;
+                                        }
+
+                                        :-ms-input-placeholder {
+                                            /* Internet Explorer 10-11 */
+                                            font-size: 16px;
+                                            color: #94A6C7;
+                                            font-weight: $mlight;
+                                        }
+
+                                        ::placeholder {
+                                            font-size: 16px;
+                                            color: #94A6C7;
+                                            font-weight: $mlight;
+                                        }
+                                    }
+
+                                    .custom-file {
+                                        background: #F9FCFF;
+                                        label {
+                                            font-size: 16px;
+                                            color: #94A6C7;
+                                            font-weight: $mlight;
+                                            border: 1px solid #BEDAF1 !important;
+                                            border-radius: 11px !important;
+                                            overflow: hidden;
+                                            align-items: center;
+                                            display: flex;
+                                            background: #F9FCFF;
+                                        }
+
+                                        .custom-file-label {
+
+                                            &::after {
+                                                background: transparent;
+                                                border-left: none;
+                                                font-family: FontAwesome;
+                                                content: "\f093";
+                                                color: #94A6C7;
+
+                                            }
+                                        }
+
+                                        input[type="file"] {
+                                            font-size: 22px;
+                                            color: #94A6C7;
+                                            font-weight: $mlight;
+                                            max-height: 89px;
+                                            border: 1px solid #BEDAF1 !important;
+                                            border-radius: 11px !important;
+                                            background: #F9FCFF;
+                                        }
+                                    }
+
+                                    .save-btn-container {
+                                        margin-top: 33px;
+
+                                        .save-btn {
+
+                                            background: rgb(35, 101, 198);
+                                            background: linear-gradient(90deg,
+                                                    rgba(35, 101, 198, 1) 0%,
+                                                    rgba(35, 101, 198, 1) 35%,
+                                                    rgba(23, 131, 189, 1) 100%);
+                                            color: $white;
+                                            border-radius: 11px;
+                                            font-weight: $mregular;
+                                            font-size: 18px;
+                                            transition: 0.5s ease;
+                                            padding: 5px 60px;
+
+                                            &:hover {
+                                                opacity: 80%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -58,14 +213,19 @@
         border-radius: 13px;
         overflow: hidden;
         margin-top: 50px;
+        background: $white;
+        margin-bottom: 200px;
 
         .animal-list-header {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             background: rgb(35, 101, 198);
-            background: linear-gradient(90deg, rgba(35, 101, 198, 1) 0%, rgba(35, 101, 198, 1) 35%, rgba(23, 131, 189, 1) 100%);
-            padding: 25px 35px;
+            background: linear-gradient(90deg,
+                    rgba(35, 101, 198, 1) 0%,
+                    rgba(35, 101, 198, 1) 35%,
+                    rgba(23, 131, 189, 1) 100%);
+            padding: 25px 25px;
 
             height: 102px;
 
@@ -93,7 +253,6 @@
                             // background: red;
                             width: inherit;
 
-
                             // transform-origin: left;
                             padding-right: 50px;
                             padding: 12px 50px 12px 12px;
@@ -107,21 +266,20 @@
 
                             ::-webkit-input-placeholder {
                                 /* Edge */
-                                color: #94A6C7;
+                                color: #94a6c7;
                                 font-weight: $mlight;
                             }
 
                             :-ms-input-placeholder {
                                 /* Internet Explorer 10-11 */
-                                color: #94A6C7;
+                                color: #94a6c7;
                                 font-weight: $mlight;
                             }
 
                             ::placeholder {
-                                color: #94A6C7;
+                                color: #94a6c7;
                                 font-weight: $mlight;
                             }
-
                         }
 
                         .search-inner {
@@ -151,15 +309,176 @@
                         transform: translate(50%, -50%);
                         cursor: pointer;
                     }
-
-
-
-
                 }
             }
         }
 
         .animal-list-body {
+
+            // Table Inner Design Start
+            .table {
+                tbody {
+                    tr {
+                        td {
+                            vertical-align: middle;
+
+                            .type-categories-brand {
+                                @media (max-width: 1440px) {
+                                    max-width: 300px;
+                                }
+
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+
+                                .left {
+                                    img {
+                                        border-radius: 15px;
+                                        width: 81px;
+                                        height: 81px;
+                                    }
+                                }
+
+                                .right {
+                                    padding-top: 12px;
+                                    margin-left: 20px;
+
+                                    h6 {
+                                        font-size: 15px;
+                                        font-weight: $mregular;
+                                        color: #1e3e59;
+                                        margin-bottom: 15px;
+                                    }
+
+                                    p {
+                                        font-size: 13px;
+                                        font-weight: $mlight;
+                                        color: #94a6c7;
+                                        max-width: 185px;
+                                        line-height: 15px;
+                                    }
+                                }
+                            }
+
+                            .type-id {
+                                font-size: 15px;
+                                font-weight: $mregular;
+                                color: #1e3e59;
+                            }
+
+                            .date {
+                                font-size: 15px;
+                                font-weight: $mregular;
+                                color: #1e3e59;
+                            }
+
+                            .status {
+                                font-size: 15px;
+                                font-weight: $mregular;
+                                color: #1e3e59;
+                            }
+
+                            .success {
+                                color: #15b14e !important;
+                            }
+
+                            .danger {
+                                color: #e82835 !important;
+                            }
+
+                            .action {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+
+                                .edit {
+                                    .edit-btn {
+                                        font-size: 15px;
+                                        font-weight: $mmedium;
+                                        color: #1e3e59;
+                                        padding: 0;
+                                        background: transparent;
+                                        border: none;
+                                        outline: none;
+
+                                        &:focus {
+                                            outline: none;
+                                            border: none;
+                                            box-shadow: none;
+                                        }
+
+                                        span {
+                                            margin-left: 5px;
+                                        }
+                                    }
+                                }
+
+                                .view {
+                                    .view-btn {
+                                        font-size: 15px;
+                                        font-weight: $mmedium;
+                                        color: #1e3e59;
+                                        padding: 0;
+                                        background: transparent;
+                                        border: none;
+                                        outline: none;
+
+                                        &:focus {
+                                            outline: none;
+                                            border: none;
+                                            box-shadow: none;
+                                        }
+
+                                        span {
+                                            margin-left: 5px;
+                                        }
+                                    }
+                                }
+
+                                .delete {
+                                    .delete-btn {
+                                        font-size: 15px;
+                                        font-weight: $mmedium;
+                                        color: #1e3e59;
+                                        padding: 0;
+                                        background: transparent;
+                                        border: none;
+                                        outline: none;
+
+                                        &:focus {
+                                            outline: none;
+                                            border: none;
+                                            box-shadow: none;
+                                        }
+
+                                        span {
+                                            margin-left: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .first-td-width {
+                            @media (max-width: 1440px) {
+                                max-width: 320px;
+                            }
+                        }
+                    }
+                }
+
+                thead {
+                    tr {
+                        .first-td-width {
+                            @media (max-width: 1366px) {
+                                max-width: 320px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Table Inner Design End
 
             .table-bordered>tbody>tr>td,
             .table-bordered>tbody>tr>th,
@@ -167,14 +486,28 @@
             .table-bordered {
                 border-bottom: 0;
                 border-top: 0;
-                border-right: 1px solid #B8D5EC;
+                border-right: 1px solid #b8d5ec;
+                padding-left: 25px;
             }
 
             .table-bordered>thead>tr>th,
             .bottomborder,
             .table-bordered {
-                border-bottom: 1px solid #B8D5EC;
-                border-right: 1px solid #B8D5EC;
+                border-bottom: 1px solid #b8d5ec;
+                border-right: 1px solid #b8d5ec;
+                padding-left: 25px;
+            }
+
+            .table {
+                thead {
+                    tr {
+                        th {
+                            font-size: 20px;
+                            font-weight: $mregular;
+                            color: #1e3e59;
+                        }
+                    }
+                }
             }
 
             .table-bordered>thead>tr,
@@ -189,7 +522,56 @@
                 border-right: 0;
             }
         }
+
+        .animal-list-pagination {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 25px;
+
+            nav {
+                ul {
+                    li {
+                        margin-right: 15px;
+
+                        &:first-child {
+                            border-radius: 6px;
+                        }
+
+                        .pagination-active {
+                            color: $white;
+                            background: #197DBE;
+                        }
+
+                        a {
+                            border-radius: 6px;
+                            width: 26px;
+                            height: 26px;
+                            padding: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            border: 1px solid #B8D5EC;
+
+                            font-size: 15px;
+                            color: #1E3E59;
+                            font-weight: $mregular;
+                        }
+                    }
+                }
+
+                .pagination-sm .page-item:first-child .page-link {
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                }
+
+                .pagination-sm .page-item:last-child .page-link {
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                }
+            }
+        }
     }
 }
 
-// Animal Type Section 
+// Animal Type Section

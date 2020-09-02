@@ -618,7 +618,7 @@ body {
   .animal-type-link-path span {
     font-size: 18px;
     font-weight: 400 !important;
-    color: #1E3E59 !important; }
+    color: #1e3e59 !important; }
 
 .animal-type-section .animal-type-top {
   display: flex;
@@ -629,7 +629,7 @@ body {
     padding-top: 12px; }
     .animal-type-section .animal-type-top .animal-type-top-left h5 {
       font-size: 25px;
-      color: #1E3E59;
+      color: #1e3e59;
       font-weight: 400;
       margin-bottom: 0; }
   .animal-type-section .animal-type-top .animal-type-top-right .plus-btn {
@@ -645,19 +645,115 @@ body {
     .animal-type-section .animal-type-top .animal-type-top-right .plus-btn .add-icon {
       position: absolute;
       left: 25px; }
+  .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content {
+    border-radius: 20px; }
+    .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-header {
+      border-bottom: 1px solid #B8D5EC; }
+      .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-header h5 {
+        font-size: 30px;
+        font-weight: 400;
+        color: #203459; }
+      .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-header .close:focus {
+        outline: none;
+        border: none;
+        box-shadow: none; }
+    .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body h5 {
+      color: #203459;
+      font-size: 25px;
+      font-weight: 400;
+      margin-bottom: 0; }
+    .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body p {
+      font-size: 18px;
+      font-weight: 300;
+      color: #94A6C7; }
+    .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body .animal-form form .form-group label {
+      font-size: 16px;
+      color: #94A6C7;
+      font-weight: 400;
+      text-transform: capitalize; }
+    .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body .animal-form form .form-group textarea {
+      font-size: 16px;
+      color: #94A6C7;
+      font-weight: 300;
+      border: 1px solid #BEDAF1;
+      border-radius: 11px;
+      resize: none;
+      background: #F9FCFF; }
+    .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body .animal-form form .form-group input {
+      background: #F9FCFF;
+      border: 1px solid #BEDAF1;
+      border-radius: 11px;
+      font-size: 16px;
+      color: #94A6C7;
+      font-weight: 300; }
+    .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body .animal-form form .form-group ::-webkit-input-placeholder {
+      /* Edge */
+      font-size: 16px;
+      color: #94A6C7;
+      font-weight: 300; }
+    .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body .animal-form form .form-group :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      font-size: 16px;
+      color: #94A6C7;
+      font-weight: 300; }
+    .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body .animal-form form .form-group ::placeholder {
+      font-size: 16px;
+      color: #94A6C7;
+      font-weight: 300; }
+    .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body .animal-form form .custom-file {
+      background: #F9FCFF; }
+      .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body .animal-form form .custom-file label {
+        font-size: 16px;
+        color: #94A6C7;
+        font-weight: 300;
+        border: 1px solid #BEDAF1 !important;
+        border-radius: 11px !important;
+        overflow: hidden;
+        align-items: center;
+        display: flex;
+        background: #F9FCFF; }
+      .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body .animal-form form .custom-file .custom-file-label::after {
+        background: transparent;
+        border-left: none;
+        font-family: FontAwesome;
+        content: "\f093";
+        color: #94A6C7; }
+      .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body .animal-form form .custom-file input[type="file"] {
+        font-size: 22px;
+        color: #94A6C7;
+        font-weight: 300;
+        max-height: 89px;
+        border: 1px solid #BEDAF1 !important;
+        border-radius: 11px !important;
+        background: #F9FCFF; }
+    .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body .animal-form form .save-btn-container {
+      margin-top: 33px; }
+      .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body .animal-form form .save-btn-container .save-btn {
+        background: #2365c6;
+        background: linear-gradient(90deg, #2365c6 0%, #2365c6 35%, #1783bd 100%);
+        color: white;
+        border-radius: 11px;
+        font-weight: 400;
+        font-size: 18px;
+        transition: 0.5s ease;
+        padding: 5px 60px; }
+        .animal-type-section .animal-type-top .animal-type-top-right .modal .modal-dialog .modal-content .modal-body .animal-form form .save-btn-container .save-btn:hover {
+          opacity: 80%; }
 
 .animal-type-section .animal-list {
   box-shadow: 0 3px 6px #707070;
   border-radius: 13px;
   overflow: hidden;
-  margin-top: 50px; }
+  margin-top: 50px;
+  background: white;
+  margin-bottom: 200px; }
   .animal-type-section .animal-list .animal-list-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background: #2365c6;
     background: linear-gradient(90deg, #2365c6 0%, #2365c6 35%, #1783bd 100%);
-    padding: 25px 35px;
+    padding: 25px 25px;
     height: 102px; }
     .animal-type-section .animal-list .animal-list-header .animal-list-header-left h5 {
       margin-bottom: 0;
@@ -685,14 +781,14 @@ body {
           color: #203459; }
           .animal-type-section .animal-list .animal-list-header .animal-list-header-right .search-container .search-box input ::-webkit-input-placeholder {
             /* Edge */
-            color: #94A6C7;
+            color: #94a6c7;
             font-weight: 300; }
           .animal-type-section .animal-list .animal-list-header .animal-list-header-right .search-container .search-box input :-ms-input-placeholder {
             /* Internet Explorer 10-11 */
-            color: #94A6C7;
+            color: #94a6c7;
             font-weight: 300; }
           .animal-type-section .animal-list .animal-list-header .animal-list-header-right .search-container .search-box input ::placeholder {
-            color: #94A6C7;
+            color: #94a6c7;
             font-weight: 300; }
         .animal-type-section .animal-list .animal-list-header .animal-list-header-right .search-container .search-box .search-inner {
           position: absolute;
@@ -715,18 +811,119 @@ body {
         top: 50%;
         transform: translate(50%, -50%);
         cursor: pointer; }
+  .animal-type-section .animal-list .animal-list-body .table tbody tr td {
+    vertical-align: middle; }
+    .animal-type-section .animal-list .animal-list-body .table tbody tr td .type-categories-brand {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      @media (max-width: 1440px) {
+        .animal-type-section .animal-list .animal-list-body .table tbody tr td .type-categories-brand {
+          max-width: 300px; } }
+      .animal-type-section .animal-list .animal-list-body .table tbody tr td .type-categories-brand .left img {
+        border-radius: 15px;
+        width: 81px;
+        height: 81px; }
+      .animal-type-section .animal-list .animal-list-body .table tbody tr td .type-categories-brand .right {
+        padding-top: 12px;
+        margin-left: 20px; }
+        .animal-type-section .animal-list .animal-list-body .table tbody tr td .type-categories-brand .right h6 {
+          font-size: 15px;
+          font-weight: 400;
+          color: #1e3e59;
+          margin-bottom: 15px; }
+        .animal-type-section .animal-list .animal-list-body .table tbody tr td .type-categories-brand .right p {
+          font-size: 13px;
+          font-weight: 300;
+          color: #94a6c7;
+          max-width: 185px;
+          line-height: 15px; }
+    .animal-type-section .animal-list .animal-list-body .table tbody tr td .type-id {
+      font-size: 15px;
+      font-weight: 400;
+      color: #1e3e59; }
+    .animal-type-section .animal-list .animal-list-body .table tbody tr td .date {
+      font-size: 15px;
+      font-weight: 400;
+      color: #1e3e59; }
+    .animal-type-section .animal-list .animal-list-body .table tbody tr td .status {
+      font-size: 15px;
+      font-weight: 400;
+      color: #1e3e59; }
+    .animal-type-section .animal-list .animal-list-body .table tbody tr td .success {
+      color: #15b14e !important; }
+    .animal-type-section .animal-list .animal-list-body .table tbody tr td .danger {
+      color: #e82835 !important; }
+    .animal-type-section .animal-list .animal-list-body .table tbody tr td .action {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .animal-type-section .animal-list .animal-list-body .table tbody tr td .action .edit .edit-btn {
+        font-size: 15px;
+        font-weight: 500;
+        color: #1e3e59;
+        padding: 0;
+        background: transparent;
+        border: none;
+        outline: none; }
+        .animal-type-section .animal-list .animal-list-body .table tbody tr td .action .edit .edit-btn:focus {
+          outline: none;
+          border: none;
+          box-shadow: none; }
+        .animal-type-section .animal-list .animal-list-body .table tbody tr td .action .edit .edit-btn span {
+          margin-left: 5px; }
+      .animal-type-section .animal-list .animal-list-body .table tbody tr td .action .view .view-btn {
+        font-size: 15px;
+        font-weight: 500;
+        color: #1e3e59;
+        padding: 0;
+        background: transparent;
+        border: none;
+        outline: none; }
+        .animal-type-section .animal-list .animal-list-body .table tbody tr td .action .view .view-btn:focus {
+          outline: none;
+          border: none;
+          box-shadow: none; }
+        .animal-type-section .animal-list .animal-list-body .table tbody tr td .action .view .view-btn span {
+          margin-left: 5px; }
+      .animal-type-section .animal-list .animal-list-body .table tbody tr td .action .delete .delete-btn {
+        font-size: 15px;
+        font-weight: 500;
+        color: #1e3e59;
+        padding: 0;
+        background: transparent;
+        border: none;
+        outline: none; }
+        .animal-type-section .animal-list .animal-list-body .table tbody tr td .action .delete .delete-btn:focus {
+          outline: none;
+          border: none;
+          box-shadow: none; }
+        .animal-type-section .animal-list .animal-list-body .table tbody tr td .action .delete .delete-btn span {
+          margin-left: 5px; }
+  @media (max-width: 1440px) {
+    .animal-type-section .animal-list .animal-list-body .table tbody tr .first-td-width {
+      max-width: 320px; } }
+  @media (max-width: 1366px) {
+    .animal-type-section .animal-list .animal-list-body .table thead tr .first-td-width {
+      max-width: 320px; } }
   .animal-type-section .animal-list .animal-list-body .table-bordered > tbody > tr > td,
   .animal-type-section .animal-list .animal-list-body .table-bordered > tbody > tr > th,
   .animal-type-section .animal-list .animal-list-body .table-bordered > thead > tr > td,
   .animal-type-section .animal-list .animal-list-body .table-bordered {
     border-bottom: 0;
     border-top: 0;
-    border-right: 1px solid #B8D5EC; }
+    border-right: 1px solid #b8d5ec;
+    padding-left: 25px; }
   .animal-type-section .animal-list .animal-list-body .table-bordered > thead > tr > th,
   .animal-type-section .animal-list .animal-list-body .bottomborder,
   .animal-type-section .animal-list .animal-list-body .table-bordered {
-    border-bottom: 1px solid #B8D5EC;
-    border-right: 1px solid #B8D5EC; }
+    border-bottom: 1px solid #b8d5ec;
+    border-right: 1px solid #b8d5ec;
+    padding-left: 25px; }
+  .animal-type-section .animal-list .animal-list-body .table thead tr th {
+    font-size: 20px;
+    font-weight: 400;
+    color: #1e3e59; }
   .animal-type-section .animal-list .animal-list-body .table-bordered > thead > tr,
   .animal-type-section .animal-list .animal-list-body .borderleft,
   .animal-type-section .animal-list .animal-list-body .table-bordered {
@@ -735,3 +932,32 @@ body {
   .animal-type-section .animal-list .animal-list-body .borderright,
   .animal-type-section .animal-list .animal-list-body .table-bordered {
     border-right: 0; }
+  .animal-type-section .animal-list .animal-list-pagination {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 25px; }
+    .animal-type-section .animal-list .animal-list-pagination nav ul li {
+      margin-right: 15px; }
+      .animal-type-section .animal-list .animal-list-pagination nav ul li:first-child {
+        border-radius: 6px; }
+      .animal-type-section .animal-list .animal-list-pagination nav ul li .pagination-active {
+        color: white;
+        background: #197DBE; }
+      .animal-type-section .animal-list .animal-list-pagination nav ul li a {
+        border-radius: 6px;
+        width: 26px;
+        height: 26px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #B8D5EC;
+        font-size: 15px;
+        color: #1E3E59;
+        font-weight: 400; }
+    .animal-type-section .animal-list .animal-list-pagination nav .pagination-sm .page-item:first-child .page-link {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px; }
+    .animal-type-section .animal-list .animal-list-pagination nav .pagination-sm .page-item:last-child .page-link {
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px; }

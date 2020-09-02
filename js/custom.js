@@ -14,6 +14,12 @@ $(document).ready(function () {
 
   });
 
+  $('.pagination .page-item .page-link').click(function () {
+
+    $('.page-item .page-link').removeClass("pagination-active");
+    $(this).addClass("pagination-active");
+
+  });
 
 
 

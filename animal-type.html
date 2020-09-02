@@ -307,10 +307,70 @@
                         </div>
                         <div class="animal-type-top-right">
                             <button type="button" class="btn btn-primary plus-btn" data-toggle="modal"
-                                data-target="#exampleModal">
+                                data-target="#AddTypeModal">
                                 <!-- <i class="fas fa-plus"></i> Add -->
                                 <span class="material-icons add-icon"> add </span>Add Type
                             </button>
+
+                            <!-- Modal  -->
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="AddTypeModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Add Animal Type</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Animal Type Information</h5>
+                                            <p>Please fill the below form.</p>
+                                            <div class="animal-form">
+                                                <form action="">
+                                                    <div class="form-group">
+                                                        <label for="animalType">Animal Type</label>
+                                                        <input type="text" class="form-control" id="animal-type"
+                                                            placeholder="Dog">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlTextarea1">Animal Type
+                                                            Description</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                            rows="6"
+                                                            placeholder="Add Description about category..."></textarea>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-7">
+                                                            <label for="vet-profile-image">Upload Logo</label>
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input"
+                                                                    id="customFile" lang="en" />
+                                                                <label class="custom-file-label"
+                                                                    for="customFile">Logo.jpeg</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-5">
+                                                            <div class="save-btn-container text-right">
+                                                                <button type="submit" class="btn btn-primary save-btn">
+                                                                    Save
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="modal-footer">
+                                           
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal  -->
+
                         </div>
                     </div>
                     <div class="animal-list">
@@ -336,8 +396,9 @@
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
-                                            <!-- <th scope="col" class="border-right borderleft">#</th> -->
-                                            <th scope="col" class="borderleft bottomborder">Animal Type</th>
+
+                                            <th scope="col" class="borderleft bottomborder first-td-width">Animal Type
+                                            </th>
                                             <th scope="col" class="bottomborder">Type ID</th>
                                             <th scope="col" class="bottomborder">Date</th>
                                             <th scope="col" class="bottomborder">Status</th>
@@ -346,46 +407,534 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <!-- <th scope="row" class="border-right border-bottom-0">1</th> -->
-                                            <td class="borderleft">Mark</td>
-                                            <td>Otto</td>
 
-                                            <td>Otto</td>
-                                            <td>Otto</td>
-                                            <td>@fat</td>
+                                            <td class="borderleft first-td-width">
+                                                <div class="type-categories-brand">
+                                                    <div class="left">
+                                                        <img src="./assets/images/Cute_puppies_in_backyard.png" alt="">
+                                                    </div>
+                                                    <div class="right">
+                                                        <h6>Dog</h6>
+                                                        <p>The quick, brown fox jumps over a lazy dog. DJs flock by </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="type-id">02542</span></td>
+
+                                            <td><span class="date">06 Aug, 12:58</span></td>
+                                            <td><span class="status success">Assigned</span></td>
+                                            <td colspan="2">
+                                                <div class="action">
+                                                    <div class="edit">
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="edit-btn btn btn-primary"
+                                                            data-toggle="modal" data-target="#exampleModalEdit">
+                                                            <i class="fa fa-pencil-square-o"
+                                                                aria-hidden="true"></i><span>Edit</span>
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <!-- <div class="modal fade" id="exampleModalEdit" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Modal title</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="view">
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalView">
+                                                            <i class="fa fa-eye"
+                                                                aria-hidden="true"></i><span>View</span>
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <!-- <div class="modal fade" id="exampleModalView" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Modal title</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="delete">
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary delete-btn"
+                                                            data-toggle="modal" data-target="#exampleModalDelete">
+                                                            <i class="fa fa-trash"
+                                                                aria-hidden="true"></i><span>Delete</span>
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <!-- <div class="modal fade" id="exampleModalDelete" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Modal title</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+
+                                            <td class="borderleft first-td-width">
+                                                <div class="type-categories-brand">
+                                                    <div class="left">
+                                                        <img src="./assets/images/WBCL_web_2014_blog_outdoor-cat-safe.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="right">
+                                                        <h6>Cat</h6>
+                                                        <p>The quick, brown fox jumps over a lazy dog. DJs flock by </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="type-id">02542</span></td>
+
+                                            <td><span class="date">06 Aug, 12:58</span></td>
+                                            <td><span class="status success">Assigned</span></td>
+                                            <td colspan="2">
+                                                <div class="action">
+                                                    <div class="edit">
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="edit-btn btn btn-primary"
+                                                            data-toggle="modal" data-target="#exampleModalEdit">
+                                                            <i class="fa fa-pencil-square-o"
+                                                                aria-hidden="true"></i><span>Edit</span>
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <!-- <div class="modal fade" id="exampleModalEdit" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Modal title</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="view">
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalView">
+                                                            <i class="fa fa-eye"
+                                                                aria-hidden="true"></i><span>View</span>
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <!-- <div class="modal fade" id="exampleModalView" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Modal title</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="delete">
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary delete-btn"
+                                                            data-toggle="modal" data-target="#exampleModalDelete">
+                                                            <i class="fa fa-trash"
+                                                                aria-hidden="true"></i><span>Delete</span>
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <!-- <div class="modal fade" id="exampleModalDelete" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Modal title</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <!-- <th scope="row">2</th> -->
-                                            <td class="borderleft">Jacob</td>
-                                            <td>Thornton</td>
 
-                                            <td>Thornton</td>
-                                            <td>Thornton</td>
-                                            <td class="borderright">@fat</td>
+                                            <td class="borderleft first-td-width">
+                                                <div class="type-categories-brand">
+                                                    <div class="left">
+                                                        <img src="./assets/images/palomino-horses-cantering-in-field-452240765-588f8e483df78caebc18aa61.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="right">
+                                                        <h6>Horse</h6>
+                                                        <p>The quick, brown fox jumps over a lazy dog. DJs flock by </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="type-id">02542</span></td>
+
+                                            <td><span class="date">06 Aug, 12:58</span></td>
+                                            <td><span class="status danger">Not Assigned</span></td>
+                                            <td colspan="2">
+                                                <div class="action">
+                                                    <div class="edit">
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="edit-btn btn btn-primary"
+                                                            data-toggle="modal" data-target="#exampleModalEdit">
+                                                            <i class="fa fa-pencil-square-o"
+                                                                aria-hidden="true"></i><span>Edit</span>
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <!-- <div class="modal fade" id="exampleModalEdit" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Modal title</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="view">
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalView">
+                                                            <i class="fa fa-eye"
+                                                                aria-hidden="true"></i><span>View</span>
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <!-- <div class="modal fade" id="exampleModalView" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Modal title</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="delete">
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary delete-btn"
+                                                            data-toggle="modal" data-target="#exampleModalDelete">
+                                                            <i class="fa fa-trash"
+                                                                aria-hidden="true"></i><span>Delete</span>
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <!-- <div class="modal fade" id="exampleModalDelete" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Modal title</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <!-- <th scope="row">3</th> -->
-                                            <td class="borderleft">Larry the Bird</td>
-                                            <td>@twitter</td>
 
-                                            <td>@twitter</td>
-                                            <td>@twitter</td>
-                                            <td class="borderright">Thornton</td>
-                                        </tr>
-                                        <tr>
-                                            <!-- <th scope="row">2</th> -->
-                                            <td class="borderleft">Jacob</td>
-                                            <td>Thornton</td>
+                                            <td class="borderleft first-td-width">
+                                                <div class="type-categories-brand">
+                                                    <div class="left">
+                                                        <img src="./assets/images/reptiles-101-480331972.png" alt="">
+                                                    </div>
+                                                    <div class="right">
+                                                        <h6>Reptile</h6>
+                                                        <p>The quick, brown fox jumps over a lazy dog. DJs flock by </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="type-id">02542</span></td>
 
-                                            <td>Thornton</td>
-                                            <td>Thornton</td>
-                                            <td class="borderright">@fat</td>
+                                            <td><span class="date">06 Aug, 12:58</span></td>
+                                            <td><span class="status success">Assigned</span></td>
+                                            <td colspan="2">
+                                                <div class="action">
+                                                    <div class="edit">
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="edit-btn btn btn-primary"
+                                                            data-toggle="modal" data-target="#exampleModalEdit">
+                                                            <i class="fa fa-pencil-square-o"
+                                                                aria-hidden="true"></i><span>Edit</span>
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <!-- <div class="modal fade" id="exampleModalEdit" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Modal title</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="view">
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalView">
+                                                            <i class="fa fa-eye"
+                                                                aria-hidden="true"></i><span>View</span>
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <!-- <div class="modal fade" id="exampleModalView" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Modal title</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="delete">
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary delete-btn"
+                                                            data-toggle="modal" data-target="#exampleModalDelete">
+                                                            <i class="fa fa-trash"
+                                                                aria-hidden="true"></i><span>Delete</span>
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <!-- <div class="modal fade" id="exampleModalDelete" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Modal title</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
+
+
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        <div class="animal-list-pagination"></div>
+                        <div class="animal-list-pagination">
+                            <nav aria-label="...">
+                                <ul class="pagination pagination-sm">
+                                    <li class="page-item " aria-current="page"><a class="pagination-active page-link"
+                                            href="#">1</a>
+                                    </li>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
 
