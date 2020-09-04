@@ -520,6 +520,10 @@
             color: #1D72C2;
             font-size: 22px;
             font-weight: $mlight;
+
+            @media(max-width: 1440px) {
+                font-size: 18px;
+            }
         }
     }
 

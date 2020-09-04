@@ -26,14 +26,17 @@ body {
   .add-vet-section .add-vets-form p {
     font-size: 18px;
     font-weight: 300;
-    color: #94A6C7; }
+    color: #94a6c7; }
   .add-vet-section .add-vets-form form {
     margin-top: 60px; }
     .add-vet-section .add-vets-form form .save-btn-container {
       margin-top: 60px;
       margin-bottom: 200px; }
+      @media (max-width: 1440px) {
+        .add-vet-section .add-vets-form form .save-btn-container {
+          margin-top: 40px; } }
       .add-vet-section .add-vets-form form .save-btn-container .save-btn {
-        background: #1D74C1;
+        background: #1d74c1;
         color: white;
         width: 267px;
         height: 88px;
@@ -43,6 +46,9 @@ body {
         transition: 0.5s ease; }
         .add-vet-section .add-vets-form form .save-btn-container .save-btn:hover {
           opacity: 80%; }
+        @media (max-width: 1440px) {
+          .add-vet-section .add-vets-form form .save-btn-container .save-btn {
+            height: unset; } }
     .add-vet-section .add-vets-form form .form-inner-margin {
       margin-bottom: 50px; }
     .add-vet-section .add-vets-form form .padding-right {
@@ -50,43 +56,46 @@ body {
     .add-vet-section .add-vets-form form label {
       font-size: 22px;
       font-weight: 400;
-      color: #94A6C7;
+      color: #94a6c7;
       margin-bottom: 20px; }
     .add-vet-section .add-vets-form form input {
       font-size: 22px;
-      color: #94A6C7;
+      color: #94a6c7;
       font-weight: 300;
       height: 89px;
-      border: 1px solid #BEDAF1;
+      border: 1px solid #bedaf1;
       border-radius: 11px; }
+      @media (max-width: 1440px) {
+        .add-vet-section .add-vets-form form input {
+          height: unset; } }
     .add-vet-section .add-vets-form form textarea {
       font-size: 22px;
-      color: #94A6C7;
+      color: #94a6c7;
       font-weight: 300;
-      border: 1px solid #BEDAF1;
+      border: 1px solid #bedaf1;
       border-radius: 11px;
       resize: none; }
     .add-vet-section .add-vets-form form ::-webkit-input-placeholder {
       /* Edge */
       font-size: 22px;
-      color: #94A6C7;
+      color: #94a6c7;
       font-weight: 300;
       opacity: 70%; }
     .add-vet-section .add-vets-form form :-ms-input-placeholder {
       /* Internet Explorer 10-11 */
       font-size: 22px;
-      color: #94A6C7;
+      color: #94a6c7;
       font-weight: 300;
       opacity: 70%; }
     .add-vet-section .add-vets-form form ::placeholder {
       font-size: 22px;
-      color: #94A6C7;
+      color: #94a6c7;
       font-weight: 300;
       opacity: 70%; }
     .add-vet-section .add-vets-form form .input-group-prepend {
       text-align: center; }
       .add-vet-section .add-vets-form form .input-group-prepend .input-group-text {
-        background: #1D73C2;
+        background: #1d73c2;
         width: 69px;
         justify-content: center;
         font-size: 22px;
@@ -95,30 +104,36 @@ body {
         border-top-left-radius: 11px;
         border-bottom-left-radius: 11px;
         max-height: 89px;
-        border: 1px solid #1D73C2; }
+        border: 1px solid #1d73c2; }
     .add-vet-section .add-vets-form form .custom-file label {
       font-size: 22px;
-      color: #94A6C7;
+      color: #94a6c7;
       font-weight: 300;
       height: 89px;
-      border: 1px solid #BEDAF1 !important;
+      border: 1px solid #bedaf1 !important;
       border-radius: 11px !important;
       overflow: hidden;
       align-items: center;
       display: flex; }
+      @media (max-width: 1440px) {
+        .add-vet-section .add-vets-form form .custom-file label {
+          height: unset; } }
     .add-vet-section .add-vets-form form .custom-file .custom-file-label::after {
       background: transparent;
       border-left: none;
       font-family: FontAwesome;
       content: "\f093";
-      color: #94A6C7;
+      color: #94a6c7;
       top: 26%; }
+      @media (max-width: 1440px) {
+        .add-vet-section .add-vets-form form .custom-file .custom-file-label::after {
+          top: 0; } }
     .add-vet-section .add-vets-form form .custom-file input[type="file"] {
       font-size: 22px;
-      color: #94A6C7;
+      color: #94a6c7;
       font-weight: 300;
       max-height: 89px;
-      border: 1px solid #BEDAF1 !important;
+      border: 1px solid #bedaf1 !important;
       border-radius: 11px !important; }
 
 .sidebar-detail-wrapper {
@@ -449,6 +464,9 @@ body {
       color: #1D72C2;
       font-size: 22px;
       font-weight: 300; }
+      @media (max-width: 1440px) {
+        .main-content .dashboard-footer p {
+          font-size: 18px; } }
 
 @-webkit-keyframes growIn {
   0% {
@@ -604,18 +622,6 @@ body {
   .payment-details .payment-inner label {
     color: #203459 !important;
     font-weight: 400; }
-  .payment-details .payment-inner .mycheck-key {
-    position: absolute;
-    top: 60%;
-    right: 40px;
-    color: #1ECB6F;
-    font-size: 23px; }
-  .payment-details .payment-inner .mycheck-id {
-    position: absolute;
-    top: 60%;
-    right: 20px;
-    color: #1ECB6F;
-    font-size: 23px; }
 
 .animal-type-link-path {
   background: white;
@@ -974,3 +980,208 @@ body {
     .animal-type-section .animal-list .animal-list-pagination nav .pagination-sm .page-item:last-child .page-link {
       border-top-right-radius: 6px;
       border-bottom-right-radius: 6px; }
+
+.add-animals {
+  margin-top: 50px; }
+  .add-animals .add-animals-form h5 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #203459; }
+  .add-animals .add-animals-form p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #94a6c7; }
+  .add-animals .add-animals-form form {
+    margin-top: 60px; }
+    .add-animals .add-animals-form form .save-btn-container {
+      margin-top: 60px;
+      margin-bottom: 200px; }
+      @media (max-width: 1440px) {
+        .add-animals .add-animals-form form .save-btn-container {
+          margin-top: 40px; } }
+      .add-animals .add-animals-form form .save-btn-container .save-btn {
+        background: #1d74c1;
+        color: white;
+        width: 267px;
+        height: 88px;
+        font-size: 25px;
+        font-weight: 400;
+        border-radius: 21px;
+        transition: 0.5s ease; }
+        .add-animals .add-animals-form form .save-btn-container .save-btn:hover {
+          opacity: 80%; }
+        @media (max-width: 1440px) {
+          .add-animals .add-animals-form form .save-btn-container .save-btn {
+            height: unset; } }
+    .add-animals .add-animals-form form .form-inner-margin {
+      margin-bottom: 50px; }
+    .add-animals .add-animals-form form .padding-right {
+      padding-right: 20px; }
+    .add-animals .add-animals-form form label {
+      font-size: 22px;
+      font-weight: 400;
+      color: #94a6c7;
+      margin-bottom: 20px; }
+    .add-animals .add-animals-form form input {
+      font-size: 22px;
+      color: #94a6c7;
+      font-weight: 300;
+      height: 89px;
+      border: 1px solid #bedaf1;
+      border-radius: 11px; }
+      @media (max-width: 1440px) {
+        .add-animals .add-animals-form form input {
+          height: unset; } }
+    .add-animals .add-animals-form form textarea {
+      font-size: 22px;
+      color: #94a6c7;
+      font-weight: 300;
+      border: 1px solid #bedaf1;
+      border-radius: 11px;
+      resize: none; }
+    .add-animals .add-animals-form form ::-webkit-input-placeholder {
+      /* Edge */
+      font-size: 22px;
+      color: #94a6c7;
+      font-weight: 300;
+      opacity: 70%; }
+    .add-animals .add-animals-form form :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      font-size: 22px;
+      color: #94a6c7;
+      font-weight: 300;
+      opacity: 70%; }
+    .add-animals .add-animals-form form ::placeholder {
+      font-size: 22px;
+      color: #94a6c7;
+      font-weight: 300;
+      opacity: 70%; }
+    .add-animals .add-animals-form form .age .col-md-4 .input-group {
+      display: flex;
+      flex-direction: row-reverse;
+      border-radius: 11px; }
+      .add-animals .add-animals-form form .age .col-md-4 .input-group .input-group-prepend {
+        text-align: center;
+        border-radius: 11px; }
+        .add-animals .add-animals-form form .age .col-md-4 .input-group .input-group-prepend .input-group-text {
+          border-radius: 11px;
+          background: #BEDAF1;
+          max-width: 96px;
+          justify-content: center;
+          font-size: 18px;
+          font-weight: 300;
+          color: white;
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+          max-height: 89px;
+          border: 1px solid #BEDAF1; }
+      .add-animals .add-animals-form form .age .col-md-4 .input-group input {
+        max-width: 95px;
+        border-radius: 11px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0; }
+    .add-animals .add-animals-form form select {
+      font-size: 22px;
+      color: #94a6c7;
+      font-weight: 300;
+      height: 89px;
+      border: 1px solid #bedaf1;
+      border-radius: 11px; }
+      @media (max-width: 1440px) {
+        .add-animals .add-animals-form form select {
+          height: 47px; } }
+    .add-animals .add-animals-form form small {
+      color: #94A6C7;
+      font-weight: 300;
+      font-size: 15px; }
+      @media (max-width: 1440px) {
+        .add-animals .add-animals-form form small {
+          font-size: 12px; } }
+    .add-animals .add-animals-form form .radio-container .radio-block {
+      margin-right: 70px; }
+      .add-animals .add-animals-form form .radio-container .radio-block input[type='radio'] {
+        border-color: #BEDAF1;
+        border: 1px solid #BEDAF1;
+        background: #BEDAF1;
+        height: unset !important; }
+      .add-animals .add-animals-form form .radio-container .radio-block label {
+        margin-left: 10px; }
+    .add-animals .add-animals-form form .upload-image-inner {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      background: #F9FCFF;
+      border-radius: 11px;
+      border: 1px solid #BEDAF1;
+      padding: 30px; }
+      .add-animals .add-animals-form form .upload-image-inner .upload {
+        margin-right: 30px; }
+        .add-animals .add-animals-form form .upload-image-inner .upload .custom-file {
+          width: 168px;
+          height: 168px; }
+          .add-animals .add-animals-form form .upload-image-inner .upload .custom-file label {
+            font-size: 22px;
+            color: #94a6c7;
+            font-weight: 300;
+            height: 89px;
+            border: 2px dashed #1D73C2;
+            border-radius: 11px;
+            overflow: hidden;
+            align-items: center;
+            display: flex; }
+            @media (max-width: 1440px) {
+              .add-animals .add-animals-form form .upload-image-inner .upload .custom-file label {
+                height: unset; } }
+          .add-animals .add-animals-form form .upload-image-inner .upload .custom-file .mycustom-file-label {
+            margin-bottom: 0;
+            width: 168px;
+            height: 168px;
+            text-align: center;
+            border: 2px dashed #1D73C2;
+            border-radius: 11px;
+            cursor: pointer; }
+            .add-animals .add-animals-form form .upload-image-inner .upload .custom-file .mycustom-file-label .icon-and-text {
+              text-align: center;
+              margin: 0 auto; }
+              .add-animals .add-animals-form form .upload-image-inner .upload .custom-file .mycustom-file-label .icon-and-text i {
+                color: #1D75C2;
+                font-size: 27px; }
+              .add-animals .add-animals-form form .upload-image-inner .upload .custom-file .mycustom-file-label .icon-and-text p {
+                font-size: 15px;
+                font-weight: 300;
+                color: #1D75C2; }
+            .add-animals .add-animals-form form .upload-image-inner .upload .custom-file .mycustom-file-label::after {
+              background: transparent;
+              border-left: none;
+              font-family: FontAwesome;
+              content: "";
+              color: #94a6c7;
+              top: 0; }
+          .add-animals .add-animals-form form .upload-image-inner .upload .custom-file input[type="file"] {
+            width: 168px;
+            display: none;
+            height: 168px;
+            font-size: 22px;
+            color: #94a6c7;
+            font-weight: 300;
+            max-height: 89px; }
+      .add-animals .add-animals-form form .upload-image-inner .show-img {
+        width: 168px;
+        height: 168px;
+        border: 2px solid #94A6C7;
+        border-radius: 16px;
+        margin-right: 30px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .add-animals .add-animals-form form .upload-image-inner .show-img img {
+          width: 100%;
+          height: 100%;
+          display: none; }
+        .add-animals .add-animals-form form .upload-image-inner .show-img p {
+          font-size: 15px;
+          font-weight: 300; }
+      .add-animals .add-animals-form form .upload-image-inner #main-image img {
+        width: 100%;
+        height: 100%; }

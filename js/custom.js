@@ -1,9 +1,28 @@
 $(document).ready(function () {
 
+
+
+
+
   $('input[type="file"]').change(function (e) {
     var fileName = e.target.files[0].name;
     $('.custom-file-label').html(fileName);
+
   });
+
+
+
+
+  // function showPreview(event) {
+  //   if (event.target.files.length > 0) {
+  //     var src = URL.createObjectURL(event.target.files[0]);
+  //     var preview = document.getElementById("main-image");
+  //     preview.src = src;
+  //     preview.style.display = "block";
+  //   }
+  // }
+
+
 
   // Menu active 
 
@@ -169,3 +188,25 @@ function isNumberKey(evt) {
   return true;
 }
 // number or not check//
+
+
+
+
+
+
+
+function previewFile(input) {
+  var file = $("input[type=file]").get(0).files[0];
+
+  if (file) {
+    var reader = new FileReader();
+
+    reader.onload = function () {
+      $('.main-image-text').css('display', 'none');
+      $('.show-img img').css('display', 'block');
+      $("#previewImg").attr("src", reader.result);
+    }
+
+    reader.readAsDataURL(file);
+  }
+}
