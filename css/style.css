@@ -42,7 +42,7 @@ body {
         height: 88px;
         font-size: 25px;
         font-weight: 400;
-        border-radius: 21px;
+        border-radius: 11px;
         transition: 0.5s ease; }
         .add-vet-section .add-vets-form form .save-btn-container .save-btn:hover {
           opacity: 80%; }
@@ -135,6 +135,13 @@ body {
       max-height: 89px;
       border: 1px solid #bedaf1 !important;
       border-radius: 11px !important; }
+
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot");
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2") format("woff2"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff") format("woff"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf") format("truetype"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg") format("svg"); }
 
 .sidebar-detail-wrapper {
   display: flex;
@@ -302,14 +309,14 @@ body {
       .main-content .main-top .main-top-right .right-divider {
         width: 1px;
         height: 44px;
-        background: #CCDBE3;
+        background: #ccdbe3;
         margin-top: 9px;
         margin-left: 30px;
         margin-right: 30px; }
       .main-content .main-top .main-top-right .menu-dropdown .dropdown .dropdown-toggle {
         background: none;
         padding: 0;
-        color: #1E3E59;
+        color: #1e3e59;
         font-size: 18px;
         font-weight: 600;
         font-weight: 700;
@@ -354,21 +361,21 @@ body {
           width: 8px;
           height: 8px;
           border-top: 10px solid transparent;
-          border-bottom: 10px solid #FFFFFF;
+          border-bottom: 10px solid #ffffff;
           border-left: 10px solid transparent;
           border-right: 10px solid transparent;
           left: 85%;
           top: -20px; }
         .main-content .main-top .main-top-right .menu-dropdown .dropdown .dropdown-menu a {
-          border-bottom: 1px solid #BEDAF1;
+          border-bottom: 1px solid #bedaf1;
           padding: 10px 0px;
-          font-family: 'Montserrat', sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-weight: 300;
           font-size: 14px;
-          color: #1E3E59;
+          color: #1e3e59;
           text-align: center; }
         .main-content .main-top .main-top-right .menu-dropdown .dropdown .dropdown-menu .logout-btn {
-          background: #1E72C3;
+          background: #1e72c3;
           color: #ffffff;
           width: 100%;
           border: none;
@@ -376,7 +383,7 @@ body {
           margin-top: 20px;
           text-transform: uppercase;
           font-size: 14px;
-          font-family: 'Montserrat', sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-weight: 400; }
   .main-content .main-middle {
     display: flex;
@@ -386,7 +393,7 @@ body {
     .main-content .main-middle .add-products h3 {
       font-size: 30px;
       font-weight: 400;
-      color: #1E3E59; }
+      color: #1e3e59; }
     .main-content .main-middle .links-path {
       background: white;
       height: 58px;
@@ -397,63 +404,430 @@ body {
       .main-content .main-middle .links-path span {
         font-size: 18px;
         font-weight: 300;
-        color: #93AACC; }
+        color: #93aacc; }
   .main-content .product-tab-section .nav {
     margin-top: 40px; }
     .main-content .product-tab-section .nav .nav-item .nav-link {
       font-size: 25px;
       font-weight: 300;
-      color: #94A6C7;
+      color: #94a6c7;
       min-width: 196px;
       height: 64px;
       text-align: center;
       align-items: center;
       padding-top: 12px; }
     .main-content .product-tab-section .nav .nav-item .active {
-      background: #2268C5;
+      background: #2268c5;
       color: white;
       border-radius: 32px;
       padding-top: 12px;
       font-weight: 400; }
   .main-content .product-tab-section .tab-content {
     margin-top: 65px; }
+    .main-content .product-tab-section .tab-content .tab-pane .general-container {
+      margin-top: 50px; }
+      .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form h5 {
+        font-size: 25px;
+        font-weight: 400;
+        color: #203459; }
+      .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form p {
+        font-size: 18px;
+        font-weight: 300;
+        color: #94a6c7; }
+      .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form {
+        margin-top: 60px; }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .save-btn-container {
+          margin-top: 60px;
+          margin-bottom: 200px; }
+          @media (max-width: 1440px) {
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .save-btn-container {
+              margin-top: 40px; } }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .save-btn-container .save-btn {
+            background: #2365c6;
+            background: linear-gradient(90deg, #2365c6 0%, #2365c6 35%, #1783bd 100%);
+            color: white;
+            width: 267px;
+            height: 88px;
+            font-size: 25px;
+            font-weight: 400;
+            border-radius: 11px;
+            transition: 0.5s ease; }
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .save-btn-container .save-btn:hover {
+              opacity: 80%; }
+            @media (max-width: 1440px) {
+              .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .save-btn-container .save-btn {
+                height: unset; } }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .form-inner-margin {
+          margin-bottom: 50px; }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .padding-right {
+          padding-right: 20px; }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form label {
+          font-size: 22px;
+          font-weight: 400;
+          color: #94a6c7;
+          margin-bottom: 20px; }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form input {
+          font-size: 22px;
+          color: #94a6c7;
+          font-weight: 300;
+          height: 89px;
+          border: 1px solid #bedaf1;
+          border-radius: 11px; }
+          @media (max-width: 1440px) {
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form input {
+              height: unset; } }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form textarea {
+          font-size: 22px;
+          color: #94a6c7;
+          font-weight: 300;
+          border: 1px solid #bedaf1;
+          border-radius: 11px;
+          resize: none; }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form ::-webkit-input-placeholder {
+          /* Edge */
+          font-size: 22px;
+          color: #94a6c7;
+          font-weight: 300;
+          opacity: 70%; }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          font-size: 22px;
+          color: #94a6c7;
+          font-weight: 300;
+          opacity: 70%; }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form ::placeholder {
+          font-size: 22px;
+          color: #94a6c7;
+          font-weight: 300;
+          opacity: 70%; }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .stock-container input {
+          max-width: 158px; }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .price-stock {
+          display: flex;
+          flex-direction: row; }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .button-container {
+          margin-top: 20px;
+          margin-bottom: 36px; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .button-container .add-new-option {
+            background: #2365c6;
+            background: linear-gradient(90deg, #2365c6 0%, #2365c6 35%, #1783bd 100%);
+            border: 1px solid #bedaf1;
+            border-radius: 11px;
+            height: 70px;
+            font-size: 20px;
+            font-weight: 400;
+            width: 203px;
+            margin-right: 50px; }
+            @media (max-width: 1440px) {
+              .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .button-container .add-new-option {
+                font-size: unset;
+                width: unset;
+                height: unset;
+                margin-right: 10px; } }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .button-container .delete-option {
+            background: white;
+            border: 1px solid #98a9c9;
+            border-radius: 11px;
+            color: #203459;
+            font-size: 20px;
+            width: 203px;
+            height: 70px;
+            margin-right: 50px; }
+            @media (max-width: 1440px) {
+              .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .button-container .delete-option {
+                font-size: unset;
+                width: unset;
+                height: unset;
+                margin-right: 10px; } }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .button-container .add-new-value {
+            font-size: 20px;
+            width: 203px;
+            height: 70px;
+            background: #cde3f9;
+            border: 1px solid #bedaf1;
+            color: #203459;
+            border-radius: 11px; }
+            @media (max-width: 1440px) {
+              .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .button-container .add-new-value {
+                font-size: unset;
+                width: unset;
+                height: unset; } }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table {
+          background: white;
+          border: 1px solid #cee4f5; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table {
+            margin-bottom: 0; }
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table tbody tr td {
+              vertical-align: middle;
+              text-align: center; }
+              .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table tbody tr td .price-modifier-inner {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly; }
+                .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table tbody tr td .price-modifier-inner select {
+                  width: 77px;
+                  background: #f9fcff;
+                  height: 61px; }
+                .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table tbody tr td .price-modifier-inner .selectpicker {
+                  font-family: "FontAwesome"; }
+                .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table tbody tr td .price-modifier-inner input {
+                  width: 77px;
+                  background: #f9fcff;
+                  padding: 5px 5px;
+                  height: 61px; }
+              .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table tbody tr td .form-group {
+                margin-bottom: 0; }
+                .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table tbody tr td .form-group input {
+                  height: 61px;
+                  background: #f9fcff; }
+              .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table tbody tr td .success {
+                color: #15b14e !important; }
+              .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table tbody tr td .action .delete .delete-btn {
+                font-size: 15px;
+                font-weight: 500;
+                color: #94a6c7;
+                padding: 0;
+                background: transparent;
+                border: none;
+                outline: none; }
+                .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table tbody tr td .action .delete .delete-btn:focus {
+                  outline: none;
+                  border: none;
+                  box-shadow: none; }
+                .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table tbody tr td .action .delete .delete-btn span {
+                  margin-left: 5px; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table-bordered > tbody > tr > td,
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table-bordered > tbody > tr > th,
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table-bordered > thead > tr > td,
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table-bordered {
+            border-bottom: 0;
+            border-top: 0;
+            border: 0;
+            padding-left: 25px; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table-bordered > thead > tr > th,
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .bottomborder,
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table-bordered {
+            border: 0;
+            padding-left: 25px; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .bottomborder {
+            text-align: center; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table thead tr th {
+            font-size: 20px;
+            font-weight: 400;
+            color: #1e3e59; }
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table thead tr th:first-child {
+              border-right: 1px solid #cee4f5; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table tbody tr td:first-child {
+            border-right: 1px solid #cee4f5;
+            text-align: left;
+            color: #94a6c7;
+            padding: 5px 5px 5px 25px;
+            vertical-align: unset !important; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table tbody .first-td-bg {
+            color: #94a6c7;
+            width: inherit;
+            padding: 15px 0px 5px 0px !important; }
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table tbody .first-td-bg div {
+              background: #e3edf6;
+              padding-left: 25px;
+              padding-top: 14px;
+              padding-bottom: 14px; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table-bordered > thead > tr,
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .borderleft {
+            border-bottom: 1px solid #cee4f5; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table-bordered > thead > tr,
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .borderright,
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .option-table .table-bordered {
+            border-right: 0; }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .input-group {
+          border-radius: 11px; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .input-group .input-group-prepend {
+            text-align: center;
+            border-radius: 11px; }
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .input-group .input-group-prepend .input-group-text {
+              border-radius: 11px;
+              background: #1d73c2;
+              width: 69px;
+              justify-content: center;
+              font-size: 18px;
+              font-weight: 300;
+              color: white;
+              border-top-right-radius: 0px;
+              border-bottom-right-radius: 0px;
+              max-height: 89px;
+              border: 1px solid #bedaf1; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .input-group input {
+            max-width: 345px;
+            min-width: 320px;
+            border-radius: 11px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px; }
+            @media (min-width: 1440px) {
+              .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .input-group input {
+                width: 345px; } }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form select {
+          font-size: 22px;
+          color: #94a6c7;
+          font-weight: 300;
+          height: 89px;
+          border: 1px solid #bedaf1;
+          border-radius: 11px; }
+          @media (max-width: 1440px) {
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form select {
+              height: 47px; } }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form small {
+          color: #94a6c7;
+          font-weight: 300;
+          font-size: 15px; }
+          @media (max-width: 1440px) {
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form small {
+              font-size: 12px; } }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .radio-container {
+          display: flex;
+          align-items: center;
+          height: 89px; }
+          @media (max-width: 1440px) {
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .radio-container {
+              height: unset; } }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .radio-container .radio-block {
+            margin-right: 20px; }
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .radio-container .radio-block input[type="radio"] {
+              border-color: #bedaf1;
+              border: 1px solid #bedaf1;
+              background: #bedaf1;
+              height: unset !important; }
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .radio-container .radio-block label {
+              margin-left: 5px; }
+        .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          background: #f9fcff;
+          border-radius: 11px;
+          border: 1px solid #bedaf1;
+          padding: 30px; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .upload {
+            margin-right: 35px; }
+            @media (max-width: 1440px) {
+              .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .upload {
+                margin-right: 25px; } }
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .upload .custom-file {
+              width: 168px;
+              height: 168px; }
+              .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .upload .custom-file label {
+                font-size: 22px;
+                color: #94a6c7;
+                font-weight: 300;
+                height: 89px;
+                border: 2px dashed #1d73c2;
+                border-radius: 11px;
+                overflow: hidden;
+                align-items: center;
+                display: flex; }
+                @media (max-width: 1440px) {
+                  .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .upload .custom-file label {
+                    height: unset; } }
+              .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .upload .custom-file .mycustom-file-label {
+                margin-bottom: 0;
+                width: 168px;
+                height: 168px;
+                text-align: center;
+                border: 2px dashed #1d73c2;
+                border-radius: 11px;
+                cursor: pointer; }
+                .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .upload .custom-file .mycustom-file-label .icon-and-text {
+                  text-align: center;
+                  margin: 0 auto; }
+                  .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .upload .custom-file .mycustom-file-label .icon-and-text i {
+                    color: #1d75c2;
+                    font-size: 27px; }
+                  .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .upload .custom-file .mycustom-file-label .icon-and-text p {
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: #1d75c2; }
+                .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .upload .custom-file .mycustom-file-label::after {
+                  background: transparent;
+                  border-left: none;
+                  font-family: FontAwesome;
+                  content: "";
+                  color: #94a6c7;
+                  top: 0; }
+              .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .upload .custom-file input[type="file"] {
+                width: 168px;
+                display: none;
+                height: 168px;
+                font-size: 22px;
+                color: #94a6c7;
+                font-weight: 300;
+                max-height: 89px; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .show-img {
+            width: 168px;
+            height: 168px;
+            border: 2px solid #94a6c7;
+            border-radius: 16px;
+            margin-right: 35px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            @media (max-width: 1440px) {
+              .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .show-img {
+                margin-right: 25px; } }
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .show-img img {
+              width: 100%;
+              height: 100%;
+              display: none; }
+            .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner .show-img p {
+              font-size: 15px;
+              font-weight: 300;
+              color: #94a6c7; }
+          .main-content .product-tab-section .tab-content .tab-pane .general-container .general-form form .upload-image-inner #main-image img {
+            width: 100%;
+            height: 100%; }
     .main-content .product-tab-section .tab-content .tab-pane .attribute-container form .form-group label {
       font-size: 22px;
-      color: #94A6C7;
+      color: #94a6c7;
       font-weight: 400;
       text-transform: uppercase; }
     .main-content .product-tab-section .tab-content .tab-pane .attribute-container form .form-group input {
-      border: 1px solid #BEDAF1;
+      border: 1px solid #bedaf1;
       height: 89px;
       border-radius: 11px;
       font-size: 22px;
-      color: #94A6C7;
+      color: #94a6c7;
       font-weight: 300; }
+      @media (max-width: 1440px) {
+        .main-content .product-tab-section .tab-content .tab-pane .attribute-container form .form-group input {
+          height: unset; } }
     .main-content .product-tab-section .tab-content .tab-pane .attribute-container form .form-group ::-webkit-input-placeholder {
       /* Edge */
       font-size: 22px;
-      color: #94A6C7;
+      color: #94a6c7;
       font-weight: 300; }
     .main-content .product-tab-section .tab-content .tab-pane .attribute-container form .form-group :-ms-input-placeholder {
       /* Internet Explorer 10-11 */
       font-size: 22px;
-      color: #94A6C7;
+      color: #94a6c7;
       font-weight: 300; }
     .main-content .product-tab-section .tab-content .tab-pane .attribute-container form .form-group ::placeholder {
       font-size: 22px;
-      color: #94A6C7;
+      color: #94a6c7;
       font-weight: 300; }
     .main-content .product-tab-section .tab-content .tab-pane .attribute-container form .save-btn-container {
       margin-top: 65px; }
       .main-content .product-tab-section .tab-content .tab-pane .attribute-container form .save-btn-container .save-btn {
         width: 290px;
         height: 89px;
-        background: #1E72C3;
+        background: #2365c6;
+        background: linear-gradient(90deg, #2365c6 0%, #2365c6 35%, #1783bd 100%);
         color: white;
         border-radius: 11px;
         font-weight: 400;
-        font-size: 34px;
+        font-size: 25px !important;
         transition: 0.5s ease; }
+        @media (max-width: 1440px) {
+          .main-content .product-tab-section .tab-content .tab-pane .attribute-container form .save-btn-container .save-btn {
+            height: unset; } }
         .main-content .product-tab-section .tab-content .tab-pane .attribute-container form .save-btn-container .save-btn:hover {
           opacity: 80%; }
   .main-content .dashboard-footer {
@@ -461,7 +835,7 @@ body {
     right: 50px;
     bottom: 70px; }
     .main-content .dashboard-footer p {
-      color: #1D72C2;
+      color: #1d72c2;
       font-size: 22px;
       font-weight: 300; }
       @media (max-width: 1440px) {
@@ -1006,7 +1380,7 @@ body {
         height: 88px;
         font-size: 25px;
         font-weight: 400;
-        border-radius: 21px;
+        border-radius: 11px;
         transition: 0.5s ease; }
         .add-animals .add-animals-form form .save-btn-container .save-btn:hover {
           opacity: 80%; }
@@ -1181,7 +1555,99 @@ body {
           display: none; }
         .add-animals .add-animals-form form .upload-image-inner .show-img p {
           font-size: 15px;
-          font-weight: 300; }
+          font-weight: 300;
+          color: #94A6C7; }
       .add-animals .add-animals-form form .upload-image-inner #main-image img {
         width: 100%;
         height: 100%; }
+
+.roles-list {
+  box-shadow: 0 3px 6px #707070;
+  border-radius: 32px;
+  overflow: hidden;
+  margin-top: 50px;
+  background: white;
+  margin-bottom: 200px; }
+  .roles-list .mytable .row {
+    border-bottom: 1px solid #B8D5EC; }
+    .roles-list .mytable .row h6 {
+      font-size: 25px;
+      font-weight: 400;
+      color: #1E3E59;
+      margin-bottom: 0; }
+      @media (max-width: 1440px) {
+        .roles-list .mytable .row h6 {
+          font-size: 20px; } }
+    .roles-list .mytable .row .role-name-title {
+      padding: 30px 0px 30px 50px;
+      border-right: 1px solid #B8D5EC; }
+    .roles-list .mytable .row .roles-link-border {
+      border-right: 1px solid #B8D5EC; }
+      .roles-list .mytable .row .roles-link-border .roles-link-container {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 10px; }
+        .roles-list .mytable .row .roles-link-border .roles-link-container .delete-permission-btn {
+          background: #FF6A6A;
+          font-size: 12px;
+          font-weight: 300;
+          padding: 14px 20px; }
+          .roles-list .mytable .row .roles-link-border .roles-link-container .delete-permission-btn i {
+            font-size: 16px; }
+        .roles-list .mytable .row .roles-link-border .roles-link-container a {
+          background: #2368C6;
+          color: white;
+          list-style: none;
+          text-decoration: none;
+          padding: 10px 20px;
+          border: 1px solid #1E3E59;
+          border-radius: 31px;
+          font-size: 20px;
+          color: white;
+          margin: 0px 10px 30px 0px;
+          display: inline-block; }
+          @media (max-width: 1440px) {
+            .roles-list .mytable .row .roles-link-border .roles-link-container a {
+              font-size: 16px;
+              margin: 0px 10px 20px 0px; } }
+    .roles-list .mytable .row .admin {
+      padding: 40px 0px 30px 50px;
+      border-right: 1px solid #B8D5EC; }
+    .roles-list .mytable .row .writer {
+      padding: 40px 0px 30px 50px;
+      border-right: 1px solid #B8D5EC; }
+    .roles-list .mytable .row .permission-title {
+      padding: 30px 0px 30px 25px;
+      border-right: 1px solid #B8D5EC; }
+    .roles-list .mytable .row .action-title {
+      padding: 30px 0px 30px 15px; }
+    .roles-list .mytable .row .action-btn-container {
+      padding-top: 40px; }
+      .roles-list .mytable .row .action-btn-container .edit {
+        text-decoration: none;
+        color: #203459;
+        font-size: 20px;
+        font-weight: 400;
+        margin-right: 40px; }
+        @media (max-width: 1700px) {
+          .roles-list .mytable .row .action-btn-container .edit {
+            margin-right: 20px; } }
+        @media (max-width: 1550px) {
+          .roles-list .mytable .row .action-btn-container .edit {
+            margin-right: 20px;
+            font-size: 16px; } }
+        @media (max-width: 1440px) {
+          .roles-list .mytable .row .action-btn-container .edit {
+            font-size: 14px;
+            margin-right: 10px; } }
+      .roles-list .mytable .row .action-btn-container .delete {
+        text-decoration: none;
+        color: #EB2D2D;
+        font-size: 20px;
+        font-weight: 400; }
+        @media (max-width: 1550px) {
+          .roles-list .mytable .row .action-btn-container .delete {
+            font-size: 16px; } }
+        @media (max-width: 1440px) {
+          .roles-list .mytable .row .action-btn-container .delete {
+            font-size: 14px; } }

@@ -64,7 +64,7 @@
               </a>
               <div class="collapse collaps-menu" id="collapseOne">
                 <ul>
-                  <li><a href="./product-catetories.html">Product Categories</a></li>
+                  <li><a href="./categories-product.html">Product Categories</a></li>
                   <li><a href="./brand-categories.html">Brand Categories</a></li>
                   <li><a href="./animal-type.html">Animal Type</a></li>
                 </ul>
@@ -206,7 +206,7 @@
               </a>
               <div class="collapse collaps-menu" id="collapseTen">
                 <ul>
-                  <li><a href="#">Roles</a></li>
+                  <li><a href="./roles.html">Roles</a></li>
                   <li><a href="#">Permissions</a></li>
                 </ul>
               </div>
@@ -285,7 +285,7 @@
             <h3>Add Products</h3>
           </div>
           <div class="links-path">
-            <span>Furever Home/Products/Add Products</span>
+            <span>Furever Home / Products / Add Products</span>
           </div>
         </div>
         <!-- Product page Tabs Section -->
@@ -300,14 +300,144 @@
                 aria-controls="pills-profile" aria-selected="false">Attributes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+              <a class="nav-link " id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
                 aria-controls="pills-contact" aria-selected="false">Options</a>
             </li>
           </ul>
           <div class="tab-content" id="pills-tabContent">
+            <!-- General  -->
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-              ...
+              <!-- Add Animal Section and Form  -->
+              <div class="general-container">
+                <div class="general-form">
+                  <h5>Product Information</h5>
+                  <p>Please fill the below form.</p>
+                  <form action="" method="POST">
+                    <div class="form-row form-inner-margin">
+                      <div class="form-group col-md-6 pr-4">
+                        <label for="vet-name">Product Name</label>
+                        <input type="text" class="form-control" id="vet-name" placeholder="Product Name" />
+                      </div>
+                      <div class="form-group col-md-6 pl-4">
+                        <label for="vet-address">Shop</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>cloudtail</option>
+                          <option>cloudtail</option>
+                          <option>cloudtail</option>
+                          <option>cloudtail</option>
+                          <option>cloudtail</option>
+                        </select>
+                        <small id="emailHelp" class="form-text text-muted">Note: If Shop name is not available, please
+                          <a href="./add-shop.html">Add Shop</a>
+                          first.</small>
+                      </div>
+                    </div>
+                    <div class="form-row form-inner-margin">
+                      <div class="form-group col-md-6 pr-4">
+                        <label for="inputEmail4">Animal Type</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Dog</option>
+                          <option>Dog</option>
+                          <option>Dog</option>
+                          <option>Dog</option>
+                          <option>Dog</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6 pl-4">
+                        <label for="inputEmail4">Product Category</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Treat</option>
+                          <option>Treat</option>
+                          <option>Treat</option>
+                          <option>Treat</option>
+                          <option>Treat</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group form-inner-margin">
+                      <label for="exampleFormControlTextarea1">Product Description</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                        placeholder="Add Description about product..."></textarea>
+                    </div>
+                    <!-- Radio Input  -->
+
+                    <div class=" form-inner-margin price-stock">
+                      <div class="form-group">
+                        <label for="Spayed">Price</label>
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">R</div>
+                          </div>
+                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="R58.00" />
+                        </div>
+                      </div>
+                      <div class="form-group pl-5">
+                        <label for="sex">In Stock</label>
+                        <div class="radio-container">
+                          <span class="radio-block">
+                            <input type="radio" id="yes" name="stock" value="yes" />
+                            <label for="yes">Yes</label>
+                          </span>
+                          <span class="radio-block">
+                            <input type="radio" id="no" name="stock" value="no" />
+                            <label for="no">No</label>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="form-group stock-container pl-5">
+                        <label for="vet-name">Stock</label>
+                        <input type="text" class="form-control" id="vet-name" placeholder="241" />
+                      </div>
+                    </div>
+
+                    <!-- Radio Input  -->
+
+                    <!-- Upload Image  -->
+                    <div class="form-group form-inner-margin">
+                      <label for="upload-image">Upload Image</label>
+                      <div class="upload-image-inner">
+                        <div class="upload">
+                          <div class="custom-file">
+                            <input onchange="previewFile(this);" type="file" class="custom-file-input"
+                              id="validatedInputGroupCustomFile" accept="image/*" required />
+
+                            <label class="mycustom-file-label" for="validatedInputGroupCustomFile">
+                              <div class="icon-and-text">
+                                <i class="fa fa-upload" aria-hidden="true"></i>
+                                <p>Upload Images</p>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="show-img main-image" id="main-image">
+                          <p class="main-image-text"> Main Image</p>
+                          <img src="./assets/images/login-background.png" id="previewImg" alt="" />
+                        </div>
+                        <div class="show-img image-2" id="image-2">
+                          <p>Image 2</p>
+                          <!-- <img src="./assets/images/login-background.png" id="previewImg2" alt="" /> -->
+                        </div>
+                        <div class="show-img image-3" id="image-3">
+                          <p>Image 3</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Upload Image  -->
+
+                    <div class="save-btn-container text-right">
+                      <button type="submit" class="btn btn-primary save-btn">
+                        Save
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- Add Animal Section and Form  -->
             </div>
+            <!-- General  -->
+
+            <!-- Attributes  -->
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
               <div class="attribute-container">
                 <form>
@@ -325,9 +455,141 @@
                 </form>
               </div>
             </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-              ...
+            <!-- Attributes  -->
+            <!-- Options  -->
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+              aria-labelledby="pills-contact-tab">
+              <!-- Option  -->
+              <div class="general-container">
+                <div class="general-form">
+                  <form action="" method="POST">
+                    <div class="form-row">
+                      <div class="form-group col-md-6 pr-4">
+                        <label for="vet-name">Option name</label>
+                        <input type="text" class="form-control" id="vet-name" placeholder="Weight" />
+                      </div>
+                      <div class="form-group col-md-6 pl-4">
+                        <label for="vet-address">Input Type</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Drop down</option>
+                          <option>Drop down</option>
+                          <option>Drop down</option>
+                          <option>Drop down</option>
+                          <option>Drop down</option>
+                        </select>
+                      </div>
+                    </div>
+
+
+
+                    <!--  Buttons  -->
+                    <div class="button-container">
+                      <button type="button" class="btn btn-primary add-new-option">Add New option</button>
+                      <button type="button" class="btn btn-secondary delete-option">Delete Option</button>
+                      <button type="button" class="btn btn-success add-new-value">Add New Value</button>
+                    </div>
+
+
+                    <!--  Buttons  -->
+
+                    <!-- Option Table  -->
+                    <div class="option-table">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+
+                            <th scope="col" class="borderleft">Options
+                            </th>
+                            <th scope="col" class="pl-5">Options Values</th>
+                            <th scope="col" class="bottomborder">Price Modifier</th>
+                            <th scope="col" class="borderright bottomborder">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+
+                            <td class="borderleft first-td-bg">
+                              <div>Weight</div>
+                            </td>
+                            <td>
+                              <div class="form-group">
+                                <input type="text" class="form-control" id="vet-name" placeholder="1" />
+                              </div>
+                            </td>
+                            <td>
+
+                              <span class="price-modifier-inner">
+                                <select id="inputState" class="form-control selectpicker">
+                                  <option selected value=""> &#xf055;</option>
+                                </select>
+                                <select id="inputState" class="form-control">
+                                  <option selected>R</option>
+                                  <option></option>
+                                </select>
+                                <input type="text" name="" id="" class="form-control" placeholder="0.00">
+                              </span>
+                            </td>
+                            <td>
+                              <div class="action">
+                                <div class="delete">
+                                  <button type="button" class="btn btn-primary delete-btn">
+                                    <i class="material-icons">delete</i>
+                                  </button>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+
+                            <td class="borderleft">
+                              <span>Size</span>
+                            </td>
+                            <td>
+                              <div class="form-group">
+                                <input type="text" class="form-control" id="vet-name" placeholder="5" />
+                              </div>
+                            </td>
+                            <td>
+                              <span class="price-modifier-inner">
+                                <select id="inputState" class="form-control selectpicker">
+                                  <option selected value=""> &#xf055;</option>
+                                </select>
+                                <select id="inputState" class="form-control">
+                                  <option selected>R</option>
+                                  <option></option>
+                                </select>
+                                <input type="text" name="" id="" class="form-control" placeholder="25.00">
+                              </span>
+                            </td>
+                            <td>
+                              <div class="action">
+                                <div class="delete">
+                                  <button type="button" class="btn btn-primary delete-btn">
+                                    <i class="material-icons">delete</i>
+                                  </button>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+
+
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- Option Table  -->
+
+                    <div class="save-btn-container text-right">
+                      <button type="submit" class="btn btn-primary save-btn">
+                        Save
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- Option  -->
             </div>
+            <!-- Options  -->
           </div>
         </div>
         <!-- Product page Tabs Section -->

@@ -1,0 +1,134 @@
+.roles-list {
+    box-shadow: 0 3px 6px #707070;
+    border-radius: 32px;
+    overflow: hidden;
+    margin-top: 50px;
+    background: $white;
+    margin-bottom: 200px;
+
+    .mytable {
+        .row {
+            border-bottom: 1px solid #B8D5EC;
+
+            h6 {
+                font-size: 25px;
+                font-weight: $mregular;
+                color: #1E3E59;
+                margin-bottom: 0;
+
+                @media(max-width: 1440px){
+                    font-size: 20px;
+                }
+            }
+
+            .role-name-title {
+                padding: 30px 0px 30px 50px;
+                border-right: 1px solid #B8D5EC;
+            }
+
+            .roles-link-border {
+                border-right: 1px solid #B8D5EC;
+
+                .roles-link-container {
+                    padding-top: 30px;
+                    padding-bottom: 20px;
+                    padding-left: 10px;
+
+                    .delete-permission-btn {
+                        background: #FF6A6A;
+                        font-size: 12px;
+                        font-weight: $mlight;
+                        padding: 14px 20px;
+
+                        i {
+                            font-size: 16px;
+                        }
+                    }
+
+                    a {
+
+                        background: #2368C6;
+                        color: $white;
+                        list-style: none;
+                        text-decoration: none;
+                        padding: 10px 20px;
+                        border: 1px solid #1E3E59;
+                        border-radius: 31px;
+                        font-size: 20px;
+                        color: $white;
+                        margin: 0px 10px 30px 0px;
+                        display: inline-block;
+
+
+
+
+                        @media(max-width: 1440px) {
+                            font-size: 16px;
+                            margin: 0px 10px 20px 0px;
+                        }
+                    }
+                }
+            }
+
+            .admin {
+                padding: 40px 0px 30px 50px;
+                border-right: 1px solid #B8D5EC;
+            }
+
+            .writer {
+                padding: 40px 0px 30px 50px;
+                border-right: 1px solid #B8D5EC;
+            }
+
+            .permission-title {
+                padding: 30px 0px 30px 25px;
+                border-right: 1px solid #B8D5EC;
+            }
+
+            .action-title {
+                padding: 30px 0px 30px 15px;
+            }
+
+            .action-btn-container {
+                padding-top: 40px;
+
+                .edit {
+                    text-decoration: none;
+                    color: #203459;
+                    font-size: 20px;
+                    font-weight: $mregular;
+                    margin-right: 40px;
+
+                    @media(max-width: 1700px) {
+                        margin-right: 20px;
+                    }
+                    @media(max-width: 1550px) {
+                        margin-right: 20px;
+                        font-size: 16px;
+                    }
+                    @media(max-width: 1440px){
+                        font-size: 14px;
+                        margin-right: 10px;
+                    }
+                }
+
+                .delete {
+                    text-decoration: none;
+                    color: #EB2D2D;
+                    font-size: 20px;
+                    font-weight: $mregular;
+                    @media(max-width: 1550px) {
+                        font-size: 16px;
+                    }
+                    @media(max-width: 1440px){
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+}
