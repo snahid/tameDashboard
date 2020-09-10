@@ -2,8 +2,6 @@ $(document).ready(function () {
 
 
 
-
-
   $('input[type="file"]').change(function (e) {
     var fileName = e.target.files[0].name;
     $('.custom-file-label').html(fileName);
@@ -25,13 +23,27 @@ $(document).ready(function () {
 
 
   // Menu active 
-
+  
   $('.navbar-nav .nav-item .nav-link').click(function () {
-
     $('.nav-item .nav-link').removeClass("menu-active");
     $(this).addClass("menu-active");
-
+    if ($(this).attr('name') == "menubtn") {
+      //store the id of the collapsible element
+      localStorage.setItem('collapseItem', $(this).attr('href'));
+    };
+    localStorage.setItem('activeId', $(this).attr('id'));
   });
+  var collapseItem = localStorage.getItem('collapseItem');
+  if (collapseItem) {
+    $(collapseItem).collapse('show')
+  }
+
+
+
+
+
+
+
 
   $('.pagination .page-item .page-link').click(function () {
 
@@ -45,17 +57,19 @@ $(document).ready(function () {
   // Menu active 
 
   // Collapse 
-  $('.navbar-nav .nav-item .nav-link').click(function () {
-    if ($(this).attr('name') == "menubtn") {
-      //store the id of the collapsible element
-      localStorage.setItem('collapseItem', $(this).attr('href'));
-    };
-  });
-  var collapseItem = localStorage.getItem('collapseItem');
+  // $('.navbar-nav .nav-item .nav-link').click(function () {
+  //   localStorage.setItem('activeClass', $(this).attr('id'));
+  //   localStorage.setItem('active', "menu-active");
+  //   var get = localStorage.getItem('activeClass');
+  //   console.log(get);
 
-  if (collapseItem) {
-    $(collapseItem).collapse('show')
-  }
+  //   if ($(this).attr('name') == "menubtn") {
+  //     //store the id of the collapsible element
+  //     localStorage.setItem('collapseItem', $(this).attr('href'));
+  //   };
+  // });
+
+
 
   // Collapse 
 

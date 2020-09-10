@@ -3,16 +3,11 @@
   font-weight: normal;
   font-style: normal;
   src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot");
-  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot")
-      format("embedded-opentype"),
-    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2")
-      format("woff2"),
-    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff")
-      format("woff"),
-    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf")
-      format("truetype"),
-    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg")
-      format("svg");
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot") format("embedded-opentype"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2") format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff") format("woff"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf") format("truetype"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg") format("svg");
 }
 
 .sidebar-detail-wrapper {
@@ -23,14 +18,12 @@
   .sidebar {
     width: 272px;
     // background-color: #2464c6;
-    background-image: linear-gradient(
-      to bottom,
-      #2365c6,
-      #066ec6,
-      #0075c4,
-      #007dc1,
-      #1783bd
-    );
+    background-image: linear-gradient(to bottom,
+        #2365c6,
+        #066ec6,
+        #0075c4,
+        #007dc1,
+        #1783bd);
     min-height: 100vh;
     border-right: 1px solid #bed5ff;
 
@@ -38,8 +31,7 @@
       margin-top: 30px;
       margin-bottom: 15px;
 
-      a {
-      }
+      a {}
     }
 
     h6 {
@@ -79,12 +71,12 @@
             font-size: 15px;
             font-weight: $mlight;
 
-            &:focus {
-              background: $white;
-              border-radius: 34px 0 0 34px;
-              color: #216ac4;
-              font-weight: $mregular;
-            }
+            // &:focus {
+            //   background: $white;
+            //   border-radius: 34px 0 0 34px;
+            //   color: #216ac4;
+            //   font-weight: $mregular;
+            // }
 
             .icon-align {
               font-size: 20px;
@@ -95,6 +87,13 @@
             .align-inline {
               padding-left: 30px;
             }
+          }
+
+          .menu-active {
+            background: $white;
+            border-radius: 34px 0 0 34px;
+            color: #216ac4;
+            font-weight: $mregular;
           }
 
           .collaps-menu {
@@ -189,12 +188,10 @@
     .main-top-left {
       .plus-btn {
         background: rgb(35, 101, 198);
-        background: linear-gradient(
-          90deg,
-          rgba(35, 101, 198, 1) 0%,
-          rgba(35, 101, 198, 1) 35%,
-          rgba(23, 131, 189, 1) 100%
-        );
+        background: linear-gradient(90deg,
+            rgba(35, 101, 198, 1) 0%,
+            rgba(35, 101, 198, 1) 35%,
+            rgba(23, 131, 189, 1) 100%);
         border-radius: 38px;
         width: 139px;
         height: 55px;
@@ -345,8 +342,7 @@
             animation-name: fadeIn;
             -webkit-animation-duration: 200ms;
             animation-duration: 200ms;
-            -webkit-animation-timing-function: opacity
-              cubic-bezier(0, 1, 0.4, 1);
+            -webkit-animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
             animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
 
             &:after {
@@ -399,22 +395,24 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 75px;
+    align-items: center;
 
     .add-products {
       h3 {
         font-size: 30px;
         font-weight: $mregular;
         color: #1e3e59;
+        margin-bottom: 0;
       }
     }
 
     .links-path {
       background: $white;
       height: 58px;
-      // max-width: 412px;
-      padding-top: 18px;
-      padding-left: 35px;
-      padding-right: 35px;
+      // padding-top: 18px;
+      // padding-left: 35px;
+      // padding-right: 35px;
+      padding: 14px 35px;
       border-radius: 37px;
 
       span {
@@ -458,6 +456,7 @@
       margin-top: 65px;
 
       .tab-pane {
+
         // General
         .general-container {
           margin-top: 50px;
@@ -488,12 +487,10 @@
 
                 .save-btn {
                   background: rgb(35, 101, 198);
-                  background: linear-gradient(
-                    90deg,
-                    rgba(35, 101, 198, 1) 0%,
-                    rgba(35, 101, 198, 1) 35%,
-                    rgba(23, 131, 189, 1) 100%
-                  );
+                  background: linear-gradient(90deg,
+                      rgba(35, 101, 198, 1) 0%,
+                      rgba(35, 101, 198, 1) 35%,
+                      rgba(23, 131, 189, 1) 100%);
                   color: $white;
                   width: 267px;
                   height: 88px;
@@ -599,12 +596,10 @@
 
                 .add-new-option {
                   background: rgb(35, 101, 198);
-                  background: linear-gradient(
-                    90deg,
-                    rgba(35, 101, 198, 1) 0%,
-                    rgba(35, 101, 198, 1) 35%,
-                    rgba(23, 131, 189, 1) 100%
-                  );
+                  background: linear-gradient(90deg,
+                      rgba(35, 101, 198, 1) 0%,
+                      rgba(35, 101, 198, 1) 35%,
+                      rgba(23, 131, 189, 1) 100%);
                   border: 1px solid #bedaf1;
                   border-radius: 11px;
                   height: 70px;
@@ -662,6 +657,7 @@
               .option-table {
                 background: $white;
                 border: 1px solid #cee4f5;
+
                 .table {
                   margin-bottom: 0;
 
@@ -681,6 +677,7 @@
                             background: #f9fcff;
                             height: 61px;
                           }
+
                           .selectpicker {
                             font-family: "FontAwesome";
                           }
@@ -690,11 +687,13 @@
                             background: #f9fcff;
                             padding: 5px 5px;
                             height: 61px;
-                           
+
                           }
                         }
+
                         .form-group {
                           margin-bottom: 0;
+
                           input {
                             height: 61px;
                             background: #f9fcff;
@@ -733,14 +732,13 @@
                   }
 
                   thead {
-                    tr {
-                    }
+                    tr {}
                   }
                 }
 
-                .table-bordered > tbody > tr > td,
-                .table-bordered > tbody > tr > th,
-                .table-bordered > thead > tr > td,
+                .table-bordered>tbody>tr>td,
+                .table-bordered>tbody>tr>th,
+                .table-bordered>thead>tr>td,
                 .table-bordered {
                   border-bottom: 0;
                   border-top: 0;
@@ -749,7 +747,7 @@
                   padding-left: 25px;
                 }
 
-                .table-bordered > thead > tr > th,
+                .table-bordered>thead>tr>th,
                 .bottomborder,
                 .table-bordered {
                   // border-bottom: 1px solid #b8d5ec;
@@ -789,10 +787,12 @@
                         }
                       }
                     }
+
                     .first-td-bg {
                       color: #94a6c7;
                       width: inherit;
                       padding: 15px 0px 5px 0px !important;
+
                       div {
                         background: #e3edf6;
                         padding-left: 25px;
@@ -803,14 +803,14 @@
                   }
                 }
 
-                .table-bordered > thead > tr,
+                .table-bordered>thead>tr,
                 .borderleft {
                   // border-left: 1px solid #CEE4F5;
 
                   border-bottom: 1px solid #cee4f5;
                 }
 
-                .table-bordered > thead > tr,
+                .table-bordered>thead>tr,
                 .borderright,
                 .table-bordered {
                   border-right: 0;
@@ -1094,12 +1094,10 @@
                 width: 290px;
                 height: 89px;
                 background: rgb(35, 101, 198);
-                background: linear-gradient(
-                  90deg,
-                  rgba(35, 101, 198, 1) 0%,
-                  rgba(35, 101, 198, 1) 35%,
-                  rgba(23, 131, 189, 1) 100%
-                );
+                background: linear-gradient(90deg,
+                    rgba(35, 101, 198, 1) 0%,
+                    rgba(35, 101, 198, 1) 35%,
+                    rgba(23, 131, 189, 1) 100%);
                 color: $white;
                 border-radius: 11px;
                 font-weight: $mregular;

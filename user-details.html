@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dashboard</title>
+    <!-- FavIcon-->
+    <link rel="shortcut icon" type="image/png" href="" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="./css/fontAwesome.css" />
+    <!-- Bootstrap style-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- FontAwesome style-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- font  -->
+    <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"> -->
+    <!-- font  -->
+    <!--Owl Carouse css-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!--AOS css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--Animate css-->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- Custom Style-->
+    <link rel="stylesheet" href="./css/checkbox.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+</head>
+
+<body>
+    <main>
+        <!-- Page Wrapper  -->
+        <div class="sidebar-detail-wrapper">
+            <!-- Sidebar Start -->
+            <div class="sidebar">
+                <div class="sidebar-logo d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <img src="./assets/images/furever logo-01.png" alt="" />
+                    </a>
+                </div>
+                <h6>Admin</h6>
+                <div class="divider"></div>
+                <div class="sidebar-menu">
+                    <ul class="navbar-nav" id="mainsidebar">
+                        <!-- Dashboard  -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><span class="material-icons icon-align"> dashboard </span><span
+                                    class="align-inline">Dashboard</span></a>
+                        </li>
+                        <!-- Dashboard  -->
+                        <!-- Categories  -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne" data-target="#collapseOne">
+                                <span class="material-icons icon-align"> description </span><span
+                                    class="align-inline">Categories</span>
+                            </a>
+                            <div class="collapse collaps-menu" id="collapseOne">
+                                <ul>
+                                    <li>
+                                        <a href="./categories-product.html">Product Categories</a>
+                                    </li>
+                                    <li>
+                                        <a href="./brand-categories.html">Brand Categories</a>
+                                    </li>
+                                    <li><a href="./animal-type.html">Animal Type</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Categories  -->
+                        <!-- Shop Management  -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseTwo"
+                                aria-expanded="true" aria-controls="collapseTwo">
+                                <span class="material-icons icon-align"> shopping_bag </span><span
+                                    class="align-inline">Shop Management</span>
+                            </a>
+                            <div class="collapse collaps-menu" id="collapseTwo">
+                                <ul>
+                                    <li><a href="#">Shops</a></li>
+                                    <li><a href="#">Shop Details</a></li>
+                                    <li><a href="./add-shop.html">Add Shop</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Shop Management  -->
+                        <!-- Product Management  -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseThree"
+                                aria-expanded="true" aria-controls="collapseThree">
+                                <span class="material-icons icon-align"> shopping_bag </span><span
+                                    class="align-inline">Product Management</span>
+                            </a>
+                            <div class="collapse collaps-menu" id="collapseThree">
+                                <ul>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Products Details</a></li>
+                                    <li>
+                                        <a href="./products-3.html">Add Products</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Product Management  -->
+                        <!-- Shelter Management  -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseFour"
+                                aria-expanded="true" aria-controls="collapseFour">
+                                <span class="material-icons icon-align"> home </span><span class="align-inline">Shelter
+                                    Management</span>
+                            </a>
+                            <div class="collapse collaps-menu" id="collapseFour">
+                                <ul>
+                                    <li><a href="./shelter.html">Shelters</a></li>
+                                    <li><a href="./shelter-details.html">Shelter Details</a></li>
+                                    <li><a href="./add-shelter.html">Add Shelter</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Shelter Management  -->
+                        <!-- Animals  -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseFive"
+                                aria-expanded="true" aria-controls="collapseFive">
+                                <span class="material-icons icon-align"> pets </span><span
+                                    class="align-inline">Animals</span>
+                            </a>
+                            <div class="collapse collaps-menu" id="collapseFive">
+                                <ul>
+                                    <li><a href="./animals.html">Animals</a></li>
+                                    <li><a href="#">Animal Details</a></li>
+                                    <li><a href="./add-animals.html">Add Animal</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Animals  -->
+                        <!-- Medical Assistance  -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseSix"
+                                aria-expanded="true" aria-controls="collapseSix">
+                                <span class="material-icons icon-align">
+                                    medical_services </span><span class="align-inline">Medical Assistance</span>
+                            </a>
+                            <div class="collapse collaps-menu" id="collapseSix">
+                                <ul>
+                                    <li><a href="#">Vet Shops</a></li>
+                                    <li><a href="#">Vet Shop Details</a></li>
+                                    <li><a href="./add-vet-shop.html">Add Vet Shop</a></li>
+                                    <li><a href="#">Vets</a></li>
+                                    <li><a href="#">Vet Details</a></li>
+                                    <li><a href="./add-vets.html">Add Vet</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Medical Assistance  -->
+                        <!-- pet Services  -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseSeven"
+                                aria-expanded="true" aria-controls="collapseSeven">
+                                <span class="material-icons icon-align"> pets </span><span class="align-inline">Pet
+                                    Services</span>
+                            </a>
+                            <div class="collapse collaps-menu" id="collapseSeven">
+                                <ul>
+                                    <li><a href="#">Pet Services</a></li>
+                                    <li>
+                                        <a href="./add-pet-services.html">Add Pet Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- pet Services  -->
+                        <!-- Orders  -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseEight"
+                                aria-expanded="true" aria-controls="collapseEight">
+                                <span class="material-icons icon-align"> shopping_cart </span><span
+                                    class="align-inline">Orders</span>
+                            </a>
+                            <div class="collapse collaps-menu" id="collapseEight">
+                                <ul>
+                                    <li><a href="./orders.html">Order Overview</a></li>
+                                    <li><a href="#">Order Details</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Orders  -->
+                        <!-- Users  -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseNine"
+                                aria-expanded="true" aria-controls="collapseNine">
+                                <span class="material-icons icon-align"> person </span><span
+                                    class="align-inline">Users</span>
+                            </a>
+                            <div class="collapse collaps-menu" id="collapseNine">
+                                <ul>
+                                    <li>
+                                        <a href="./user-list.html">User List</a>
+                                    </li>
+                                    <li><a href="./user-details.html" class="submenu-active">User Details</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Users  -->
+
+                        <!-- Roles  -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" name="menubtn" data-toggle="collapse" href="#collapseTen"
+                                aria-expanded="true" aria-controls="collapseTen">
+                                <span class="material-icons icon-align"> engineering </span><span
+                                    class="align-inline">Roles</span>
+                            </a>
+                            <div class="collapse collaps-menu" id="collapseTen">
+                                <ul>
+                                    <li><a href="./roles.html">Roles</a></li>
+                                    <li><a href="#">Permissions</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Roles  -->
+                        <!-- Settings  -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><span class="material-icons icon-align"> construction
+                                </span><span class="align-inline">Settings</span></a>
+                        </li>
+                        <!-- Settings  -->
+                    </ul>
+                </div>
+            </div>
+            <!-- Sidebar End  -->
+            <!-- Main Content Start -->
+            <div class="main-content">
+                <div class="main-top">
+                    <div class="main-top-left">
+                        <button type="button" class="btn btn-primary plus-btn" data-toggle="modal"
+                            data-target="#exampleModal">
+                            <!-- <i class="fas fa-plus"></i> Add -->
+                            <span class="material-icons add-icon"> add </span>Add
+                        </button>
+                    </div>
+                    <div class="main-top-right">
+                        <div class="search-and-notification">
+                            <div class="search">
+                                <button>
+                                    <img src="./assets/images/search.svg" alt="" />
+                                </button>
+                            </div>
+                            <div class="notification">
+                                <!-- <button>
+                       
+                       <img src="./assets/images/notification.svg" alt="">
+                       <span>4</span>
+                    </button> -->
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown mx-1 no-arrow">
+                                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="./assets/images/notification.svg" alt="" />
+                                            <span class="notification-counter">4</span>
+                                        </a>
+                                        <!-- <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                       
+                      </div> -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right-divider"></div>
+                        <div class="user-profile">
+                            <div class="menu-dropdown">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <img src="./assets/images/Ellipse 1.png" alt="" />
+                                        Welcome, <span>Christina</span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Dashboard</a>
+                                        <a class="dropdown-item" href="#">Dashboard</a>
+                                        <a class="dropdown-item" href="#">Dashboard</a>
+                                        <button type="button" class="btn btn-primary logout-btn">
+                                            logout
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-middle">
+                    <div class="add-products">
+                        <h3>Users Profile</h3>
+                    </div>
+                    <div class="links-path animal-type-link-path">
+                        <span>Furever Home / Users / Users List</span>
+                    </div>
+                </div>
+                <!-- User Detail Section -->
+                <div class="user-detail-wrapper">
+                    <!-- User Detail Top  -->
+                    <div class="user-detail-top">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="user-top-left">
+                                    <div class="image-and-email text-center">
+                                        <div class="img">
+                                            <img src="./assets/images/Ellipse 44.png" alt="">
+                                        </div>
+                                        <div class="name">
+                                            <h6>Rita Cloy</h6>
+                                        </div>
+                                        <div class="email">
+                                            <p>ritacloy@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="status-delete">
+                                        <div class="status">
+                                            <h6>Status:&nbsp;&nbsp;<span class="online">Online</span></h6>
+                                        </div>
+                                        <div class="delete">
+                                            <button class="btn user-delete-btn">
+                                                <i class="fa fa-trash" aria-hidden="true"></i> Delete
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="personal-details">
+                                    <h3>Personal Details</h3>
+                                    <div class="name-email row">
+                                        <div class="name col-md-7">
+                                            <h5>Full Name</h5>
+                                            <p>Rita Cloy</p>
+                                        </div>
+                                        <div class="email col-md-5">
+                                            <h5>Email</h5>
+                                            <p>kremptonpart@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="address-mobile-number row">
+                                        <div class="address col-md-7">
+                                            <h5>Address</h5>
+                                            <p>43 Avenue, XYZ Street Johannesberg,
+                                                South Africa</p>
+                                        </div>
+                                        <div class="mobile-number col-md-5">
+                                            <h5>Mobile Number</h5>
+                                            <p>+27 8585 4547 54</p>
+                                        </div>
+                                    </div>
+                                    <div class="deathbirth-family-status row">
+                                        <div class="date-of-birth col-md-7">
+                                            <h5>Date of Birth</h5>
+                                            <p>15 Aug 1993</p>
+                                        </div>
+                                        <div class="family-status col-md-5">
+                                            <h5>Family Status</h5>
+                                            <p>Parent</p>
+                                        </div>
+                                    </div>
+                                    <div class="children ">
+                                        <h5>Children</h5>
+                                        <p>2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- User Detail Top  -->
+
+                    <!-- User Detail Middle  -->
+                    <!-- User List Table  -->
+                    <div class="user-detail-table">
+                        <h3>Order History</h3>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="borderleft bottomborder">Products</th>
+                                    <th scope="col" class="bottomborder">Order ID</th>
+                                    <th scope="col" class="bottomborder">Date</th>
+                                    <th scope="col" class="bottomborder">Price</th>
+                                    <th scope="col" class="borderright bottomborder">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="col" class="borderleft first-td-width">
+                                        <div class="type-categories-brand">
+                                            <div class="left">
+                                                <img src="./assets/images/2.png" alt="" />
+                                            </div>
+                                            <div class="right">
+                                                <h6>Jerry's Pet Products
+                                                    Super Soft Dual Round...</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td scope="col"><span class="type-id">01455</span></td>
+
+                                    <td scope="col"><span class="date">02 Aug, 03:11 PM</span></td>
+                                    <td scope="col"><span class="phone">R 21.20</span></td>
+                                    <td scope="col">
+                                        <span class="Cancelled">Cancelled</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="borderleft first-td-width">
+                                        <div class="type-categories-brand">
+                                            <div class="left">
+                                                <img src="./assets/images/105.png" alt="" />
+                                            </div>
+                                            <div class="right">
+                                                <h6>Jerry's Pet Products
+                                                    Super Soft Dual Round...</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="type-id">01455</span></td>
+
+                                    <td><span class="date">02 Aug, 03:11 PM</span></td>
+                                    <td><span class="phone">R 21.20</span></td>
+                                    <td>
+                                        <span class="complete">Completed</span>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- User List Table  -->
+                    <!-- User Detail Middle  -->
+
+                    <!-- User Detail Bottom  -->
+                    <div class="user-detail-bottom">
+                        <div class="cart-wishlist-wrapper">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="products-cart">
+                                        <h3>Products in Cart</h3>
+                                        <div class="cart-inner">
+                                            <div class="cart-left">
+                                                <div class="img">
+                                                    <img src="./assets/images/cart/2.png" alt="">
+                                                </div>
+                                                <div class="detail">
+                                                    <h6>Jerry's Pet Products 
+                                                        Super Soft Dual Round...</h6>
+                                                        <p>Product ID: 01455</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart-right">
+                                                <div class="price">
+                                                    <h1>R 21.20</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-inner">
+                                            <div class="cart-left">
+                                                <div class="img">
+                                                    <img src="./assets/images/cart/105.png" alt="">
+                                                </div>
+                                                <div class="detail">
+                                                    <h6>Jerry's Pet Products 
+                                                        Super Soft Dual Round...</h6>
+                                                        <p>Product ID: 01455</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart-right">
+                                                <div class="price">
+                                                    <h1>R 54.20</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="products-wishlist">
+                                        <div class="products-cart">
+                                            <h3>Products in Wishlist</h3>
+                                            <div class="cart-inner">
+                                                <div class="cart-left">
+                                                    <div class="img">
+                                                        <img src="./assets/images/cart/2.png" alt="">
+                                                    </div>
+                                                    <div class="detail">
+                                                        <h6>Jerry's Pet Products 
+                                                            Super Soft Dual Round...</h6>
+                                                            <p>Product ID: 01455</p>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-right">
+                                                    <div class="price">
+                                                        <h1>R 21.20</h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cart-inner">
+                                                <div class="cart-left">
+                                                    <div class="img">
+                                                        <img src="./assets/images/cart/105.png" alt="">
+                                                    </div>
+                                                    <div class="detail">
+                                                        <h6>Jerry's Pet Products 
+                                                            Super Soft Dual Round...</h6>
+                                                            <p>Product ID: 01455</p>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-right">
+                                                    <div class="price">
+                                                        <h1>R 54.20</h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- User Detail Bottom  -->
+                </div>
+
+                <!-- User Detail Section -->
+
+                <!-- Footer Start -->
+                <div class="dashboard-footer">
+                    <p>Copyright 2020 | Furever Home.</p>
+                </div>
+                <!-- Footer End -->
+            </div>
+            <!-- Main Content End -->
+        </div>
+        <!-- Page Wrapper  -->
+    </main>
+
+    <!-- Jquery Js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap Js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <!-- counter up  -->
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <!-- counter up  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!--AOS Js-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Owl Carouse js-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Custom Js-->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

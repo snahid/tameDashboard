@@ -1,0 +1,458 @@
+.animals-wrapper {
+    .overview {
+        margin-top: 50px;
+
+        .overview-inner {
+            border-radius: 15px;
+
+            height: 179px;
+            padding-left: 40px;
+            padding-top: 30px;
+
+            h6 {
+                font-size: 16px;
+                font-weight: $mregular;
+                color: $white;
+                margin-bottom: 0;
+            }
+
+            span {
+                font-size: 64px;
+                font-weight: $mregular;
+                color: $white;
+            }
+        }
+
+        .one {
+            background-image: linear-gradient(to left top, #1b7dc6, #0093d6, #00a9e4, #00bfee, #00d5f6);
+        }
+
+        .two {
+            background-image: linear-gradient(to left top, #1ab5a0, #0bc8a4, #1adba4, #37eda1, #56ff9a);
+
+        }
+
+        .three {
+            background-image: linear-gradient(to left top, #c14d87, #d14e87, #e15085, #f05382, #ff567e);
+        }
+
+        .four {
+            background-image: linear-gradient(to left top, #c14d87, #d14e87, #e15085, #f05382, #ff567e);
+
+        }
+    }
+}
+
+.animals-middle-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h5 {
+        font-size: 30px;
+        color: #1e3e59;
+        font-weight: $mregular;
+        margin-bottom: 0;
+    }
+
+    form {
+        margin-left: 20px;
+
+        .form-group {
+            margin-bottom: 0;
+
+            select {
+                width: 101px;
+                background: transparent;
+                border: 1px solid #A1B1CE;
+                border-radius: 5px;
+                color: #203459 !important;
+                font-size: 16px;
+                font-weight: $mlight;
+
+
+            }
+        }
+
+    }
+}
+
+// Animal Tab Section 
+.animals-tab-section {
+    .nav {
+        margin-right: 20px;
+
+        .nav-link {
+            color: #8AADE1;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            position: relative;
+            background: $white;
+
+            .mybar {
+                font-size: 16px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%)rotate(90deg);
+            }
+
+            .my-list {
+                font-size: 16px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .active {
+            color: $white;
+            background: #2365C6;
+        }
+    }
+}
+
+// Animal Tab Section 
+
+// Sheltr Table 
+.animals-table {
+    background: $white;
+    border-radius: 27px;
+    margin-top: 70px;
+
+    // Table Inner Design Start
+    .table {
+        tbody {
+            tr {
+                td {
+                    vertical-align: middle;
+
+                    .type-categories-brand {
+                        @media (max-width: 1440px) {
+                            max-width: 300px;
+                        }
+
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        .left {
+                            width: 78px;
+                            height: 78px;
+                            border: 1px solid #707070;
+                            border-radius: 15px;
+                            overflow: hidden;
+
+                            img {
+
+                                width: 78px;
+                                height: 78px;
+                            }
+                        }
+
+                        .right {
+                            padding-top: 12px;
+                            margin-left: 10px;
+
+                            h6 {
+                                font-size: 15px;
+                                font-weight: $mregular;
+                                color: #203459;
+                                margin-bottom: 15px;
+                            }
+
+                            p {
+                                font-size: 12px;
+                                font-weight: $mlight;
+                                color: #94A6C7;
+                                max-width: 203px;
+                                line-height: 15px;
+                            }
+                        }
+                    }
+
+                    .type-id {
+                        font-size: 15px;
+                        font-weight: $mregular;
+                        color: #1e3e59;
+                    }
+
+                    .date {
+                        font-size: 15px;
+                        font-weight: $mregular;
+                        color: #1e3e59;
+                    }
+
+                    .status {
+                        font-size: 15px;
+                        font-weight: $mregular;
+                        color: $white;
+                        border-radius: 18px;
+                        padding: 5px 10px;
+                    }
+
+                    .available {
+                        background: #1CBB85;
+                    }
+
+                    .address {
+                        max-width: 112px;
+                        font-size: 15px;
+                        font-weight: $mregular;
+                        color: #203459;
+                    }
+
+                    .not-available {
+                        background: #F56E6E;
+                    }
+
+                    .action {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        .edit {
+                            .edit-btn {
+                                font-size: 15px;
+                                font-weight: $mmedium;
+                                color: #1e3e59;
+                                padding: 0;
+                                background: transparent;
+                                border: none;
+                                outline: none;
+
+                                &:focus {
+                                    outline: none;
+                                    border: none;
+                                    box-shadow: none;
+                                }
+
+                                span {
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+
+                        .view {
+                            .view-btn {
+                                font-size: 15px;
+                                font-weight: $mmedium;
+                                color: #1e3e59;
+                                padding: 0;
+                                background: transparent;
+                                border: none;
+                                outline: none;
+
+                                &:focus {
+                                    outline: none;
+                                    border: none;
+                                    box-shadow: none;
+                                }
+
+                                span {
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+
+                        .delete {
+                            .delete-btn {
+                                font-size: 15px;
+                                font-weight: $mmedium;
+                                color: #1e3e59;
+                                padding: 0;
+                                background: transparent;
+                                border: none;
+                                outline: none;
+
+                                &:focus {
+                                    outline: none;
+                                    border: none;
+                                    box-shadow: none;
+                                }
+
+                                span {
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .first-td-width {
+                    @media (max-width: 1440px) {
+                        max-width: 320px;
+                    }
+                }
+            }
+        }
+
+        thead {
+            tr {
+                .first-td-width {
+                    @media (max-width: 1366px) {
+                        max-width: 320px;
+                    }
+                }
+            }
+        }
+    }
+
+    .table-bordered>tbody>tr>td,
+    .table-bordered>tbody>tr>th,
+    .table-bordered>thead>tr>td,
+    .table-bordered {
+        border-bottom: 0;
+        border-top: 0;
+        border-right: 1px solid #b8d5ec;
+        padding-left: 25px;
+
+        @media(max-width: 1440px) {
+            padding-left: 10px;
+            text-align: center;
+        }
+
+
+    }
+
+    .table-bordered>thead>tr>th {
+        border-top: 0;
+    }
+
+    // Table Inner Design End
+
+
+
+    .table-bordered>thead>tr>th {
+        border-bottom: 1px solid #b8d5ec;
+        border-right: 1px solid #b8d5ec;
+        padding-left: 25px;
+
+        &:last-child {
+            border-right: 0;
+        }
+    }
+
+    .table {
+        tbody {
+            tr {
+                td {
+                    &:last-child {
+                        border-right: 0;
+                    }
+
+                    &:first-child {
+                        @media(max-width: 1440px) {
+                            text-align: left !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .table {
+        thead {
+            tr {
+                th {
+                    font-size: 18px;
+                    font-weight: $mregular;
+                    color: #203459;
+                }
+            }
+        }
+    }
+
+    .table-bordered>thead>tr,
+    .borderleft,
+    .table-bordered {
+        border-left: 0;
+    }
+
+    .table-bordered>thead>tr,
+    .borderright,
+    .table-bordered {
+        border-right: 0;
+    }
+}
+
+// Sheltr Table 
+
+// Animal Image 
+.animal-image {
+    margin-top: 70px;
+    .row {
+        .col-md-4 {
+            .animal-img {
+                max-width: 434px;
+                max-height: 520px;
+                border-radius: 27px;
+                overflow: hidden;
+                position: relative;
+                margin-bottom: 50px;
+
+                .image-and-name {
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .name-and-age {
+                        position: absolute;
+                        left: 20px;
+                        bottom: 20px;
+
+                        h6 {
+                            font-size: 30px;
+                            font-weight: $mregular;
+                            color: $white;
+                            margin-bottom: 0;
+                        }
+
+                        p {
+                            font-size: 20px;
+                            color: $white;
+                            font-weight: $mlight;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                .animal-shadow {
+                    transition: 0.5s;
+                    border-radius: 27px;
+                    // opacity: 56%;
+                    position: absolute;
+                    background: rgba(0, 0, 0, .3);
+                    width: 100%;
+                    height: 100%;
+                    bottom: -100%;
+
+                    .animal-action-link{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        .animal-btn{
+                            color: $white;
+                            i{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .animal-shadow {
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Animal Image 
