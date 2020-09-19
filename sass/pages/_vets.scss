@@ -1,0 +1,233 @@
+.vets-information {
+    margin-top: 50px;
+    .row {
+        .col-md-6 {
+            .vets-inner {
+                background: $white;
+                border-radius: 18px;
+                // max-width: 708px;
+                margin-bottom: 50px;
+                transition: 0.3s;
+
+                &:hover {
+                    -webkit-box-shadow: 10px 10px 20px 0px rgba(13, 50, 91, 0.08);
+                    -moz-box-shadow: 10px 10px 20px 0px rgba(13, 50, 91, 0.08);
+                    box-shadow: 10px 10px 20px 0px rgba(13, 50, 91, 0.08);
+                }
+
+                .image-and-detail {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 20px;
+
+                    @media(max-width: 1553px) {
+                        padding: 20px 10px 20px 10px;
+                    }
+
+                    img {
+                        // width: 191px;
+                        // height: 191px;
+                        max-width: 191px;
+                        max-height: 191px;
+                        border: 2px solid #2365c6;
+                        border-radius: 50%;
+
+                        @media(max-width: 1699px) {
+                            width: 170px;
+                            height: 170px;
+                        }
+
+                        @media(max-width: 1657px) {
+                            width: 160px;
+                            height: 160px;
+                        }
+
+                        @media(max-width: 1513px) {
+                            width: 150px;
+                            height: 150px;
+                        }
+
+                        @media(max-width: 1461px) {
+                            width: 140px;
+                            height: 140px;
+                        }
+
+                        @media(max-width: 1398px) {
+                            width: 130px;
+                            height: 130px;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .vets-detail {
+                        // width: calc(100% - 191px);
+                        width: 100%;
+                        margin-left: 30px;
+                        padding-top: 20px;
+
+                        @media(max-width: 1554px) {
+                            padding-top: 10px;
+                            margin-left: 15px;
+                        }
+
+                        @media(max-width: 1442px) {
+                            padding-top: 0;
+                        }
+
+                        .name {
+                            h6 {
+                                font-size: 25px;
+                                font-weight: $mregular;
+                                color: #203459;
+
+                                @media(max-width: 1450px) {
+                                    font-size: 22px;
+                                }
+
+                            }
+                        }
+
+                        .experience {
+                            p {
+                                color: #94a6c7;
+                                font-size: 18px;
+                                font-weight: $mlight;
+                                margin-bottom: 8px;
+
+                                @media(max-width: 1639px) {
+                                    font-size: 16px;
+                                }
+
+                                @media(max-width: 1441px) {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+
+                        .address {
+                            p {
+                                color: #94a6c7;
+                                font-size: 18px;
+                                font-weight: $mlight;
+                                margin-bottom: 8px;
+
+                                @media(max-width: 1639px) {
+                                    font-size: 16px;
+                                }
+
+                                @media(max-width: 1441px) {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+
+                        .fees {
+                            p {
+                                span {
+                                    color: #1a7cc0;
+                                }
+
+                                color: #94a6c7;
+                                font-size: 18px;
+                                font-weight: $mlight;
+
+                                @media(max-width: 1639px) {
+                                    font-size: 16px;
+                                }
+
+                                @media(max-width: 1441px) {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+
+                        // Star and Call Button
+                        .star-and-callbtn {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .star {
+                                i {
+                                    color: #b0bdd5;
+                                }
+
+                                .rating {
+                                    color: #fba12b !important;
+                                }
+                            }
+
+                            .call {
+                                .call-btn {
+                                    background: #1a7cc0;
+                                    font-size: 13px;
+                                    font-weight: $mlight;
+                                    border-radius: 22px;
+                                    height: 41px;
+                                    width: 116px;
+                                    transition: 0.5s;
+
+                                    &:hover {
+                                        opacity: 80%;
+                                    }
+                                }
+                            }
+                        }
+
+                        // Star and Call Button
+                    }
+                }
+
+                .vets-divider {
+                    background: #b0bdd5;
+                    height: 1px;
+                    width: 100%;
+                    opacity: 30%;
+                }
+
+                .view-edit-delete {
+                    padding: 10px 0px;
+
+                    .vets-view-btn {
+                        color: #94a6c7;
+                        font-size: 13px;
+                        font-weight: $mlight;
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+
+                    .vets-edit-btn {
+                        color: #94a6c7;
+                        font-size: 13px;
+                        font-weight: $mlight;
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+
+                    .vets-delete-btn {
+                        color: #f16573;
+                        font-size: 13px;
+                        font-weight: $mlight;
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+
+            .vets-inner-right {
+                margin-left: auto;
+            }
+        }
+    }
+}

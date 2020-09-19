@@ -1,0 +1,118 @@
+.pet-services-inner {
+    background: $white;
+    border-radius: 18px;
+    // max-width: 708px;
+    margin-bottom: 50px;
+    transition: 0.3s;
+
+    &:hover {
+        -webkit-box-shadow: 10px 10px 20px 0px rgba(13, 50, 91, 0.08);
+        -moz-box-shadow: 10px 10px 20px 0px rgba(13, 50, 91, 0.08);
+        box-shadow: 10px 10px 20px 0px rgba(13, 50, 91, 0.08);
+    }
+
+    .pet-groming {
+        padding: 20px;
+
+        h6 {
+            font-size: 25px;
+            font-weight: $mregular;
+            color: #1A7CC0;
+        }
+
+        p {
+            font-size: 20px;
+            color: #94A6C7;
+            font-weight: $mlight;
+            line-height: 30px;
+            @media(max-width: 1440px){
+                font-size: 16px;
+            }
+        }
+    }
+
+    // Star and Call Button
+    .star-and-callbtn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px 20px 20px;
+
+        .star {
+            i {
+                color: #b0bdd5;
+            }
+
+            .rating {
+                color: #fba12b !important;
+            }
+        }
+
+        .call {
+
+            span{
+                color: #1A7CC0;
+                font-size: 20px;
+                font-weight: $mregular;
+                margin-right: 20px;
+            }
+            .call-btn {
+                background: #1a7cc0;
+                font-size: 13px;
+                font-weight: $mlight;
+                border-radius: 22px;
+                height: 41px;
+                width: 116px;
+                transition: 0.5s;
+
+                &:hover {
+                    opacity: 80%;
+                }
+            }
+        }
+    }
+
+    // Star and Call Button
+
+    .vets-divider {
+        background: #b0bdd5;
+        height: 1px;
+        width: 100%;
+        opacity: 30%;
+    }
+
+    .view-edit-delete {
+        padding: 10px 0px;
+
+        .vets-view-btn {
+            color: #94a6c7;
+            font-size: 13px;
+            font-weight: $mlight;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .vets-edit-btn {
+            color: #94a6c7;
+            font-size: 13px;
+            font-weight: $mlight;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .vets-delete-btn {
+            color: #f16573;
+            font-size: 13px;
+            font-weight: $mlight;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}

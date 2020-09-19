@@ -12,6 +12,7 @@
             -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
             -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+            min-height: 573px;
 
             .image-and-email {
                 padding-top: 80px;
@@ -102,7 +103,7 @@
         .personal-details {
             background: $white;
             border-radius: 22px;
-            padding: 20px;
+            padding: 30px 5px 50px 20px;
             max-width: 879px;
             margin-left: auto;
             -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
@@ -117,7 +118,7 @@
 
             .name-email {
 
-                margin-top: 50px;
+                margin-top: 60px;
 
                 .name {
 
@@ -154,6 +155,7 @@
             }
 
             .address-mobile-number {
+                // margin-top: 20px;
 
                 .address {
 
@@ -188,6 +190,7 @@
             }
 
             .deathbirth-family-status {
+                // margin-top: 20px;
                 .date-of-birth {
                     h5 {
                         font-size: 25px;
@@ -220,6 +223,7 @@
             }
 
             .children {
+                // margin-top: 20px;
                 h5 {
                     font-size: 25px;
                     font-weight: $mregular;
@@ -310,6 +314,10 @@
                                     // margin-bottom: 15px;
                                     font-size: 19px;
                                     max-width: 249px;
+
+                                    @media(max-width: 1440px){
+                                        font-size: 16px;
+                                    }
                                 }
                             }
                         }
@@ -330,6 +338,10 @@
                             border-radius: 6px;
                             font-size: 21px;
                             font-weight: $mregular;
+
+                            @media(max-width: 1440px){
+                                font-size: 16px;
+                            }
                         }
 
                         .complete {
@@ -339,6 +351,9 @@
                             background: #B0F3DC;
                             border-radius: 6px;
                             color: #369E7B;
+                            @media(max-width: 1440px){
+                                font-size: 16px;
+                            }
                         }
 
                         // Status 
@@ -568,12 +583,20 @@
                                 font-size: 19px;
                                 font-weight: $mregular;
                                 color: #203459;
+
+                                @media(max-width: 1440px){
+                                    font-size: 16px;
+                                }
                             }
 
                             p {
                                 color: #94A6C7;
                                 font-size: 20px;
                                 font-weight: $mlight;
+
+                                @media(max-width: 1440px){
+                                    font-size: 18px;
+                                }
                             }
                         }
                     }
@@ -586,6 +609,26 @@
                                 font-size: 41px;
                                 color: #1B7AC1;
                                 font-weight: $mregular;
+
+                                
+                                @media(max-width: 1698px){
+                                    font-size: 38px;
+                                }
+                                @media(max-width: 1610px){
+                                    font-size: 35px;
+                                }
+                                @media(max-width: 1522px){
+                                    font-size: 32px;
+                                }
+                                @media(max-width: 1440px){
+                                    font-size: 30px;
+                                }
+                                @media(max-width: 1366px){
+                                    font-size: 28px;
+                                }
+                                @media(max-width: 1330px){
+                                    font-size: 26px;
+                                }
                             }
                         }
                     }
@@ -646,12 +689,20 @@
                                 font-size: 19px;
                                 font-weight: $mregular;
                                 color: #203459;
+
+                                @media(max-width: 1440px){
+                                    font-size: 16px;
+                                }
                             }
 
                             p {
                                 color: #94A6C7;
                                 font-size: 20px;
                                 font-weight: $mlight;
+
+                                @media(max-width: 1440px){
+                                    font-size: 18px;
+                                }
                             }
                         }
                     }
@@ -664,6 +715,25 @@
                                 font-size: 41px;
                                 color: #1B7AC1;
                                 font-weight: $mregular;
+
+                                @media(max-width: 1698px){
+                                    font-size: 38px;
+                                }
+                                @media(max-width: 1610px){
+                                    font-size: 35px;
+                                }
+                                @media(max-width: 1522px){
+                                    font-size: 32px;
+                                }
+                                @media(max-width: 1440px){
+                                    font-size: 30px;
+                                }
+                                @media(max-width: 1366px){
+                                    font-size: 28px;
+                                }
+                                @media(max-width: 1330px){
+                                    font-size: 26px;
+                                }
                             }
                         }
                     }

@@ -1,0 +1,119 @@
+.dashboard-top {
+    margin-top: 100px;
+    background: rgb(35, 101, 198);
+    background: linear-gradient(90deg, rgba(35, 101, 198, 1) 0%, rgba(35, 101, 198, 1) 50%, rgba(22, 134, 189, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 17px;
+    position: relative;
+    min-height: 272px;
+    
+    @media(max-width: 1620px){
+        min-height: 250px;
+
+    }
+
+    @media(max-width: 1440px){
+        min-height: 220px;
+    }
+    @media(max-width: 1440px){
+        min-height: 200px;
+    }
+    .dashboard-top-left{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 50px;
+
+        @media(max-width: 1520px){
+            padding-left: 40px;
+        }
+        .image{
+            max-width: 203px;
+            max-height: 203px;
+            background: $white;
+          
+            border-radius: 50%;
+            img{
+                width: 203px;
+                padding: 5px;
+                height: 203px;
+                border-radius: 50%;
+                @media(max-width: 1620px){
+                    width: 180px;
+                    height: 180px;
+                }
+
+                @media(max-width: 1520px){
+                    width: 170px;
+                    height: 170px;
+                }
+                @media(max-width: 1440px){
+                    width: 160px;
+                    height: 160px;
+                }
+            }
+        }
+        .welcome{
+            color: $white;
+            margin-left: 40px;
+            @media(max-width: 1620px){
+                margin-left: 30px;
+            }
+            @media(max-width: 1520px){
+                margin-left: 25px;
+            }
+            h5{
+                font-size: 25px;
+                font-weight: $msemibold;
+                @media(max-width: 1520px){
+                    font-size: 22px;
+                }
+            }
+            p{
+                font-size: 18px;
+                font-weight: $mlight;
+                line-height: 35px;
+                max-width: 729px;
+                margin: 0;
+                @media(max-width: 1750px){
+                    line-height: 30px;
+                    max-width: 600px;
+                }
+                @media(max-width: 1620px){
+                    line-height: 28px;
+                    max-width: 550px;
+                }
+                @media(max-width: 1520px){
+                    line-height: 24px;
+                    max-width: 500px;
+                }
+                @media(max-width: 1440px){
+                    font-size: 16px;
+                    max-width: 480px;
+                }
+            }
+        }
+    }
+    .dashboard-top-right{
+        img{
+            position: absolute;
+            right: 30px;
+            top: -60px;
+
+            @media(max-width: 1620px){
+                width: 280px;
+
+            }
+
+            @media(max-width: 1440px){
+                width: 250px;
+            }
+            @media(max-width: 1440px){
+                width: 230px;
+            }
+        }
+    }
+}

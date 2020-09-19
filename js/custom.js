@@ -1,6 +1,11 @@
 $(document).ready(function () {
 
 
+  // $(".small-img")[1].click(function(){
+  //   $('#big-image').src = $('.small-img')[1].src;
+  // });
+
+
 
   $('input[type="file"]').change(function (e) {
     var fileName = e.target.files[0].name;
@@ -11,32 +16,50 @@ $(document).ready(function () {
 
 
 
-  // function showPreview(event) {
-  //   if (event.target.files.length > 0) {
-  //     var src = URL.createObjectURL(event.target.files[0]);
-  //     var preview = document.getElementById("main-image");
-  //     preview.src = src;
-  //     preview.style.display = "block";
-  //   }
-  // }
 
 
 
   // Menu active 
-  
-  $('.navbar-nav .nav-item .nav-link').click(function () {
-    $('.nav-item .nav-link').removeClass("menu-active");
-    $(this).addClass("menu-active");
+
+
+  // $('.navbar-nav .nav-item .nav-link').click(function () {
+  //   $('.nav-item .nav-link').removeClass("menu-active");
+  //   $(this).addClass("menu-active");
+  //   if ($(this).attr('name') == "menubtn") {
+  //     //store the id of the collapsible element
+  //     localStorage.setItem('collapseItem', $(this).attr('href'));
+  //   };
+  // });
+  // var collapseItem = localStorage.getItem('collapseItem');
+  // if (collapseItem) {
+  //   $(collapseItem).collapse('show')
+  // }
+
+  $(".sidebar-menu .nav-item .nav-link").click(function () {
+    var id = $(this).attr("id");
+
+    $('#' + id).siblings().find(".menu-active").removeClass("menu-active");
+    //                       ^ you forgot this
+    $('#' + id).addClass("menu-active");
+    localStorage.setItem("selectedolditem", id);
     if ($(this).attr('name') == "menubtn") {
       //store the id of the collapsible element
       localStorage.setItem('collapseItem', $(this).attr('href'));
     };
-    localStorage.setItem('activeId', $(this).attr('id'));
   });
+
+  var selectedolditem = localStorage.getItem('selectedolditem');
   var collapseItem = localStorage.getItem('collapseItem');
   if (collapseItem) {
     $(collapseItem).collapse('show')
   }
+
+  if (selectedolditem != null) {
+    $('#' + selectedolditem).siblings().find(".menu-active").removeClass("menu-active");
+    //                                        ^ you forgot this
+    $('#' + selectedolditem).addClass("menu-active");
+  }
+
 
 
 
@@ -56,28 +79,8 @@ $(document).ready(function () {
 
   // Menu active 
 
-  // Collapse 
-  // $('.navbar-nav .nav-item .nav-link').click(function () {
-  //   localStorage.setItem('activeClass', $(this).attr('id'));
-  //   localStorage.setItem('active', "menu-active");
-  //   var get = localStorage.getItem('activeClass');
-  //   console.log(get);
-
-  //   if ($(this).attr('name') == "menubtn") {
-  //     //store the id of the collapsible element
-  //     localStorage.setItem('collapseItem', $(this).attr('href'));
-  //   };
-  // });
 
 
-
-  // Collapse 
-
-
-  // Search show hide 
-  // $('.search-show').mouse(function () {
-  //   $('.search-box').css("display", "block");
-  // });
   $('.search-show').click(function () {
     $('.search-show').css('display', 'none');
     $('.search-box').css("display", "block");
@@ -89,109 +92,9 @@ $(document).ready(function () {
     $('.search-show').css("display", "block");
   });
 
-  // $(".search-show").mouseover(function () {
-  //   $('.search-box').css('transition', '0.4s linear');
-  //   $(".search-box").css("display", "block");
-  // });
-
-  // $(".search-show").focus(function () {
-  //   $(".search-box").css("display", "block");
-  // });
-
-  // $(".search-show").mouseleave(function () {
-  //   $('.search-box').css('transition', '0.4s linear');
-  //   $(".search-box").css("display", "none");
-  // });
-  // Search show hide 
-
-
-
-  // var Size = $(window).width();
-
-  //   while (Size <= 768) {
-  //     var maxLength = 300;
-  //     $(".show-read-more").each(function () {
-  //       var myStr = $(this).text();
-  //       if ($.trim(myStr).length > maxLength) {
-  //         var newStr = myStr.substring(0, maxLength);
-  //         var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
-  //         $(this).empty().html(newStr);
-  //         $(this).append("<br/>");
-  //         $(this).append(
-  //           '<a href="javascript:void(0);" class="read-more">Read More</a>'
-  //         );
-  //         $(this).append('<span class="more-text">' + removedStr + "</span>");
-  //       }
-  //     });
-  //     $(".read-more").click(function () {
-  //       $(this).siblings(".more-text").contents().unwrap();
-  //       $(this).remove();
-  //     });
-  //   }
-
-  // $(window).scroll(function () {
-  //   if ($(document).scrollTop() >= 50) {
-  //     $(".header-menu").addClass("navbar-fixed");
-  //   } else {
-  //     $(".header-menu").removeClass("navbar-fixed");
-  //   }
-  // });
-
-  // Check Width
-  //   function checkWidth() {
-  //     var windowSize = $(window).width();
-  //     if (windowSize <= 768) {
-  //       var maxLength = 300;
-  //       $(".show-read-more").each(function () {
-  //         var myStr = $(this).text();
-  //         if ($.trim(myStr).length > maxLength) {
-  //           var newStr = myStr.substring(0, maxLength);
-  //           var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
-  //           $(this).empty().html(newStr);
-  //           $(this).append("<br/>");
-  //           $(this).append(
-  //             '<a href="javascript:void(0);" class="read-more">Read More</a>'
-  //           );
-  //           $(this).append('<span class="more-text">' + removedStr + "</span>");
-  //         }
-  //       });
-  //       $(".read-more").click(function () {
-  //         $(this).siblings(".more-text").contents().unwrap();
-  //         $(this).remove();
-  //       });
-  //     }
-  //   }
-  // open
-  //   $(".open").click(function () {
-  //     $(".open").css("display", "none");
-  //     $(".close").css("display", "block");
-  //     $(".toggle-logo").css("color", "transparent");
-  //     $(".toggle-logo").bind("click", false);
-  //   });
-
-  //   $(".close").click(function () {
-  //     $(".open").css("display", "block");
-  //     $(".close").css("display", "none");
-  //     $(".toggle-logo").css("color", "#c94f9b");
-  //     $(".toggle-logo").unbind("click", false);
-  //   });
-  //   //close
-
-  //   // Check Width
-  // //   checkWidth();
-  //   activePageLinkControl();
 });
 
-// function activePageLinkControl() {
-//   $(".pagination .page-item a").click(function () {
-//     $(".page-item").removeClass("active");
-//     $(this).closest(".page-item").addClass("active");
-//   });
-// }
 
-// function goBack() {
-//   window.history.back();
-// }
 
 // number or not check//
 function isNumberKey(evt) {
@@ -224,3 +127,239 @@ function previewFile(input) {
     reader.readAsDataURL(file);
   }
 }
+
+
+// Animal Detail Image Rotate 
+var bigImg = document.getElementById('big-image');
+var smallImg = document.querySelectorAll(".small-img");
+
+
+
+smallImg[0].addEventListener("click", function () {
+  bigImg.src = smallImg[0].src;
+});
+smallImg[1].addEventListener("click", function () {
+  bigImg.src = smallImg[1].src;
+});
+smallImg[2].addEventListener("click", function () {
+  bigImg.src = smallImg[2].src;
+});
+smallImg[3].addEventListener("click", function () {
+  bigImg.src = smallImg[3].src;
+});
+smallImg[4].addEventListener("click", function () {
+  bigImg.src = smallImg[4].src;
+});
+// Animal Detail Image Rotate 
+
+
+// // Chart 
+
+//  //doughnut chart data
+//  var data = {
+//   labels: ["Treats", "Food", "Toys"],
+//   datasets: [
+//     {
+//       label: "TeamB Score",
+//       data: [45, 20, 35],
+//       backgroundColor: [
+//         "#F36BCB",
+//         "#8D49E6",
+//         "#10ADFF"
+//       ]
+//     }
+//   ]
+// };
+//  //options
+//  var options = {
+//    responsive: true,
+//    cutoutPercentage: 65,
+//   title: {
+//     display: false,
+//     position: "top",
+//     text: "Top Products",
+//     fontSize: 18,
+//     fontColor: "#111"
+//   },
+//   legend: {
+//     display: true,
+//     position: "left",
+//     labels: {
+//       fontColor: "#1E3E59",
+//       fontSize: 16,
+//       padding: 35
+//     }
+//   }
+// };
+
+
+// // Text Center 
+// // register plugin
+// Chart.pluginService.register({
+//   beforeDraw: function(chart) {
+//     var width = chart.chart.width,
+//         height = chart.chart.height,
+//         ctx = chart.chart.ctx;
+
+//     ctx.restore();
+//     var fontSize = (height / 114).toFixed(2);
+//     ctx.font = fontSize + "em sans-serif";
+//     ctx.textBaseline = "middle";
+
+//     var text = "45%",
+//         textX = Math.round((width - ctx.measureText(text).width) / 1.54),
+//         textY = height / 2.5;
+
+//     ctx.fillText(text, textX, textY);
+//     var text = "Treats",
+//         textX = Math.round((width - ctx.measureText(text).width) / 1.55),
+//         textY = height / 2;
+
+//     ctx.fillText(text, textX, textY);
+//     ctx.save();
+//   }
+// });
+// // Text Center 
+
+
+
+// var ctx = document.getElementById('myDonutChart').getContext('2d');
+// var chart = new Chart(ctx, {
+//   type: 'doughnut',
+//   data: data,
+//   options: options
+// });
+// Chart 
+
+
+
+
+
+// var data = {
+//   labels: [
+//     "Red",
+//     "Blue",
+//     "Yellow"
+//   ],
+//   datasets: [
+//     {
+//       data: [300, 50, 100],
+//       backgroundColor: [
+//         "#FF6384",
+//         "#36A2EB",
+//         "#FFCE56"
+//       ],
+//       hoverBackgroundColor: [
+//         "#FF6384",
+//         "#36A2EB",
+//         "#FFCE56"
+//       ]
+//     }]
+// };
+
+// var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
+//   type: 'doughnut',
+//   data: data,
+//   options: {
+//   	responsive: true,
+//     legend: {
+//       display: false
+//     }
+//   }
+// });
+
+// Chart.pluginService.register({
+//   beforeDraw: function(chart) {
+//     var width = chart.chart.width,
+//         height = chart.chart.height,
+//         ctx = chart.chart.ctx;
+
+//     ctx.restore();
+//     var fontSize = (height / 114).toFixed(2);
+//     ctx.font = fontSize + "em sans-serif";
+//     ctx.textBaseline = "middle";
+
+//     var text = "75%",
+//         textX = Math.round((width - ctx.measureText(text).width) / 2),
+//         textY = height / 2.5;
+//         var textt = "Treats",
+//         texttX = Math.round((width - ctx.measureText(text).width) / 2.2),
+//         texttY = height / 1.8;
+
+//     ctx.fillText(text, textX, textY);
+//     ctx.fillText(textt, texttX, texttY);
+//     ctx.save();
+//   }
+// });
+
+// const chart = new Highcharts.Chart({
+//     chart: {
+//       color: '#000',
+//       backgroundColor: '#336196',
+//       renderTo: 'container',
+//       type: 'pie'
+//     },
+//     title: {
+//       text: "What's using data",
+//       style: {
+//         color: '#000'
+//       }
+//     },
+//     yAxis: {
+//       title: {
+//         text: 'Total percent market share'
+//       }
+//     },
+//     plotOptions: {
+//       pie: {
+//         shadow: false,
+//         borderColor: null
+//       }
+//     },
+//     tooltip: {
+//       formatter: function () {
+//         return '<b>' + this.point.name + '</b>: ' + this.y + ' %'
+//       }
+//     },
+//     legend: {
+//       align: 'right',
+//       layout: 'vertical',
+//       verticalAlign: 'middle',
+//       symbolRadius: 0,
+//       symbolPadding: 10,
+//       itemMarginTop: 15,
+//       itemStyle: {
+//         color: '#fff'
+//       }
+//     },
+//     series: [{
+//       name: 'Browsers',
+//       data: data,
+//       size: '120%',
+//       innerSize: '60%',
+//       showInLegend: true,
+//       dataLabels: {
+//         enabled: false
+//       },
+//       marker: {
+//         symbol: 'square',
+//         radius: 12
+//       }
+//     }]
+//   },
+//   function (chart) {
+//     var textX = chart.plotLeft + chart.plotWidth * 0.5
+//     var textY = chart.plotTop + chart.plotHeight * 0.52
+
+//     var span =
+//       '<div id="pieChartInfoText" style="position:absolute; text-align:center;">'
+//     span +=
+//       '<div style="color:#fff;font-size: 20px;width:50pxmargin-top:36px;margin-left:18px;"></div><br>'
+//     span += '</div>'
+
+//     $('#addText').append(span)
+//     span = $('#pieChartInfoText')
+//     span.css('left', textX + span.width() * -0.5)
+//     span.css('top', textY + span.height() * -0.5)
+//   }
+// )

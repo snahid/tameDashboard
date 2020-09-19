@@ -3,12 +3,13 @@
     border-radius: 27px;
     padding: 30px;
     margin-bottom: 200px;
-    margin-top: 100px;
+    margin-top: 50px;
 
     h5 {
         color: #1E3E59;
         font-size: 20px;
         font-weight: $mregular;
+        margin-bottom: 20px;
     }
 
     .shelter-info-left {
@@ -27,10 +28,50 @@
         }
 
         .name {
+            margin-top: 20px;
             h6 {
                 font-size: 35px;
                 font-weight: $mregular;
                 color: #1D75C2;
+                @media(max-width: 1613px){
+                    font-size: 34px;
+                }
+                @media(max-width: 1581px){
+                    font-size: 32px;
+                }
+                @media(max-width: 1549px){
+                    font-size: 31px;
+                }
+                @media(max-width: 1517px){
+                    font-size: 30px;
+                }
+                @media(max-width: 1485px){
+                    font-size: 29px;
+                }
+                @media(max-width: 1453px){
+                    font-size: 28px;
+                }
+                @media(max-width: 1421px){
+                    font-size: 27px;
+                }
+                @media(max-width: 1389px){
+                    font-size: 26px;
+                }
+                @media(max-width: 1357px){
+                    font-size: 25px;
+                }
+                @media(max-width: 1325px){
+                    font-size: 24px;
+                }
+                @media(max-width: 1293px){
+                    font-size: 23px;
+                }
+                @media(max-width: 1261px){
+                    font-size: 22px;
+                }
+                @media(max-width: 1229px){
+                    font-size: 22px;
+                }
             }
         }
 
@@ -232,6 +273,11 @@
             font-size: 16px;
             font-weight: $mlight;
             padding: 10px 30px;
+            transition: 0.5s ease;
+
+            &:hover {
+                opacity: 80%;
+            }
         }
         .edit{
             margin-left: 50px;
@@ -241,6 +287,11 @@
             font-size: 16px;
             font-weight: $mlight;
             padding: 10px 35px;
+            transition: 0.5s ease;
+
+            &:hover {
+                opacity: 80%;
+            }
         }
     }
 }

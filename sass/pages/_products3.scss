@@ -257,9 +257,10 @@
                   position: absolute;
                   border: 1px solid $white;
                   left: 15px;
-                  top: 13px;
-                  width: 16px;
-                  height: 16px;
+                  top: 10px;
+                  padding: 1px 5px;
+                  // min-width: 16px;
+                  // min-height: 16px;
                   font-size: 10px;
                   text-align: center;
                   align-items: center;
@@ -418,7 +419,7 @@
       span {
         font-size: 18px;
         font-weight: $mlight;
-        color: #93aacc;
+        color: #93AACC;
       }
     }
   }
