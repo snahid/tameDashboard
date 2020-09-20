@@ -209,10 +209,6 @@
                     }
                 }
             }
-
-            .example-open .modal-backdrop {
-                background-color: red;
-            }
         }
     }
 
@@ -423,6 +419,9 @@
 
                                         span {
                                             margin-left: 5px;
+                                            @media(max-width: 1440px){
+                                                margin-left: 3px;
+                                            }
                                         }
                                     }
                                 }
@@ -445,6 +444,10 @@
 
                                         span {
                                             margin-left: 5px;
+
+                                            @media(max-width: 1440px){
+                                                margin-left: 3px;
+                                            }
                                         }
                                     }
                                 }
@@ -467,6 +470,9 @@
 
                                         span {
                                             margin-left: 5px;
+                                            @media(max-width: 1440px){
+                                                margin-left: 3px;
+                                            }
                                         }
                                     }
                                 }
@@ -512,6 +518,18 @@
                 border-bottom: 1px solid #b8d5ec;
                 border-right: 1px solid #b8d5ec;
                 padding-left: 25px;
+            }
+
+            .table{
+                tbody{
+                    tr{
+                        td{
+                            &:last-child{
+                                padding: 6px 6px 6px 12px;
+                            }
+                        }
+                    }
+                }
             }
 
             .table {

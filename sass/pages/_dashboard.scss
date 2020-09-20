@@ -9,111 +9,352 @@
     border-radius: 17px;
     position: relative;
     min-height: 272px;
-    
-    @media(max-width: 1620px){
+
+    @media(max-width: 1620px) {
         min-height: 250px;
 
     }
 
-    @media(max-width: 1440px){
+    @media(max-width: 1440px) {
         min-height: 220px;
     }
-    @media(max-width: 1440px){
+
+    @media(max-width: 1440px) {
         min-height: 200px;
     }
-    .dashboard-top-left{
+
+    .dashboard-top-left {
         display: flex;
         flex-direction: row;
         align-items: center;
         padding-left: 50px;
 
-        @media(max-width: 1520px){
+        @media(max-width: 1520px) {
             padding-left: 40px;
         }
-        .image{
+
+        .image {
             max-width: 203px;
             max-height: 203px;
             background: $white;
-          
+
             border-radius: 50%;
-            img{
+
+            img {
                 width: 203px;
                 padding: 5px;
                 height: 203px;
                 border-radius: 50%;
-                @media(max-width: 1620px){
+
+                @media(max-width: 1620px) {
                     width: 180px;
                     height: 180px;
                 }
 
-                @media(max-width: 1520px){
+                @media(max-width: 1520px) {
                     width: 170px;
                     height: 170px;
                 }
-                @media(max-width: 1440px){
+
+                @media(max-width: 1440px) {
                     width: 160px;
                     height: 160px;
                 }
             }
         }
-        .welcome{
+
+        .welcome {
             color: $white;
             margin-left: 40px;
-            @media(max-width: 1620px){
+
+            @media(max-width: 1620px) {
                 margin-left: 30px;
             }
-            @media(max-width: 1520px){
+
+            @media(max-width: 1520px) {
                 margin-left: 25px;
             }
-            h5{
+
+            h5 {
                 font-size: 25px;
                 font-weight: $msemibold;
-                @media(max-width: 1520px){
+
+                @media(max-width: 1520px) {
                     font-size: 22px;
                 }
             }
-            p{
+
+            p {
                 font-size: 18px;
                 font-weight: $mlight;
                 line-height: 35px;
                 max-width: 729px;
                 margin: 0;
-                @media(max-width: 1750px){
+
+                @media(max-width: 1750px) {
                     line-height: 30px;
                     max-width: 600px;
                 }
-                @media(max-width: 1620px){
+
+                @media(max-width: 1620px) {
                     line-height: 28px;
                     max-width: 550px;
                 }
-                @media(max-width: 1520px){
+
+                @media(max-width: 1520px) {
                     line-height: 24px;
                     max-width: 500px;
                 }
-                @media(max-width: 1440px){
+
+                @media(max-width: 1440px) {
                     font-size: 16px;
                     max-width: 480px;
                 }
             }
         }
     }
-    .dashboard-top-right{
-        img{
+
+    .dashboard-top-right {
+        img {
             position: absolute;
             right: 30px;
             top: -60px;
 
-            @media(max-width: 1620px){
+            @media(max-width: 1620px) {
                 width: 280px;
 
             }
 
-            @media(max-width: 1440px){
+            @media(max-width: 1440px) {
                 width: 250px;
             }
-            @media(max-width: 1440px){
+
+            @media(max-width: 1440px) {
                 width: 230px;
             }
         }
     }
 }
+
+
+// Dashboard bottom 
+// Animal Type Section
+.dashboard-section {
+
+    .animal-list {
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03);
+        border-radius: 8px;
+        overflow: hidden;
+        margin-top: 50px;
+        background: $white;
+        margin-bottom: 200px;
+
+        .animal-list-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: rgb(35, 101, 198);
+            background: linear-gradient(90deg,
+                    rgba(35, 101, 198, 1) 0%,
+                    rgba(35, 101, 198, 1) 35%,
+                    rgba(23, 131, 189, 1) 100%);
+            padding: 25px 25px;
+
+            height: 102px;
+
+            .animal-list-header-left {
+                h5 {
+                    margin-bottom: 0;
+                    padding-top: 12px;
+                    color: $white;
+                    font-size: 25px;
+                    font-weight: $mregular;
+                }
+            }
+
+            .animal-list-header-right {
+              
+            }
+            .dashboard-select{
+                select{
+                 color: #94A6C7;
+                }
+             //    color: #94A6C7 !important;
+            }
+        }
+
+        .dashboard-bottom-body {
+
+            // Table Inner Design Start
+            .dashboard-table {
+                tbody {
+                    tr {
+                        td {
+                            vertical-align: middle;
+                            border-right: 0px solid transparent;
+
+                            .type-categories-brand {
+                                @media (max-width: 1440px) {
+                                    max-width: 300px;
+                                }
+
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+
+                                .left {
+                                    width: 82px;
+                                    height: 82px;
+                                    border: 1px solid #E4F0F9;
+                                    overflow: hidden;
+
+                                    img {
+
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+
+                                .right {
+                                    padding-top: 12px;
+                                    margin-left: 20px;
+
+
+                                    p {
+                                        font-size: 15px;
+                                        font-weight: $mregular;
+                                        color: #203459;
+                                        max-width: 185px;
+                                        line-height: 15px;
+                                        line-height: 25px;
+                                    }
+                                }
+                            }
+
+                            .type-id {
+                                font-size: 15px;
+                                font-weight: $mregular;
+                                color: #1e3e59;
+                            }
+
+                            .date {
+                                font-size: 15px;
+                                font-weight: $mregular;
+                                color: #1e3e59;
+                            }
+
+                           .category{
+                               font-size: 15px;
+                               font-weight: $mlight;
+                               color: #203459;
+                           }
+                           .dealer{
+                               color: #203459;
+                               font-size: 16px;
+                               font-weight: $mlight;
+                           }
+                           .price{
+                               color: #203459;
+                               font-weight: $mlight;
+                               font-size: 15px;
+                           }
+                          
+                        }
+
+                        .first-td-width {
+                            @media (max-width: 1440px) {
+                                max-width: 320px;
+                            }
+                        }
+                    }
+                }
+
+                thead {
+                    tr {
+                        .first-td-width {
+                            @media (max-width: 1366px) {
+                                max-width: 320px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .dashboard-table>tbody>tr>td,
+            .dashboard-table>tbody>tr>th,
+            .dashboard-table>thead>tr>td,
+            .dashboard-table {
+                border-bottom: 0;
+                border-top: 0;
+                border-right: 0px solid transparent !important;
+                padding-left: 25px;
+            }
+
+            // Table Inner Design End
+
+            .dashboard-table{
+                border-bottom: 0px;
+                tbody{
+                    tr{
+                        border-bottom: 0px;
+                        td{
+                            border-bottom: 0px;
+                        }
+                    }
+                }
+            }
+
+
+            .dashboard-table>thead>tr>th,
+            .bottomborder,
+            .dashboard-table {
+                // border-bottom: 1px solid #b8d5ec;
+                border-right: 0px solid transparent;
+                padding-left: 25px;
+              
+            }
+
+            .dashboard-table>thead>tr>th{
+                color: #203459;
+                font-weight: $mregular;
+                font-size: 20px;
+                border-right: none;
+                 border-bottom: 1px solid #b8d5ec;
+                 padding-top: 20px;
+                 padding-bottom: 20px;
+            }
+
+            .dashboard-table {
+                thead {
+                    tr {
+                        th {
+                            font-size: 20px;
+                            font-weight: $mregular;
+                            color: #1e3e59;
+                            border-right: 0px solid transparent !important;
+                        }
+                    }
+                }
+            }
+
+            .dashboard-table>thead>tr,
+            .borderleft,
+            .dashboard-table {
+                border-left: 0;
+            }
+
+            .dashboard-table>thead>tr,
+            .borderright,
+            .table-bordered {
+                border-right: 0;
+            }
+        }
+
+     
+    }
+}
+
+// Animal Type Section
+// Dashboard bottom 

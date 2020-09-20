@@ -31,9 +31,10 @@
     <!--Animate css-->
     <link rel="stylesheet" href="css/animate.min.css" />
     <!-- Custom Style-->
-    <link rel="stylesheet" href="./css/checkbox.css" />
+    <link rel="stylesheet" href="./css/product-detail.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="./css/search.css" />
+
 </head>
 
 <body>
@@ -53,7 +54,8 @@
                     <ul class="navbar-nav" id="mainsidebar">
                         <!-- Dashboard  -->
                         <li class="nav-item">
-                            <a href="./dashboard.html" class="nav-link" id="idOne"><span class="material-icons icon-align"> dashboard
+                            <a href="./dashboard.html" class="nav-link" id="idOne"><span
+                                    class="material-icons icon-align"> dashboard
                                 </span><span class="align-inline">Dashboard</span></a>
                         </li>
                         <!-- Dashboard  -->
@@ -104,7 +106,8 @@
                             <div class="collapse collaps-menu" id="collapseThree">
                                 <ul>
                                     <li><a href="./products.html">Products</a></li>
-                                    <li><a href="./product-details.html">Products Details</a></li>
+                                    <li><a href="./product-details.html" class="submenu-active">Products Details</a>
+                                    </li>
                                     <li>
                                         <a href="./products-3.html">Add Products</a>
                                     </li>
@@ -122,9 +125,7 @@
                             <div class="collapse collaps-menu" id="collapseFour">
                                 <ul>
                                     <li><a href="./shelter.html">Shelters</a></li>
-                                    <li>
-                                        <a href="./shelter-details.html">Shelter Details</a>
-                                    </li>
+                                    <li><a href="./shelter-details.html">Shelter Details</a></li>
                                     <li><a href="./add-shelter.html">Add Shelter</a></li>
                                 </ul>
                             </div>
@@ -191,10 +192,8 @@
                             </a>
                             <div class="collapse collaps-menu" id="collapseEight">
                                 <ul>
-                                    <li>
-                                        <a href="./orders.html">Order Overview</a>
-                                    </li>
-                                    <li><a href="./order-details.html" class="submenu-active">Order Details</a></li>
+                                    <li><a href="./orders.html">Order Overview</a></li>
+                                    <li><a href="./order-details.html">Order Details</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -306,243 +305,149 @@
                 </div>
                 <div class="main-middle">
                     <div class="add-products shelter-filter">
-                        <h3>Order Details</h3>
+                        <h3>Overview</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <select id="inputState" class="form-control">
+                                    <option selected>This week</option>
+                                    <option>Last week</option>
+                                </select>
+                            </div>
+                        </form>
                     </div>
                     <div class="links-path">
-                        <span>Furever Home / Orders / Order Details</span>
+                        <span>Furever Home / Shops</span>
                     </div>
                 </div>
 
-                <!-- Order Detail Top  -->
-
-                <div class="order-detail-top-container">
-                    <div class="order-detail-top row">
-                        <div class="order-id col-md-2">
-                            <span>Order ID : 05289</span>
-                        </div>
-                        <div class="order-status col-md-2">
-                            <p> Status: <span>On Hold</span></p>
-                        </div>
-                        <div class="order-payment-date col-md-8">
-                            <div class="row">
-                                <div class="col-5 date"> Date: <span>02 Aug 2020, 10.00AM</span></div>
-                                <div class="col-7 payment">Payment Method:&nbsp;&nbsp;<span>VISA ending 3658</span>
-                                </div>
+                <!-- Product Details Top  -->
+                <div class="product-detail-top">
+                    <main class="product-container">
+                        <!-- Left Column / Headphones Image -->
+                        <div class="left-column">
+                            <div class="top-img">
+                                <img data-image="black" src="./assets/images/product-details/1.png" alt="">
+                                <img data-image="blue" src="./assets/images/product-details/1.png" alt="">
+                                <img data-image="red" class="product-active" src="./assets/images/product-details/1.png" alt="">
                             </div>
+                          
+                            <div class="small-img-container">
+                                <img src="./assets/images/product-details/1.png" alt="" class="product-img product-small-img">
+                                <img src="./assets/images/product-details/102.png" alt="" class="product-img">
+                                <img src="./assets/images/product-details/103.png" alt="" class="product-img">
+                                <img src="./assets/images/product-details/105.png" alt="" class="product-img">
+                                <img src="./assets/images/product-details/106.png" alt="" class="product-img">
+                            </div>
+
+                        </div>
+                        <!-- Right Column -->
+                        <div class="right-column">
+                            <!-- Product Description -->
+                            <div class="product-description">
+                              <h4>Sold By <span>Cloudtail</span></h4>
+                              <h1>The Pets Company Dog Poop 
+                                Scooper, Pet Waste Potty Picker, 
+                                Large, 24 Inch</h1>
+                            </div>
+                            <!-- Dog Utility btn  -->
+                            <div class="dog-utility-btn">
+                                <button type="button" class="btn dog-btn">Dog</button>
+                                <button type="button" class="btn utility-btn">Utility</button>
+                            </div>
+                            <!-- Dog Utility btn  -->
+                            <div class="price">
+                                <h3>Price <span>R 45.00</span></h3>
+                            </div>
+
+
+                            <!-- Product Configuration -->
+                            <div class="product-configuration">
+                                <!-- Product Color -->
+                                <div class="product-color">
+                                    <h3>Color
+                                    </h3>
+                                    <div class="color-choose">
+                                        <div class="checkbox">
+                                            <input data-image="red" type="radio" id="red" name="color" value="red"
+                                                checked>
+                                            <label for="red">
+                                                <span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                                            <label for="blue">
+                                                <span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input data-image="black" type="radio" id="black" name="color"
+                                                value="black">
+                                            <label for="black">
+                                                <span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Cable Configuration -->
+                             
+                            </div>
+                           <div class="add-to-cart-price">
+                               <button type="button" class="btn add-to-btn">Add to Cart</button>
+                               <button type="button" class="btn favourite-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                           </div>
+                        </div>
+                    </main>
+                </div>
+                <!-- Product Details Top  -->
+
+
+
+                <!-- Product Details Bottom  -->
+                <div class="product-details-bottom">
+                    <div class="product-details-bottom-tab">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Description</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false">About</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk
+                                    MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad
+                                    nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs
+                                    jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold
+                                    Jim. </p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">...</div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">...</div>
                         </div>
                     </div>
-                    <div class="order-detail-action">
-                        <h6>Action</h6>
-                        <button type="button" class="btn btn-complete">Completed</button>
-                        <button type="button" class="btn btn-shipped">Shipped</button>
-                        <button type="button" class="btn btn-hold">On Hold</button>
-                        <button type="button" class="btn btn-Processing">Processing</button>
+                    <div class="product-details-bottom-button">
+                        <div class="remove-edit-container text-right">
+                            <a href="#" role="button" class="btn remove"><i class="fa fa-trash"
+                                    aria-hidden="true"></i>&nbsp;<span>Remove</span></a>
+                            <a href="#" role="button" class="btn edit"><i class="fa fa-pencil-square-o"
+                                    aria-hidden="true"></i>&nbsp;<span>Delete</span></a>
+                        </div>
                     </div>
                 </div>
-                <!-- Order Detail Top  -->
-
-                <!-- Order Detail Middle  -->
-                <div class="order-detail-middle-container">
-                    <div class="order-detail-middle">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="order-middle-left">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="from">
-                                                <h3>From</h3>
-                                                <div class="logo-and-name">
-                                                    <div class="logo">
-                                                        <img src="./assets/images/order/company-logo/0.png" alt="">
-                                                    </div>
-                                                    <div class="name">
-                                                        <h5>Cloudtail</h5>
-                                                    </div>
-                                                </div>
-                                                <p class="address">680 Paul Kruger St, Les Marais, Pretoria, 0084, South
-                                                    Africa</p>
-                                                <p class="phone-no">+27 8585 6586 54</p>
-                                                <p class="email">cloudtail@gmail.com</p>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="to">
-                                                <h3>To</h3>
-                                                <div class="user-img-and-name">
-                                                    <div class="logo">
-                                                        <img src="./assets/images/order/user-image/user1.png" alt="">
-                                                    </div>
-                                                    <div class="name">
-                                                        <h5>Michael Marks</h5>
-                                                    </div>
-                                                </div>
-                                                <p class="address">680 Paul Kruger St, Les Marais, Pretoria, 0084, South
-                                                    Africa</p>
-                                                <p class="phone-no">+27 7858 5845 55</p>
-                                                <p class="email">michaelm@gmail.com</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-md-4">
-                                <div class="order-middle-right">
-                                    <h3>Order Summary</h3>
-                                    <div class="subtotal">
-                                        <div class="row">
-                                            <div class="subtotal-left col">
-                                                <h6>Subtotal</h6>
-                                            </div>
-                                            <div class="subtotal-right col">
-                                                <h6>R 158.00</h6>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="subtotal">
-                                        <div class="row">
-                                            <div class="subtotal-left col">
-                                                <h6>Discount</h6>
-                                            </div>
-                                            <div class="subtotal-right col">
-                                                <h6>R 0.00</h6>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="subtotal">
-                                        <div class="row">
-                                            <div class="subtotal-left col">
-                                                <h6>Shipping</h6>
-                                            </div>
-                                            <div class="subtotal-right col">
-                                                <h6>R 0.00</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="order-total">
-                                        <div class="row">
-                                            <div class="order-total-left col">
-                                                <h5>Order Total</h5>
-                                            </div>
-                                            <div class="order-total-right col">
-                                                <h5>R 158.00</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Order Detail Middle  -->
-
-                <!-- Order Detail Bottom  -->
-                <div class="order-detail-bottom-container">
-                    <div class="order-detail-bottom">
-
-                        <div class="items-counter">
-                            <h3>Items</h3>
-                            <h5>&nbsp;&nbsp;<span>2 item</span><span>(s)</span></h5>
-                        </div>
-                        <!-- Order Items  -->
-                        <div class="order-items">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="product-id-image">
-                                        <div class="product-img">
-                                            <img src="./assets/images/order/user-image/1.png" alt="">
-                                        </div>
-                                        <div class="product-id-detail">
-                                            <h5>The Pets Company Dog Poop Scooper</h5>
-                                            <p>Product ID: 585685</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="order-detail">
-    
-                                        <div class="product-id-detail">
-                                            <h5>Category</h5>
-                                            <p>Utility</p>
-                                        </div>
-                                        <div class="product-id-detail">
-                                            <h5>Type</h5>
-                                            <p>Dog</p>
-                                        </div>
-                                        <div class="product-id-detail">
-                                            <h5>Quantity</h5>
-                                            <p>1</p>
-                                        </div>
-                                        <div class="product-id-detail">
-                                            <h5>Total</h5>
-                                            <p>R 100.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Order Items  -->
-
-                        <!-- Order Items  -->
-                        <div class="order-items">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="product-id-image">
-                                        <div class="product-img">
-                                            <img src="./assets/images/order/user-image/2.png" alt="">
-                                        </div>
-                                        <div class="product-id-detail">
-                                            <h5>Jerry's Soft Product Super Soft Bed</h5>
-                                            <p>Product ID: 585685</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="order-detail">
-    
-                                        <div class="product-id-detail">
-                                            <h5>Category</h5>
-                                            <p>Utility</p>
-                                        </div>
-                                        <div class="product-id-detail">
-                                            <h5>Type</h5>
-                                            <p>Dog</p>
-                                        </div>
-                                        <div class="product-id-detail">
-                                            <h5>Quantity</h5>
-                                            <p>1</p>
-                                        </div>
-                                        <div class="product-id-detail">
-                                            <h5>Total</h5>
-                                            <p>R 100.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Order Items  -->
-
-                        <!-- Order Total  -->
-                        <div class="total-order">
-                            <h3>Order Total</h3>
-                            <h5>R 158.00</h5>
-                        </div>
-                        <!-- Order Total  -->
-                    </div>
-                </div>
-                <!-- Order Detail Bottom  -->
-
-
-
-
-
-
-
-
+                <!-- Product Details Bottom  -->
 
                 <!-- Footer Start -->
                 <div class="dashboard-footer">
@@ -557,6 +462,10 @@
 
     <!-- Jquery Js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Chart  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- Chart  -->
     <!-- Bootstrap Js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">

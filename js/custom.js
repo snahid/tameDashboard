@@ -1,10 +1,34 @@
 $(document).ready(function () {
 
 
-  // $(".small-img")[1].click(function(){
-  //   $('#big-image').src = $('.small-img')[1].src;
-  // });
+ 
 
+  //Search 
+$('.search-btn').on('click', function () {
+  $('.myinput').toggleClass('mytoggle').focus();
+  $('.mysearch-box').css('background', '#fff');
+});
+
+$('.myinput').on('focusout', function () {
+  $(this).removeClass('mytoggle');
+  $('.mysearch-box').css('background', 'transparent');
+});
+
+  //Search 
+
+
+
+
+
+  // Product Detail Page 
+  $('.color-choose input').on('click', function () {
+    var headphonesColor = $(this).attr('data-image');
+
+    $('.product-active').removeClass('product-active');
+    $('.left-column img[data-image = ' + headphonesColor + ']').addClass('product-active');
+    $(this).addClass('product-active');
+  });
+  // Product Detail Page 
 
 
   $('input[type="file"]').change(function (e) {
@@ -14,12 +38,12 @@ $(document).ready(function () {
   });
 
 
-
-
-
-
-
   // Menu active 
+
+  $('.product-img').click(function () {
+    $('.product-img').removeClass('product-small-img');
+    $(this).addClass('product-small-img');
+  });
 
 
   // $('.navbar-nav .nav-item .nav-link').click(function () {
@@ -96,6 +120,10 @@ $(document).ready(function () {
 
 
 
+
+
+
+
 // number or not check//
 function isNumberKey(evt) {
   var charCode = evt.which ? evt.which : evt.keyCode;
@@ -105,6 +133,22 @@ function isNumberKey(evt) {
   return true;
 }
 // number or not check//
+
+// let sbtn = document.getElementById('Search-btn');
+// let sinput = document.getElementById('myinput');
+// let sbox = document.getElementById('mysearch-box');
+
+// function Search() {
+//   sinput.style.width = "240px";
+// }
+
+// window.addEventListener('click', outSideClicik);
+
+// function outSideClicik(e) {
+//   if (e.target == sbox) {
+//     sinput.style.width = "0px";
+//   }
+// }
 
 
 
@@ -130,26 +174,26 @@ function previewFile(input) {
 
 
 // Animal Detail Image Rotate 
-var bigImg = document.getElementById('big-image');
-var smallImg = document.querySelectorAll(".small-img");
+// var bigImg = document.getElementById('big-image');
+// var smallImg = document.querySelectorAll(".small-img");
 
 
 
-smallImg[0].addEventListener("click", function () {
-  bigImg.src = smallImg[0].src;
-});
-smallImg[1].addEventListener("click", function () {
-  bigImg.src = smallImg[1].src;
-});
-smallImg[2].addEventListener("click", function () {
-  bigImg.src = smallImg[2].src;
-});
-smallImg[3].addEventListener("click", function () {
-  bigImg.src = smallImg[3].src;
-});
-smallImg[4].addEventListener("click", function () {
-  bigImg.src = smallImg[4].src;
-});
+// smallImg[0].addEventListener("click", function () {
+//   bigImg.src = smallImg[0].src;
+// });
+// smallImg[1].addEventListener("click", function () {
+//   bigImg.src = smallImg[1].src;
+// });
+// smallImg[2].addEventListener("click", function () {
+//   bigImg.src = smallImg[2].src;
+// });
+// smallImg[3].addEventListener("click", function () {
+//   bigImg.src = smallImg[3].src;
+// });
+// smallImg[4].addEventListener("click", function () {
+//   bigImg.src = smallImg[4].src;
+// });
 // Animal Detail Image Rotate 
 
 
