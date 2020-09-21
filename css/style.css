@@ -912,11 +912,21 @@ body {
   .login1-background .signin-form {
     max-width: 636px;
     margin-left: 100px;
-    padding-top: 100px; }
+    padding-top: 70px; }
+    @media (max-width: 1440px) {
+      .login1-background .signin-form {
+        padding-top: 60px;
+        max-width: 600px; } }
     .login1-background .signin-form .sign-in-top {
       position: relative;
-      padding: 50px;
+      padding: 40px;
       z-index: 999; }
+      @media (max-width: 1500px) {
+        .login1-background .signin-form .sign-in-top {
+          padding: 30px; } }
+      @media (max-width: 1440px) {
+        .login1-background .signin-form .sign-in-top {
+          padding-top: 15px; } }
       .login1-background .signin-form .sign-in-top::after {
         position: absolute;
         content: "";
@@ -928,13 +938,27 @@ body {
         z-index: -1;
         opacity: 80%;
         border-radius: 7px; }
+      @media (max-width: 1440px) {
+        .login1-background .signin-form .sign-in-top .sign-in-logo img {
+          max-width: 160px;
+          height: 100px; } }
       .login1-background .signin-form .sign-in-top .form h2 {
         color: #0A72A1;
         font-weight: 500;
         font-size: 36px;
         margin: 30px 0px; }
+        @media (max-width: 1500px) {
+          .login1-background .signin-form .sign-in-top .form h2 {
+            font-size: 30px;
+            margin: 20px 0px; } }
+        @media (max-width: 1440px) {
+          .login1-background .signin-form .sign-in-top .form h2 {
+            margin-bottom: 20px; } }
       .login1-background .signin-form .sign-in-top .form form .mb-30 {
         margin-bottom: 40px; }
+        @media (max-width: 1500px) {
+          .login1-background .signin-form .sign-in-top .form form .mb-30 {
+            margin-bottom: 20px; } }
       .login1-background .signin-form .sign-in-top .form form .form-group label {
         color: #203459;
         font-weight: 500;
@@ -966,13 +990,23 @@ body {
           font-size: 16px;
           font-weight: 500;
           color: #203459;
-          user-select: none; }
+          user-select: none;
+          cursor: pointer;
+          transition: 0.5s ease; }
+          .login1-background .signin-form .sign-in-top .form form .remember-forgot .remember label:hover {
+            color: #0A72A1; }
         .login1-background .signin-form .sign-in-top .form form .remember-forgot .forgot a {
           font-size: 16px;
           font-weight: 500;
           color: #203459; }
       .login1-background .signin-form .sign-in-top .form form .login-button {
         margin-top: 50px; }
+        @media (max-width: 1500px) {
+          .login1-background .signin-form .sign-in-top .form form .login-button {
+            margin-top: 30px; } }
+        @media (max-width: 1440px) {
+          .login1-background .signin-form .sign-in-top .form form .login-button {
+            margin-top: 30px; } }
         .login1-background .signin-form .sign-in-top .form form .login-button .btn.login-btn {
           background-color: #2464C7;
           color: white;
@@ -981,14 +1015,21 @@ body {
           padding: 12px 65px;
           transition: 0.5s ease;
           border-radius: 8px; }
+          @media (max-width: 1440px) {
+            .login1-background .signin-form .sign-in-top .form form .login-button .btn.login-btn {
+              padding: 9px 55px; } }
           .login1-background .signin-form .sign-in-top .form form .login-button .btn.login-btn:hover {
             opacity: 80%; }
     .login1-background .signin-form .sign-in-bottom {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      margin-top: 100px;
+      margin-top: 65px;
       padding-bottom: 30px; }
+      @media (max-width: 1440px) {
+        .login1-background .signin-form .sign-in-bottom {
+          padding-bottom: 0px;
+          margin-top: 40px; } }
       .login1-background .signin-form .sign-in-bottom .sign-in-bottom-left p {
         color: white;
         font-weight: 300;
@@ -5717,6 +5758,98 @@ body {
     @media (max-width: 1440px) {
       .dashboard-top .dashboard-top-right img {
         width: 230px; } }
+
+.dashboard-chart-container {
+  margin-top: 50px; }
+  .dashboard-chart-container .chart-top .row .chart-container {
+    background-color: white;
+    border-radius: 18px;
+    -webkit-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.1); }
+    .dashboard-chart-container .chart-top .row .chart-container h5 {
+      color: #1E3E59;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 0;
+      padding: 30px 0px 0px 30px; }
+      @media (max-width: 1440px) {
+        .dashboard-chart-container .chart-top .row .chart-container h5 {
+          padding: 20px 0px 0px 20px; } }
+    .dashboard-chart-container .chart-top .row .chart-container .up-number {
+      color: #15BCBE;
+      margin-bottom: 0;
+      font-size: 71px;
+      font-weight: 400;
+      padding-left: 30px; }
+      @media (max-width: 1440px) {
+        .dashboard-chart-container .chart-top .row .chart-container .up-number {
+          font-size: 55px;
+          padding-left: 20px; } }
+    .dashboard-chart-container .chart-top .row .chart-container .down-number {
+      font-size: 71px;
+      font-weight: 400;
+      color: #F35D7C;
+      margin-bottom: 0;
+      padding-left: 30px; }
+      @media (max-width: 1440px) {
+        .dashboard-chart-container .chart-top .row .chart-container .down-number {
+          font-size: 55px;
+          padding-left: 20px; } }
+    .dashboard-chart-container .chart-top .row .chart-container h6 {
+      color: #93AACC;
+      font-size: 18px;
+      font-weight: 300;
+      padding-left: 30px; }
+      @media (max-width: 1440px) {
+        .dashboard-chart-container .chart-top .row .chart-container h6 {
+          padding-left: 20px; } }
+      .dashboard-chart-container .chart-top .row .chart-container h6 .up {
+        color: #15BCBE;
+        font-size: 18px;
+        font-weight: 400; }
+        .dashboard-chart-container .chart-top .row .chart-container h6 .up .up-arrow {
+          color: #15BCBE; }
+      .dashboard-chart-container .chart-top .row .chart-container h6 .down {
+        color: #F35D7C;
+        font-size: 18px;
+        font-weight: 400; }
+        .dashboard-chart-container .chart-top .row .chart-container h6 .down .down-arrow {
+          color: #F35D7C;
+          transform: rotate(180deg); }
+  .dashboard-chart-container .chart-bottom {
+    margin-top: 50px; }
+    .dashboard-chart-container .chart-bottom .row .col-md-4 .chart {
+      position: relative; }
+      .dashboard-chart-container .chart-bottom .row .col-md-4 .chart h5 {
+        font-size: 25px;
+        font-weight: 400;
+        color: #1E3E59;
+        padding-left: 10px;
+        margin-bottom: 20px; }
+      .dashboard-chart-container .chart-bottom .row .col-md-4 .chart h2 {
+        position: absolute;
+        right: 90px;
+        top: 46%;
+        width: 110px;
+        color: #F36BCB;
+        font-weight: 400;
+        font-size: 31px;
+        z-index: 1; }
+        .dashboard-chart-container .chart-bottom .row .col-md-4 .chart h2 span {
+          font-size: 46px; }
+          @media (max-width: 1550px) {
+            .dashboard-chart-container .chart-bottom .row .col-md-4 .chart h2 span {
+              font-size: 40px; } }
+      .dashboard-chart-container .chart-bottom .row .col-md-4 .chart canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        z-index: 99; }
+      .dashboard-chart-container .chart-bottom .row .col-md-4 .chart .my-chart {
+        display: block;
+        width: 533px;
+        height: 230px; }
 
 .dashboard-section .animal-list {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.03);

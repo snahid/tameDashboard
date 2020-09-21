@@ -136,15 +136,169 @@
     }
 }
 
+// Dashboard Middle Chart 
+.dashboard-chart-container {
+    margin-top: 50px;
+    .chart-top {
+        .row {
+            .chart-container {
+                background-color: $white;
+                border-radius: 18px;
+                -webkit-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.1);
+                box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.1);
+                h5{
+                    color: #1E3E59;
+                    font-size: 18px;
+                    font-weight: $mregular;
+                    margin-bottom: 0;
+                    padding: 30px 0px 0px 30px;
+
+                    @media(max-width: 1440px){
+                        padding: 20px 0px 0px 20px;
+                    }
+                }
+                .up-number{
+                    color: #15BCBE;
+                    margin-bottom: 0;
+                    font-size: 71px;
+                    font-weight: $mregular;
+                    padding-left: 30px;
+                    @media(max-width: 1440px){
+                        font-size: 55px;
+                        padding-left: 20px;
+                    }
+                }
+                .down-number{
+                    font-size: 71px;
+                    font-weight: $mregular;
+                    color: #F35D7C;
+                    margin-bottom: 0;
+
+                    padding-left: 30px;
+                    @media(max-width: 1440px){
+                        font-size: 55px;
+                        padding-left: 20px;
+                    }
+                }
+                h6{ color: #93AACC;
+                    font-size: 18px;
+                    font-weight: $mlight;
+                    padding-left: 30px;
+                    @media(max-width: 1440px){
+                        padding-left: 20px;
+                    }
+                    .up{
+                        color: #15BCBE;
+                        font-size: 18px;
+                        font-weight: $mregular;
+
+                        .up-arrow{
+                            color: #15BCBE;
+                        }
+                    }
+                    .down{
+                        color: #F35D7C;
+                        font-size: 18px;
+                        font-weight: $mregular;
+
+                        .down-arrow{
+                            color: #F35D7C;
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+
+            .chart-one {
+
+            }
+        }
+    }
+
+    .chart-bottom{
+        margin-top: 50px;
+        .row{
+            .col-md-4{
+                .chart {
+                    position: relative;
+            
+                    h5 {
+                        font-size: 25px;
+                        font-weight: $mregular;
+                        color: #1E3E59;
+                        padding-left: 10px;
+                        margin-bottom: 20px;
+                    }
+            
+                    h2 {
+                        position: absolute;
+                        right: 90px;
+                        top: 46%;
+                        width: 110px;
+                        color: #F36BCB;
+                        font-weight: $mregular;
+                        font-size: 31px;
+                        z-index: 1;
+            
+                        // @media(max-width: 1620px) {
+                        //     right: 220px;
+                        // }
+                        // @media(max-width: 1550px) {
+                        //     right: 190px;
+                        //     font-size: 28px;
+                        // }
+                        // @media(max-width: 1500px) {
+                        //     right: 180px;
+                        // }
+                        // @media(max-width: 1450px) {
+                        //     right: 160px;
+                        // }
+                        // @media(max-width: 1400px) {
+                        //     right: 150px;
+                        // }
+                        // @media(max-width: 1366px) {
+                        //     right: 140px;
+                        // }
+            
+                        span {
+                            font-size: 46px;
+                            @media(max-width: 1550px) {
+                                font-size: 40px;
+                            }
+                        }
+                    }
+                   
+            
+                    canvas {
+                        -moz-user-select: none;
+                        -webkit-user-select: none;
+                        -ms-user-select: none;
+                        z-index: 99;
+                    }
+            
+                    .my-chart {
+                        display: block;
+                        width: 533px;
+                        height: 230px;
+                    }
+            
+                }
+            }
+        }
+    }
+}
+
+// Dashboard Middle Chart 
+
 
 // Dashboard bottom 
-// Animal Type Section
 .dashboard-section {
 
     .animal-list {
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03);
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.03);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.03);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.03);
         border-radius: 8px;
         overflow: hidden;
         margin-top: 50px;
@@ -174,14 +328,14 @@
                 }
             }
 
-            .animal-list-header-right {
-              
-            }
-            .dashboard-select{
-                select{
-                 color: #94A6C7;
+            .animal-list-header-right {}
+
+            .dashboard-select {
+                select {
+                    color: #94A6C7;
                 }
-             //    color: #94A6C7 !important;
+
+                //    color: #94A6C7 !important;
             }
         }
 
@@ -245,22 +399,24 @@
                                 color: #1e3e59;
                             }
 
-                           .category{
-                               font-size: 15px;
-                               font-weight: $mlight;
-                               color: #203459;
-                           }
-                           .dealer{
-                               color: #203459;
-                               font-size: 16px;
-                               font-weight: $mlight;
-                           }
-                           .price{
-                               color: #203459;
-                               font-weight: $mlight;
-                               font-size: 15px;
-                           }
-                          
+                            .category {
+                                font-size: 15px;
+                                font-weight: $mlight;
+                                color: #203459;
+                            }
+
+                            .dealer {
+                                color: #203459;
+                                font-size: 16px;
+                                font-weight: $mlight;
+                            }
+
+                            .price {
+                                color: #203459;
+                                font-weight: $mlight;
+                                font-size: 15px;
+                            }
+
                         }
 
                         .first-td-width {
@@ -294,12 +450,14 @@
 
             // Table Inner Design End
 
-            .dashboard-table{
+            .dashboard-table {
                 border-bottom: 0px;
-                tbody{
-                    tr{
+
+                tbody {
+                    tr {
                         border-bottom: 0px;
-                        td{
+
+                        td {
                             border-bottom: 0px;
                         }
                     }
@@ -313,17 +471,17 @@
                 // border-bottom: 1px solid #b8d5ec;
                 border-right: 0px solid transparent;
                 padding-left: 25px;
-              
+
             }
 
-            .dashboard-table>thead>tr>th{
+            .dashboard-table>thead>tr>th {
                 color: #203459;
                 font-weight: $mregular;
                 font-size: 20px;
                 border-right: none;
-                 border-bottom: 1px solid #b8d5ec;
-                 padding-top: 20px;
-                 padding-bottom: 20px;
+                border-bottom: 1px solid #b8d5ec;
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
 
             .dashboard-table {
@@ -352,9 +510,8 @@
             }
         }
 
-     
+
     }
 }
 
-// Animal Type Section
 // Dashboard bottom 

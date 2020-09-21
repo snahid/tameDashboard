@@ -8,6 +8,7 @@
     <title>Dashboard</title>
     <!-- FavIcon-->
     <link rel="shortcut icon" type="image/png" href="" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="./css/fontAwesome.css" />
@@ -53,7 +54,8 @@
                     <ul class="navbar-nav" id="mainsidebar">
                         <!-- Dashboard  -->
                         <li class="nav-item">
-                            <a href="./dashboard.html" class="nav-link" id="idOne"><span class="material-icons icon-align"> dashboard
+                            <a href="./dashboard.html" class="nav-link" id="idOne"><span
+                                    class="material-icons icon-align"> dashboard
                                 </span><span class="align-inline">Dashboard</span></a>
                         </li>
                         <!-- Dashboard  -->
@@ -253,16 +255,11 @@
                         <div class="search-and-notification">
                             <div class="search">
                                 <div class="mysearch-box" id="mysearch-box">
-                                    <input type="text" class="myinput"  placeholder="Search here...">
+                                    <input type="text" class="myinput" placeholder="Search here...">
                                     <span class="search-btn"> <img src="./assets/images/search.svg" alt="" /></span>
-                                  </div>
+                                </div>
                             </div>
                             <div class="notification">
-                                <!-- <button>
-                       
-                       <img src="./assets/images/notification.svg" alt="">
-                       <span>4</span>
-                    </button> -->
                                 <ul class="navbar-nav">
                                     <li class="nav-item dropdown mx-1 no-arrow">
                                         <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
@@ -308,7 +305,9 @@
                         </div>
                         <div class="welcome">
                             <h5>Welcome, <span>Christina</span></h5>
-                            <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived </p>
+                            <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV
+                                quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for
+                                quick jigs vex! Fox nymphs grab quick-jived </p>
                         </div>
                     </div>
                     <div class="dashboard-top-right">
@@ -328,150 +327,199 @@
                             </div>
                         </form>
                     </div>
-                   
                 </div>
 
-              
-               
-
-              
-
-
-              
-
-
-              <!-- Dashboard Bottom Table  -->
-              <div class="dashboard-bottom-table">
-                <div class="dashboard-section">
-                  
-                    <div class="animal-list">
-                        <div class="animal-list-header">
-                            <div class="animal-list-header-left">
-                                <h5>Top Products</h5>
+                <!-- Dashboard Middle Chart  -->
+                <div class="dashboard-chart-container">
+                    <div class="chart-top">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="chart-one chart-container">
+                                    <h5>Orders</h5>
+                                    <h1 class="up-number">2054</h1>
+                                    <h6><span class="up">20% <i class="fa fa-caret-up up-arrow"
+                                                aria-hidden="true"></i></span> from the last week</h6>
+                                    <canvas id="Order" width="400" height="400"></canvas>
+                                </div>
                             </div>
-                            <div class="animal-list-header-right dashboard-select">
-                                <form action="">
-                                    <div class="form-group">
-                                        <select id="dashboard-select" class="form-control">
-                                            <option selected>This week</option>
-                                            <option>Last week</option>
-                                        </select>
-                                    </div>
-                                </form>
-
+                            <div class="col-md-4">
+                                <div class="chart-two chart-container">
+                                    <h5>Revenue</h5>
+                                    <h1 class="up-number">R 10,252</h1>
+                                    <h6><span class="up">20% <i class="fa fa-caret-up up-arrow"
+                                                aria-hidden="true"></i></span> from the last week</h6>
+                                    <canvas id="revenue" width="400" height="400"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="chart-two chart-container">
+                                    <h5>Traffic</h5>
+                                    <h1 class="down-number">20,584</h1>
+                                    <h6><span class="down">2% <i class="fa fa-caret-up down-arrow"
+                                                aria-hidden="true"></i></span> from the last week</h6>
+                                    <canvas id="traffic" width="400" height="400"></canvas>
+                                </div>
                             </div>
                         </div>
-                        <div class="dashboard-bottom-body">
-                            <div class="animal-table">
-                                <table class="table dashboard-table">
-                                    <thead>
-                                        <tr>
-
-                                            <th scope="col" class="borderleft bottomborder first-td-width">Product
-                                            </th>
-                                            <th scope="col" class="bottomborder">Category</th>
-                                            <th scope="col" class="bottomborder">Dealer</th>
-                                            <th scope="col" class="bottomborder">Price</th>
-                                            <th scope="col" class="bottomborder">Sold</th>
-                                            <th scope="col" class="borderright bottomborder">Profit</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-
-                                            <td class="borderleft first-td-width">
-                                                <div class="type-categories-brand">
-                                                    <div class="left">
-                                                        <img src="./assets/images/dashboard/1.png" alt="">
-                                                    </div>
-                                                    <div class="right">
-                                                      <p>The Pets Company Dog 
-                                                        Poop Scooper</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td><span class="category">Utility</span></td>
-
-                                            <td><span class="dealer">S.K. Enterprices</span></td>
-                                           <td><span class="price">R 58.00</span></td>
-                                           <td><span class="dealer">45</span></td>
-                                           <td><span class="price">R 25232.00</span></td>
-                                           
-                                        </tr>
-                                        <tr>
-
-                                            <td class="borderleft first-td-width">
-                                                <div class="type-categories-brand">
-                                                    <div class="left">
-                                                        <img src="./assets/images/dashboard/2.png" alt="">
-                                                    </div>
-                                                    <div class="right">
-                                                      <p>Jerry's Pet Products Super
-                                                        Soft Dual Round Dog/Cat Bed</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td><span class="category">Utility</span></td>
-
-                                            <td><span class="dealer">Cloudtails</span></td>
-                                           <td><span class="price">R 25.00</span></td>
-                                           <td><span class="dealer">58</span></td>
-                                           <td><span class="price">R 5252.00</span></td>
-                                           
-                                        </tr>
-                                        <tr>
-
-                                            <td class="borderleft first-td-width">
-                                                <div class="type-categories-brand">
-                                                    <div class="left">
-                                                        <img src="./assets/images/dashboard/3.png" alt="">
-                                                    </div>
-                                                    <div class="right">
-                                                      <p>Drools Chicken and Egg Adult 
-                                                        Dog Food</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td><span class="category">Food</span></td>
-
-                                            <td><span class="dealer">Hiputee</span></td>
-                                           <td><span class="price">R 36.00</span></td>
-                                           <td><span class="dealer">125</span></td>
-                                           <td><span class="price">R 85758.00</span></td>
-                                           
-                                        </tr>
-                                        <tr>
-
-                                            <td class="borderleft first-td-width">
-                                                <div class="type-categories-brand">
-                                                    <div class="left">
-                                                        <img src="./assets/images/dashboard/4.png" alt="">
-                                                    </div>
-                                                    <div class="right">
-                                                      <p>Pedigree Dentastix Medium
-                                                        Breed</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td><span class="category">Treat</span></td>
-
-                                            <td><span class="dealer">S.K. Enterprices</span></td>
-                                           <td><span class="price">R 14.00</span></td>
-                                           <td><span class="dealer">15</span></td>
-                                           <td><span class="price">R 3452.00</span></td>
-                                           
-                                        </tr>
-                                    </tbody>
-                                </table>
+                    </div>
+                    <div class="chart-bottom">
+                        <div class="row">
+                            <div class="col-md-8"></div>
+                            <div class="col-md-4">
+                                <!-- Doghnut Chart  -->
+                                <div class="chart">
+                                    <h5>Top Product Categories</h5>
+                                    <h2><span>45%</span> Treats</h2>
+                                    <canvas id="mydChart" height="250px"></canvas>
+                                </div>
+                                <!-- Doghnut Chart  -->
                             </div>
                         </div>
                     </div>
                 </div>
-         
-              </div>
-              <!-- Dashboard Bottom Table  -->
+                <!-- Dashboard Middle Chart  -->
 
-            
+
+
+
+
+
+
+
+
+
+                <!-- Dashboard Bottom Table  -->
+                <div class="dashboard-bottom-table">
+                    <div class="dashboard-section">
+
+                        <div class="animal-list">
+                            <div class="animal-list-header">
+                                <div class="animal-list-header-left">
+                                    <h5>Top Products</h5>
+                                </div>
+                                <div class="animal-list-header-right dashboard-select">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <select id="dashboard-select" class="form-control">
+                                                <option selected>This week</option>
+                                                <option>Last week</option>
+                                            </select>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="dashboard-bottom-body">
+                                <div class="animal-table">
+                                    <table class="table dashboard-table">
+                                        <thead>
+                                            <tr>
+
+                                                <th scope="col" class="borderleft bottomborder first-td-width">Product
+                                                </th>
+                                                <th scope="col" class="bottomborder">Category</th>
+                                                <th scope="col" class="bottomborder">Dealer</th>
+                                                <th scope="col" class="bottomborder">Price</th>
+                                                <th scope="col" class="bottomborder">Sold</th>
+                                                <th scope="col" class="borderright bottomborder">Profit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+
+                                                <td class="borderleft first-td-width">
+                                                    <div class="type-categories-brand">
+                                                        <div class="left">
+                                                            <img src="./assets/images/dashboard/1.png" alt="">
+                                                        </div>
+                                                        <div class="right">
+                                                            <p>The Pets Company Dog
+                                                                Poop Scooper</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="category">Utility</span></td>
+
+                                                <td><span class="dealer">S.K. Enterprices</span></td>
+                                                <td><span class="price">R 58.00</span></td>
+                                                <td><span class="dealer">45</span></td>
+                                                <td><span class="price">R 25232.00</span></td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td class="borderleft first-td-width">
+                                                    <div class="type-categories-brand">
+                                                        <div class="left">
+                                                            <img src="./assets/images/dashboard/2.png" alt="">
+                                                        </div>
+                                                        <div class="right">
+                                                            <p>Jerry's Pet Products Super
+                                                                Soft Dual Round Dog/Cat Bed</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="category">Utility</span></td>
+
+                                                <td><span class="dealer">Cloudtails</span></td>
+                                                <td><span class="price">R 25.00</span></td>
+                                                <td><span class="dealer">58</span></td>
+                                                <td><span class="price">R 5252.00</span></td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td class="borderleft first-td-width">
+                                                    <div class="type-categories-brand">
+                                                        <div class="left">
+                                                            <img src="./assets/images/dashboard/3.png" alt="">
+                                                        </div>
+                                                        <div class="right">
+                                                            <p>Drools Chicken and Egg Adult
+                                                                Dog Food</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="category">Food</span></td>
+
+                                                <td><span class="dealer">Hiputee</span></td>
+                                                <td><span class="price">R 36.00</span></td>
+                                                <td><span class="dealer">125</span></td>
+                                                <td><span class="price">R 85758.00</span></td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td class="borderleft first-td-width">
+                                                    <div class="type-categories-brand">
+                                                        <div class="left">
+                                                            <img src="./assets/images/dashboard/4.png" alt="">
+                                                        </div>
+                                                        <div class="right">
+                                                            <p>Pedigree Dentastix Medium
+                                                                Breed</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="category">Treat</span></td>
+
+                                                <td><span class="dealer">S.K. Enterprices</span></td>
+                                                <td><span class="price">R 14.00</span></td>
+                                                <td><span class="dealer">15</span></td>
+                                                <td><span class="price">R 3452.00</span></td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Dashboard Bottom Table  -->
+
+
 
                 <!-- Footer Start -->
                 <div class="dashboard-footer">
@@ -485,9 +533,10 @@
     </main>
 
     <!-- Jquery Js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
     <!-- Chart  -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <!-- Chart  -->
     <!-- Bootstrap Js-->
@@ -509,6 +558,145 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- Custom Js-->
     <script src="js/custom.js"></script>
+
+    <script>
+        //  Chart 
+        var ctx = document.getElementById('mydChart').getContext('2d');
+        var chartd = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'doughnut',
+
+            // The data for our dataset
+            data: {
+                labels: ['Treats', 'Food', 'Toys'],
+                datasets: [{
+                    label: "Score",
+                    data: [45, 20, 35],
+                    backgroundColor: [
+                        "#F36BCB",
+                        "#8D49E6",
+                        "#10ADFF"
+                    ]
+                }]
+            },
+
+            // Configuration options go here
+            options: {
+                responsive: true,
+                cutoutPercentage: 65,
+                title: {
+                    display: false,
+                    position: "top",
+                    text: "Top Products",
+                    fontSize: 18,
+                    fontColor: "#111"
+                },
+                legend: {
+                    display: true,
+                    position: "top",
+                    labels: {
+                        fontColor: "#1E3E59",
+                        fontSize: 16,
+                        padding: 10
+                    }
+                }
+            }
+        });
+        //  Chart
+
+        // Line Chart Order
+        const CHART = document.getElementById("Order");
+        let lineChart = new Chart(CHART, {
+            type: 'line',
+            data: {
+                labels: ["january", 'February', 'March'],
+                datasets: [{
+                    label: "First",
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(75, 192,192,0.4)",
+                    borderColor: "rgba(75,192,192,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(76,192,192,1)",
+                    pointBackgroundColor: '#fff',
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(76,192,192,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data: [65, 59, 80],
+
+                }]
+            }
+        });
+        // Line Chart  Order
+
+        // Line Chart Revenue 
+        const CHART1 = document.getElementById("revenue");
+        let lineChart1 = new Chart(CHART1, {
+            type: 'line',
+            data: {
+                labels: ["january", 'February', 'March'],
+                datasets: [{
+                    label: "First",
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(75, 192,192,0.4)",
+                    borderColor: "rgba(75,192,192,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(76,192,192,1)",
+                    pointBackgroundColor: '#fff',
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(76,192,192,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data: [65, 59, 80],
+
+                }]
+            }
+        });
+        // Line Chart Revenue 
+
+        // Line Chart Traffic 
+        const CHART2 = document.getElementById("traffic");
+        let lineChart2 = new Chart(CHART2, {
+            type: 'line',
+            data: {
+                labels: ["january", 'February', 'March'],
+                datasets: [{
+                    label: "First",
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(75, 192,192,0.4)",
+                    borderColor: "rgba(75,192,192,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(76,192,192,1)",
+                    pointBackgroundColor: '#fff',
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(76,192,192,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data: [65, 59, 80],
+
+                }]
+            }
+        });
+        // Line Chart Traffic 
+    </script>
 </body>
 
 </html>
