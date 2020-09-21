@@ -5829,13 +5829,36 @@ body {
         margin-bottom: 20px; }
       .dashboard-chart-container .chart-bottom .row .col-md-4 .chart h2 {
         position: absolute;
-        right: 90px;
-        top: 46%;
+        right: 180px;
+        top: 48%;
         width: 110px;
         color: #F36BCB;
         font-weight: 400;
         font-size: 31px;
         z-index: 1; }
+        @media (max-width: 1800px) {
+          .dashboard-chart-container .chart-bottom .row .col-md-4 .chart h2 {
+            right: 160px; } }
+        @media (max-width: 1750px) {
+          .dashboard-chart-container .chart-bottom .row .col-md-4 .chart h2 {
+            right: 150px; } }
+        @media (max-width: 1650px) {
+          .dashboard-chart-container .chart-bottom .row .col-md-4 .chart h2 {
+            right: 130px;
+            font-size: 28px; } }
+        @media (max-width: 1500px) {
+          .dashboard-chart-container .chart-bottom .row .col-md-4 .chart h2 {
+            right: 105px; } }
+        @media (max-width: 1450px) {
+          .dashboard-chart-container .chart-bottom .row .col-md-4 .chart h2 {
+            right: 100px;
+            top: 49%; } }
+        @media (max-width: 1400px) {
+          .dashboard-chart-container .chart-bottom .row .col-md-4 .chart h2 {
+            right: 90px; } }
+        @media (max-width: 1366px) {
+          .dashboard-chart-container .chart-bottom .row .col-md-4 .chart h2 {
+            right: 85px; } }
         .dashboard-chart-container .chart-bottom .row .col-md-4 .chart h2 span {
           font-size: 46px; }
           @media (max-width: 1550px) {

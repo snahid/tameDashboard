@@ -233,33 +233,37 @@
             
                     h2 {
                         position: absolute;
-                        right: 90px;
-                        top: 46%;
+                        right: 180px;
+                        top: 48%;
                         width: 110px;
                         color: #F36BCB;
                         font-weight: $mregular;
                         font-size: 31px;
                         z-index: 1;
-            
-                        // @media(max-width: 1620px) {
-                        //     right: 220px;
-                        // }
-                        // @media(max-width: 1550px) {
-                        //     right: 190px;
-                        //     font-size: 28px;
-                        // }
-                        // @media(max-width: 1500px) {
-                        //     right: 180px;
-                        // }
-                        // @media(max-width: 1450px) {
-                        //     right: 160px;
-                        // }
-                        // @media(max-width: 1400px) {
-                        //     right: 150px;
-                        // }
-                        // @media(max-width: 1366px) {
-                        //     right: 140px;
-                        // }
+                        
+                        @media(max-width: 1800px){
+                            right: 160px;
+                        }
+                        @media(max-width: 1750px) {
+                            right: 150px;
+                        }
+                        @media(max-width: 1650px) {
+                            right: 130px;
+                            font-size: 28px;
+                        }
+                        @media(max-width: 1500px) {
+                            right: 105px;
+                        }
+                        @media(max-width: 1450px) {
+                            right: 100px;
+                            top: 49%;
+                        }
+                        @media(max-width: 1400px) {
+                            right: 90px;
+                        }
+                        @media(max-width: 1366px) {
+                            right: 85px;
+                        }
             
                         span {
                             font-size: 46px;
