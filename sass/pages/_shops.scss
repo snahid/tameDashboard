@@ -278,7 +278,7 @@
                     }
 
                     .location {
-                        @media(max-width: 1600px){
+                        @media(max-width: 1600px) {
                             max-width: 130px;
                             margin: 0 auto;
                         }
@@ -451,3 +451,69 @@
         border-right: 0;
     }
 }
+
+// Chart 
+.chart-container {
+    .chart {
+        position: relative;
+
+        h5 {
+            padding-left: 55px;
+        }
+
+        h2 {
+            position: absolute;
+            right: 240px;
+            top: 40%;
+            width: 110px;
+            color: #F36BCB;
+            font-weight: $mregular;
+            font-size: 31px;
+            z-index: 1;
+
+            @media(max-width: 1620px) {
+                right: 220px;
+            }
+            @media(max-width: 1550px) {
+                right: 190px;
+                font-size: 28px;
+            }
+            @media(max-width: 1500px) {
+                right: 180px;
+            }
+            @media(max-width: 1450px) {
+                right: 160px;
+            }
+            @media(max-width: 1400px) {
+                right: 150px;
+            }
+            @media(max-width: 1366px) {
+                right: 140px;
+            }
+
+            span {
+                font-size: 46px;
+                @media(max-width: 1550px) {
+                    font-size: 40px;
+                }
+            }
+        }
+       
+
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            z-index: 99;
+        }
+
+        .my-chart {
+            display: block;
+            width: 533px;
+            height: 230px;
+        }
+
+    }
+}
+
+// Chart 

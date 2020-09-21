@@ -3,20 +3,18 @@
     max-width: 786px;
 
     .products-two {
-      background-image: linear-gradient(
-        to left top,
-        #9b5cee,
-        #be56e1,
-        #d953d3,
-        #ef52c4,
-        #ff56b5
-      );
+      background-image: linear-gradient(to left top,
+          #9b5cee,
+          #be56e1,
+          #d953d3,
+          #ef52c4,
+          #ff56b5);
     }
 
     .chart {
       margin-top: 50px;
       width: 100%;
-      padding: 10px 0;
+      padding: 10px 0 20px;
       background: $white;
       border-radius: 18px;
       -webkit-box-shadow: 0px 0px 20px 0px rgba(13, 50, 91, 0.1);
@@ -27,12 +25,11 @@
         color: #1e3e59;
         font-size: 25px;
         font-weight: $mregular;
-        padding-left: 35px;
+        padding-left: 40px;
         margin-bottom: 0;
       }
 
-      #myDonutChart {
-      }
+      
     }
   }
 }
@@ -226,9 +223,9 @@
     }
   }
 
-  .table-bordered > tbody > tr > td,
-  .table-bordered > tbody > tr > th,
-  .table-bordered > thead > tr > td,
+  .table-bordered>tbody>tr>td,
+  .table-bordered>tbody>tr>th,
+  .table-bordered>thead>tr>td,
   .table-bordered {
     border-bottom: 0;
     border-top: 0;
@@ -241,13 +238,13 @@
     }
   }
 
-  .table-bordered > thead > tr > th {
+  .table-bordered>thead>tr>th {
     border-top: 0;
   }
 
   // Table Inner Design End
 
-  .table-bordered > thead > tr > th {
+  .table-bordered>thead>tr>th {
     border-bottom: 1px solid #b8d5ec;
     border-right: 1px solid #b8d5ec;
     padding-left: 25px;
@@ -287,13 +284,13 @@
     }
   }
 
-  .table-bordered > thead > tr,
+  .table-bordered>thead>tr,
   .borderleft,
   .table-bordered {
     border-left: 0;
   }
 
-  .table-bordered > thead > tr,
+  .table-bordered>thead>tr,
   .borderright,
   .table-bordered {
     border-right: 0;
@@ -325,11 +322,11 @@
           padding-top: 20px;
 
           img {
-           height: 268px;
+            height: 268px;
 
-           @media(max-width: 1440px){
-            height: 200px;
-           }
+            @media(max-width: 1440px) {
+              height: 200px;
+            }
           }
 
           .name-and-age {
@@ -361,9 +358,11 @@
             font-size: 31px;
             color: #8aade1;
             transition: 0.2s ease;
+
             &:hover {
               color: #2365c6;
             }
+
             &:focus {
               box-shadow: none;
             }
@@ -373,12 +372,14 @@
         .product-title {
           margin-top: 34px;
           margin-bottom: 50px;
+
           h6 {
             font-size: 20px;
             text-align: center;
             max-width: 310px;
             margin: 0 auto;
             line-height: 35px;
+
             @media (max-width: 1440px) {
               font-size: 18px;
             }
@@ -392,6 +393,7 @@
           align-items: center;
           padding: 0 20px;
           margin-bottom: 20px;
+
           .price {
             p {
               margin-bottom: 0;
@@ -404,6 +406,7 @@
               }
             }
           }
+
           .add-cart {
             .add-cart-btn {
               background: #1c78c1;
