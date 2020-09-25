@@ -219,6 +219,25 @@
     .chart-bottom{
         margin-top: 50px;
         .row{
+            .col-md-8{
+                .chart-four{
+
+                    .dashboard-revenue-select{
+                        margin-bottom: 20px;
+                    }
+                    .chart-bottom-select{
+                        h3{
+                            font-size: 30px;
+                            font-weight: 400;
+                            color: #1e3e59;
+                            margin-bottom: 0;
+                        }
+                    }
+                    canvas{
+                        height: 400px;
+                    }
+                }
+            }
             .col-md-4{
                 .chart {
                     position: relative;

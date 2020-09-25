@@ -247,6 +247,10 @@ body {
   padding-right: 50px;
   position: relative;
   min-height: 100vh; }
+  @media (max-width: 1440px) {
+    .main-content {
+      padding-left: 30px;
+      padding-right: 30px; } }
   .main-content .main-top {
     display: flex;
     flex-direction: row;
@@ -442,6 +446,8 @@ body {
       text-align: center;
       align-items: center;
       padding-top: 12px; }
+    .main-content .product-tab-section .nav .nav-item .company-info-btn {
+      min-width: 208px; }
     .main-content .product-tab-section .nav .nav-item .active {
       background: #2268c5;
       color: white;
@@ -1807,6 +1813,9 @@ body {
     font-size: 15px !important;
     color: #203459;
     font-weight: 400; }
+    @media (max-width: 1419px) {
+      .user-list .user-list-table .table tbody tr td {
+        font-size: 14px !important; } }
     .user-list .user-list-table .table tbody tr td .type-categories-brand {
       display: flex;
       flex-direction: row;
@@ -1824,12 +1833,19 @@ body {
         .user-list .user-list-table .table tbody tr td .type-categories-brand .left img {
           width: 100%;
           height: 100%; }
+          @media (max-width: 1440px) {
+            .user-list .user-list-table .table tbody tr td .type-categories-brand .left img {
+              width: 60px;
+              height: 60px; } }
       .user-list .user-list-table .table tbody tr td .type-categories-brand .right {
         padding-top: 12px;
         margin-left: 20px; }
         @media (max-width: 1532px) {
           .user-list .user-list-table .table tbody tr td .type-categories-brand .right {
             margin-left: 10px; } }
+        @media (max-width: 1400px) {
+          .user-list .user-list-table .table tbody tr td .type-categories-brand .right {
+            margin-left: 5px; } }
         .user-list .user-list-table .table tbody tr td .type-categories-brand .right h6 {
           font-weight: 400;
           color: #1e3e59;
@@ -1896,6 +1912,24 @@ body {
     border-top: 0;
     border-right: 1px solid #b8d5ec;
     padding-left: 25px; }
+    @media (max-width: 1691px) {
+      .user-list .user-list-table .table-bordered > tbody > tr > td,
+      .user-list .user-list-table .table-bordered > tbody > tr > th,
+      .user-list .user-list-table .table-bordered > thead > tr > td,
+      .user-list .user-list-table .table-bordered {
+        padding: 12px 3px 12px 6px; } }
+    @media (max-width: 1440px) {
+      .user-list .user-list-table .table-bordered > tbody > tr > td,
+      .user-list .user-list-table .table-bordered > tbody > tr > th,
+      .user-list .user-list-table .table-bordered > thead > tr > td,
+      .user-list .user-list-table .table-bordered {
+        text-align: center; } }
+    @media (max-width: 1380px) {
+      .user-list .user-list-table .table-bordered > tbody > tr > td,
+      .user-list .user-list-table .table-bordered > tbody > tr > th,
+      .user-list .user-list-table .table-bordered > thead > tr > td,
+      .user-list .user-list-table .table-bordered {
+        padding: 12px 0px 12px 3px; } }
   .user-list .user-list-table .table-bordered > thead > tr > th {
     border-bottom: 1px solid #b8d5ec;
     border-right: 1px solid #b8d5ec;
@@ -1911,6 +1945,9 @@ body {
       font-size: 18px;
       font-weight: 400;
       color: #1e3e59; }
+      @media (max-width: 1419px) {
+        .user-list .user-list-table .table thead tr th {
+          font-size: 17px; } }
   .user-list .user-list-table .table-bordered > thead > tr,
   .user-list .user-list-table .borderleft,
   .user-list .user-list-table .table-bordered {
@@ -3913,25 +3950,178 @@ body {
       .pet-services-inner .view-edit-delete .vets-delete-btn:focus {
         box-shadow: none; }
 
-.products-wrapper .left-width {
+.products-wrapper .left-width .products-two {
+  background-image: linear-gradient(to left top, #9b5cee, #be56e1, #d953d3, #ef52c4, #ff56b5); }
+
+.products-wrapper .left-width .shop-medical-porducts {
   max-width: 786px; }
-  .products-wrapper .left-width .products-two {
-    background-image: linear-gradient(to left top, #9b5cee, #be56e1, #d953d3, #ef52c4, #ff56b5); }
-  .products-wrapper .left-width .chart {
-    margin-top: 50px;
-    width: 100%;
-    padding: 10px 0 20px;
-    background: white;
-    border-radius: 18px;
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(13, 50, 91, 0.1);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(13, 50, 91, 0.1);
-    box-shadow: 0px 0px 20px 0px rgba(13, 50, 91, 0.1); }
-    .products-wrapper .left-width .chart h5 {
-      color: #1e3e59;
-      font-size: 25px;
-      font-weight: 400;
-      padding-left: 40px;
-      margin-bottom: 0; }
+  .products-wrapper .left-width .shop-medical-porducts .products-margin {
+    margin-left: auto; }
+  .products-wrapper .left-width .shop-medical-porducts .overview-inner {
+    max-width: 358px; }
+
+.products-wrapper .left-width .chart {
+  max-width: 786px !important;
+  margin-top: 50px;
+  width: 100%;
+  padding: 10px 0 20px;
+  background: white;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(13, 50, 91, 0.1);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(13, 50, 91, 0.1);
+  box-shadow: 0px 0px 20px 0px rgba(13, 50, 91, 0.1); }
+  .products-wrapper .left-width .chart h5 {
+    color: #1e3e59;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 40px;
+    margin-bottom: 0; }
+
+.products-wrapper .col-md-5 .chart-container {
+  background-color: white;
+  border-radius: 18px;
+  -webkit-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.1); }
+  .products-wrapper .col-md-5 .chart-container h5 {
+    color: #1E3E59;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding: 30px 0px 0px 30px; }
+    @media (max-width: 1545px) {
+      .products-wrapper .col-md-5 .chart-container h5 {
+        padding: 20px 0px 0px 10px; } }
+  .products-wrapper .col-md-5 .chart-container .logo-and-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    margin: 15px 0; }
+    @media (max-width: 1545px) {
+      .products-wrapper .col-md-5 .chart-container .logo-and-name {
+        padding-left: 10px;
+        margin: 10px 0; } }
+    .products-wrapper .col-md-5 .chart-container .logo-and-name .name {
+      margin-left: 15px; }
+      .products-wrapper .col-md-5 .chart-container .logo-and-name .name h4 {
+        font-size: 38px;
+        font-weight: 400;
+        color: #15BCBE; }
+        @media (max-width: 1545px) {
+          .products-wrapper .col-md-5 .chart-container .logo-and-name .name h4 {
+            font-size: 30px; } }
+  @media (max-width: 1545px) {
+    .products-wrapper .col-md-5 .chart-container .row .col-md-5 {
+      padding-right: 0; } }
+  .products-wrapper .col-md-5 .chart-container .row .col-md-5 .revenue .title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1E3E59; }
+  .products-wrapper .col-md-5 .chart-container .row .col-md-5 .revenue h2 {
+    padding-left: 20px;
+    color: #15BCBE;
+    font-size: 48px;
+    font-weight: 400; }
+    @media (max-width: 1545px) {
+      .products-wrapper .col-md-5 .chart-container .row .col-md-5 .revenue h2 {
+        padding-left: 10px;
+        font-size: 40px; } }
+  .products-wrapper .col-md-5 .chart-container .row .col-md-5 .revenue h6 {
+    color: #93AACC;
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 30px; }
+    @media (max-width: 1545px) {
+      .products-wrapper .col-md-5 .chart-container .row .col-md-5 .revenue h6 {
+        padding-left: 10px; } }
+    .products-wrapper .col-md-5 .chart-container .row .col-md-5 .revenue h6 .up {
+      color: #15BCBE;
+      font-size: 12px;
+      font-weight: 400; }
+      .products-wrapper .col-md-5 .chart-container .row .col-md-5 .revenue h6 .up .up-arrow {
+        color: #15BCBE; }
+    .products-wrapper .col-md-5 .chart-container .row .col-md-5 .revenue h6 .down {
+      color: #F35D7C;
+      font-size: 12px;
+      font-weight: 400; }
+      .products-wrapper .col-md-5 .chart-container .row .col-md-5 .revenue h6 .down .down-arrow {
+        color: #F35D7C;
+        transform: rotate(180deg); }
+  .products-wrapper .col-md-5 .chart-container .row .col-md-7 .total-products .title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1E3E59; }
+  .products-wrapper .col-md-5 .chart-container .row .col-md-7 .total-products h2 {
+    padding-left: 20px;
+    color: #15BCBE;
+    font-size: 48px;
+    font-weight: 400; }
+    @media (max-width: 1545px) {
+      .products-wrapper .col-md-5 .chart-container .row .col-md-7 .total-products h2 {
+        font-size: 40px; } }
+  .products-wrapper .col-md-5 .chart-container .row .col-md-7 .total-products h6 {
+    color: #93AACC;
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 30px; }
+    @media (max-width: 1440px) {
+      .products-wrapper .col-md-5 .chart-container .row .col-md-7 .total-products h6 {
+        padding-left: 20px; } }
+    .products-wrapper .col-md-5 .chart-container .row .col-md-7 .total-products h6 .up {
+      color: #15BCBE;
+      font-size: 12px;
+      font-weight: 400; }
+      .products-wrapper .col-md-5 .chart-container .row .col-md-7 .total-products h6 .up .up-arrow {
+        color: #15BCBE; }
+    .products-wrapper .col-md-5 .chart-container .row .col-md-7 .total-products h6 .down {
+      color: #F35D7C;
+      font-size: 12px;
+      font-weight: 400; }
+      .products-wrapper .col-md-5 .chart-container .row .col-md-7 .total-products h6 .down .down-arrow {
+        color: #F35D7C;
+        transform: rotate(180deg); }
+  .products-wrapper .col-md-5 .chart-container .up-number {
+    color: #15BCBE;
+    margin-bottom: 0;
+    font-size: 71px;
+    font-weight: 400;
+    padding-left: 30px; }
+    @media (max-width: 1440px) {
+      .products-wrapper .col-md-5 .chart-container .up-number {
+        font-size: 55px;
+        padding-left: 20px; } }
+  .products-wrapper .col-md-5 .chart-container .down-number {
+    font-size: 71px;
+    font-weight: 400;
+    color: #F35D7C;
+    margin-bottom: 0;
+    padding-left: 30px; }
+    @media (max-width: 1440px) {
+      .products-wrapper .col-md-5 .chart-container .down-number {
+        font-size: 55px;
+        padding-left: 20px; } }
+  .products-wrapper .col-md-5 .chart-container h6 {
+    color: #93AACC;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 30px; }
+    @media (max-width: 1440px) {
+      .products-wrapper .col-md-5 .chart-container h6 {
+        padding-left: 20px; } }
+    .products-wrapper .col-md-5 .chart-container h6 .up {
+      color: #15BCBE;
+      font-size: 18px;
+      font-weight: 400; }
+      .products-wrapper .col-md-5 .chart-container h6 .up .up-arrow {
+        color: #15BCBE; }
+    .products-wrapper .col-md-5 .chart-container h6 .down {
+      color: #F35D7C;
+      font-size: 18px;
+      font-weight: 400; }
+      .products-wrapper .col-md-5 .chart-container h6 .down .down-arrow {
+        color: #F35D7C;
+        transform: rotate(180deg); }
 
 .products-table {
   background: white;
@@ -5819,6 +6009,15 @@ body {
           transform: rotate(180deg); }
   .dashboard-chart-container .chart-bottom {
     margin-top: 50px; }
+    .dashboard-chart-container .chart-bottom .row .col-md-8 .chart-four .dashboard-revenue-select {
+      margin-bottom: 20px; }
+    .dashboard-chart-container .chart-bottom .row .col-md-8 .chart-four .chart-bottom-select h3 {
+      font-size: 30px;
+      font-weight: 400;
+      color: #1e3e59;
+      margin-bottom: 0; }
+    .dashboard-chart-container .chart-bottom .row .col-md-8 .chart-four canvas {
+      height: 400px; }
     .dashboard-chart-container .chart-bottom .row .col-md-4 .chart {
       position: relative; }
       .dashboard-chart-container .chart-bottom .row .col-md-4 .chart h5 {
@@ -6575,13 +6774,17 @@ body {
     padding-left: 55px; }
   .chart-container .chart h2 {
     position: absolute;
-    right: 240px;
+    right: 255px;
     top: 40%;
     width: 110px;
     color: #F36BCB;
     font-weight: 400;
     font-size: 31px;
     z-index: 1; }
+    @media (max-width: 1700px) {
+      .chart-container .chart h2 {
+        right: 240px;
+        top: 38%; } }
     @media (max-width: 1620px) {
       .chart-container .chart h2 {
         right: 220px; } }

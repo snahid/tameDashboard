@@ -20,6 +20,13 @@ var chart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
+        tooltips: {
+            backgroundColor: "#330C27",
+            bodyFontColor: "#fff",
+            titleFontColor: "#fff",
+            bodyFontSize: '12',
+            displayColors: false,
+          },
         responsive: true,
         cutoutPercentage: 65,
         title: {

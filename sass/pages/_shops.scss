@@ -463,7 +463,7 @@
 
         h2 {
             position: absolute;
-            right: 240px;
+            right: 255px;
             top: 40%;
             width: 110px;
             color: #F36BCB;
@@ -471,6 +471,10 @@
             font-size: 31px;
             z-index: 1;
 
+            @media(max-width: 1700px){
+                right: 240px;
+                top: 38%;
+            }
             @media(max-width: 1620px) {
                 right: 220px;
             }

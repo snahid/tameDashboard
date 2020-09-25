@@ -179,6 +179,11 @@
   position: relative;
   min-height: 100vh;
 
+  @media(max-width: 1440px){
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   // Dashboard top
   .main-top {
     display: flex;
@@ -250,22 +255,23 @@
                 /* Edge */
                 color: #94a6c7;
                 font-weight: $mlight;
-            }
+              }
 
-            :-ms-input-placeholder {
+              :-ms-input-placeholder {
                 /* Internet Explorer 10-11 */
                 color: #94a6c7;
                 font-weight: $mlight;
-            }
+              }
 
-            ::placeholder {
+              ::placeholder {
                 color: #94a6c7;
                 font-weight: $mlight;
+              }
             }
+
+            .mytoggle {
+              width: 240px;
             }
-           .mytoggle{
-             width: 240px;
-           }
 
             .search-btn {
               float: right;
@@ -499,6 +505,10 @@
           align-items: center;
           // padding: 8px 5px;
           padding-top: 12px;
+        }
+
+        .company-info-btn {
+          min-width: 208px;
         }
 
         .active {

@@ -317,7 +317,7 @@
                 <div class="animals-wrapper products-wrapper">
                     <div class="overview row">
                         <div class="col-md-7 left-width">
-                            <div class="products-orverview row">
+                            <div class="products-orverview shop-medical-porducts row">
                                 <div class="col">
                                     <div class="overview-inner one">
                                         <h6>Total Shops</h6>
@@ -344,7 +344,45 @@
 
                             </div>
                         </div>
-                        <div class="col-md-5"></div>
+                        <div class="col-md-5">
+                            <div class="chart-two chart-container">
+                                <h5>Top Seller</h5>
+                                <div class="logo-and-name">
+                                    <div class="logo">
+                                        <img src="./assets/images/shops/New folder/0.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <h4>Cloudtail</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="revenue">
+                                            <h6 class="title">Revenue</h6>
+                                            <h2>4,547</h2>
+                                            <h6>
+                                                <span class="up">20%
+                                                    <i class="fa fa-caret-up up-arrow" aria-hidden="true"></i></span>
+                                                from the last week
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="total-products">
+                                            <h6 class="title">Total Product Sold</h6>
+                                            <h2>1,254</h2>
+                                            <h6>
+                                                <span class="up">20%
+                                                    <i class="fa fa-caret-up up-arrow" aria-hidden="true"></i></span>
+                                                from the last week
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                                <canvas id="revenue" width="400" height="300"></canvas>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -947,6 +985,86 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- Custom Js-->
     <script src="js/custom.js"></script>
+
+    <script>
+        // Line Chart Revenue
+        const CHART1 = document.getElementById("revenue");
+        let lineChart1 = new Chart(CHART1, {
+            type: "line",
+            options: {
+                tooltips: {
+                    backgroundColor: "#fff",
+                    bodyFontColor: "#93AACC",
+                    titleFontColor: "#15BCBE",
+                    bodyFontSize: '12',
+                    displayColors: false,
+                },
+                legend: {
+                    display: false,
+                },
+                scales: {
+                    yAxes: [{
+                        scaleLabel: {
+                            display: false,
+                        },
+                        ticks: {
+                            display: false,
+                        },
+                        gridLines: {
+                            display: false,
+                        },
+                    }, ],
+                    xAxes: [{
+                        ticks: {
+                            suggestedMin: 0,
+                            display: false,
+                            suggestedMax: 11.12 * 2,
+                            stepSize: 1, //interval between ticks
+                        },
+                        gridLines: {
+                            zeroLineColor: "#CEE4F5",
+                            color: "#CEE4F5",
+                        },
+                    }, ],
+                },
+            },
+            data: {
+                labels: [
+                    "january",
+                    "February",
+                    "March",
+                    "April",
+                    "May",
+                    "june",
+                    "July",
+                    "August",
+                    "September",
+                ],
+                datasets: [{
+                    label: "First",
+                    fill: true,
+                    lineTension: 0.00001,
+                    backgroundColor: "rgba(206, 228,245,0.4)",
+                    borderColor: "#2ECF98",
+                    borderWidth: 5,
+                    borderCapStyle: "butt",
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: "miter",
+                    pointBorderColor: "#fff",
+                    pointBackgroundColor: "#15BBCB",
+                    pointBorderWidth: 2,
+                    pointHoverRadius: 10,
+                    pointHoverBackgroundColor: "rgba(76,192,192,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 7,
+                    pointHitRadius: 8,
+                    data: [10, 15, 13, 20, 18, 25, 20, 27, 20],
+                }, ],
+            },
+        });
+        // Line Chart Revenue
+    </script>
 </body>
 
 </html>

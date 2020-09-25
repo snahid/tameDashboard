@@ -2,701 +2,941 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dashboard</title>
-    <!-- FavIcon-->
-    <link rel="shortcut icon" type="image/png" href="" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Dashboard</title>
+  <!-- FavIcon-->
+  <link rel="shortcut icon" type="image/png" href="" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="./css/fontAwesome.css" />
-    <!-- Bootstrap style-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <!-- FontAwesome style-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!-- font  -->
-    <!-- <link
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="./css/fontAwesome.css" />
+  <!-- Bootstrap style-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- FontAwesome style-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- font  -->
+  <!-- <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet"> -->
-    <!-- font  -->
-    <!--Owl Carouse css-->
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <!--AOS css-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!--Animate css-->
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <!-- Custom Style-->
-    <link rel="stylesheet" href="./css/checkbox.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" href="./css/search.css" />
+  <!-- font  -->
+  <!--Owl Carouse css-->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <!--AOS css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!--Animate css-->
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <!-- Custom Style-->
+  <link rel="stylesheet" href="./css/checkbox.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" href="./css/search.css" />
 </head>
 
 <body>
-    <main>
-        <!-- Page Wrapper  -->
-        <div class="sidebar-detail-wrapper">
-            <!-- Sidebar Start -->
-            <div class="sidebar">
-                <div class="sidebar-logo d-flex align-items-center justify-content-center">
-                    <a href="#">
-                        <img src="./assets/images/furever logo-01.png" alt="" />
-                    </a>
-                </div>
-                <h6>Admin</h6>
-                <div class="divider"></div>
-                <div class="sidebar-menu">
-                    <ul class="navbar-nav" id="mainsidebar">
-                        <!-- Dashboard  -->
-                        <li class="nav-item">
-                            <a href="./dashboard.html" class="nav-link" id="idOne"><span
-                                    class="material-icons icon-align"> dashboard
-                                </span><span class="align-inline">Dashboard</span></a>
-                        </li>
-                        <!-- Dashboard  -->
-                        <!-- Categories  -->
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" id="idTwo" name="menubtn" data-toggle="collapse"
-                                href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
-                                data-target="#collapseOne">
-                                <span class="material-icons icon-align"> description </span><span
-                                    class="align-inline">Categories</span>
-                            </a>
-                            <div class="collapse collaps-menu" id="collapseOne">
-                                <ul>
-                                    <li>
-                                        <a href="./categories-product.html">Product Categories</a>
-                                    </li>
-                                    <li>
-                                        <a href="./brand-categories.html">Brand Categories</a>
-                                    </li>
-                                    <li><a href="./animal-type.html">Animal Type</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- Categories  -->
-                        <!-- Shop Management  -->
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" id="idThree" name="menubtn" data-toggle="collapse"
-                                href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                <span class="material-icons icon-align"> shopping_bag </span><span
-                                    class="align-inline">Shop Management</span>
-                            </a>
-                            <div class="collapse collaps-menu" id="collapseTwo">
-                                <ul>
-                                    <li><a href="./shops.html">Shops</a></li>
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./add-shop.html">Add Shop</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- Shop Management  -->
-                        <!-- Product Management  -->
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" id="idFour" name="menubtn" data-toggle="collapse"
-                                href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                <span class="material-icons icon-align"> shopping_bag </span><span
-                                    class="align-inline">Product Management</span>
-                            </a>
-                            <div class="collapse collaps-menu" id="collapseThree">
-                                <ul>
-                                    <li><a href="./products.html">Products</a></li>
-                                    <li><a href="./product-details.html">Products Details</a></li>
-                                    <li>
-                                        <a href="./products-3.html">Add Products</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- Product Management  -->
-                        <!-- Shelter Management  -->
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" id="idFive" name="menubtn" data-toggle="collapse"
-                                href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                <span class="material-icons icon-align"> home </span><span class="align-inline">Shelter
-                                    Management</span>
-                            </a>
-                            <div class="collapse collaps-menu" id="collapseFour">
-                                <ul>
-                                    <li><a href="./shelter.html">Shelters</a></li>
-                                    <li><a href="./shelter-details.html">Shelter Details</a></li>
-                                    <li><a href="./add-shelter.html">Add Shelter</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- Shelter Management  -->
-                        <!-- Animals  -->
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" id="idSix" name="menubtn" data-toggle="collapse"
-                                href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                                <span class="material-icons icon-align"> pets </span><span
-                                    class="align-inline">Animals</span>
-                            </a>
-                            <div class="collapse collaps-menu" id="collapseFive">
-                                <ul>
-                                    <li><a href="./animals.html">Animals</a></li>
-                                    <li><a href="./animal-details.html">Animal Details</a></li>
-                                    <li><a href="./add-animals.html">Add Animal</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- Animals  -->
-                        <!-- Medical Assistance  -->
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" id="idSeven" name="menubtn" data-toggle="collapse"
-                                href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                                <span class="material-icons icon-align">
-                                    medical_services </span><span class="align-inline">Medical Assistance</span>
-                            </a>
-                            <div class="collapse collaps-menu" id="collapseSix">
-                                <ul>
-                                    <li><a href="./vet-shops.html">Vet Shops</a></li>
-                                    <li><a href="#">Vet Shop Details</a></li>
-                                    <li><a href="./add-vet-shop.html">Add Vet Shop</a></li>
-                                    <li><a href="./vets.html">Vets</a></li>
-                                    <li><a href="#">Vet Details</a></li>
-                                    <li><a href="./add-vets.html">Add Vet</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- Medical Assistance  -->
-                        <!-- pet Services  -->
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" id="idEight" name="menubtn" data-toggle="collapse"
-                                href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
-                                <span class="material-icons icon-align"> pets </span><span class="align-inline">Pet
-                                    Services</span>
-                            </a>
-                            <div class="collapse collaps-menu" id="collapseSeven">
-                                <ul>
-                                    <li><a href="./pet-services.html">Pet Services</a></li>
-                                    <li>
-                                        <a href="./add-pet-services.html">Add Pet Services</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- pet Services  -->
-                        <!-- Orders  -->
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" id="idNine" name="menubtn" data-toggle="collapse"
-                                href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
-                                <span class="material-icons icon-align"> shopping_cart </span><span
-                                    class="align-inline">Orders</span>
-                            </a>
-                            <div class="collapse collaps-menu" id="collapseEight">
-                                <ul>
-                                    <li><a href="./orders.html">Order Overview</a></li>
-                                    <li><a href="./order-details.html">Order Details</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- Orders  -->
-                        <!-- Users  -->
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" id="idTen" name="menubtn" data-toggle="collapse"
-                                href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
-                                <span class="material-icons icon-align"> person </span><span
-                                    class="align-inline">Users</span>
-                            </a>
-                            <div class="collapse collaps-menu" id="collapseNine">
-                                <ul>
-                                    <li>
-                                        <a href="./user-list.html">User List</a>
-                                    </li>
-                                    <li><a href="./user-details.html">User Details</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- Users  -->
+  <main>
+    <!-- Page Wrapper  -->
+    <div class="sidebar-detail-wrapper">
+      <!-- Sidebar Start -->
+      <div class="sidebar">
+        <div class="sidebar-logo d-flex align-items-center justify-content-center">
+          <a href="#">
+            <img src="./assets/images/furever logo-01.png" alt="" />
+          </a>
+        </div>
+        <h6>Admin</h6>
+        <div class="divider"></div>
+        <div class="sidebar-menu">
+          <ul class="navbar-nav" id="mainsidebar">
+            <!-- Dashboard  -->
+            <li class="nav-item">
+              <a href="./dashboard.html" class="nav-link" id="idOne"><span class="material-icons icon-align"> dashboard
+                </span><span class="align-inline">Dashboard</span></a>
+            </li>
+            <!-- Dashboard  -->
+            <!-- Categories  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" id="idTwo" name="menubtn" data-toggle="collapse" href="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne" data-target="#collapseOne">
+                <span class="material-icons icon-align"> description </span><span class="align-inline">Categories</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseOne">
+                <ul>
+                  <li>
+                    <a href="./categories-product.html">Product Categories</a>
+                  </li>
+                  <li>
+                    <a href="./brand-categories.html">Brand Categories</a>
+                  </li>
+                  <li><a href="./animal-type.html">Animal Type</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Categories  -->
+            <!-- Shop Management  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" id="idThree" name="menubtn" data-toggle="collapse" href="#collapseTwo"
+                aria-expanded="true" aria-controls="collapseTwo">
+                <span class="material-icons icon-align"> shopping_bag </span><span class="align-inline">Shop
+                  Management</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseTwo">
+                <ul>
+                  <li><a href="./shops.html">Shops</a></li>
+                  <li><a href="./shop-details.html">Shop Details</a></li>
+                  <li><a href="./add-shop.html">Add Shop</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Shop Management  -->
+            <!-- Product Management  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" id="idFour" name="menubtn" data-toggle="collapse" href="#collapseThree"
+                aria-expanded="true" aria-controls="collapseThree">
+                <span class="material-icons icon-align"> shopping_bag </span><span class="align-inline">Product
+                  Management</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseThree">
+                <ul>
+                  <li><a href="./products.html">Products</a></li>
+                  <li>
+                    <a href="./product-details.html">Products Details</a>
+                  </li>
+                  <li>
+                    <a href="./products-3.html">Add Products</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- Product Management  -->
+            <!-- Shelter Management  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" id="idFive" name="menubtn" data-toggle="collapse" href="#collapseFour"
+                aria-expanded="true" aria-controls="collapseFour">
+                <span class="material-icons icon-align"> home </span><span class="align-inline">Shelter
+                  Management</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseFour">
+                <ul>
+                  <li><a href="./shelter.html">Shelters</a></li>
+                  <li>
+                    <a href="./shelter-details.html">Shelter Details</a>
+                  </li>
+                  <li><a href="./add-shelter.html">Add Shelter</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Shelter Management  -->
+            <!-- Animals  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" id="idSix" name="menubtn" data-toggle="collapse" href="#collapseFive"
+                aria-expanded="true" aria-controls="collapseFive">
+                <span class="material-icons icon-align"> pets </span><span class="align-inline">Animals</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseFive">
+                <ul>
+                  <li><a href="./animals.html">Animals</a></li>
+                  <li><a href="./animal-details.html">Animal Details</a></li>
+                  <li><a href="./add-animals.html">Add Animal</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Animals  -->
+            <!-- Medical Assistance  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" id="idSeven" name="menubtn" data-toggle="collapse" href="#collapseSix"
+                aria-expanded="true" aria-controls="collapseSix">
+                <span class="material-icons icon-align">
+                  medical_services </span><span class="align-inline">Medical Assistance</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseSix">
+                <ul>
+                  <li><a href="./vet-shops.html">Vet Shops</a></li>
+                  <li><a href="#">Vet Shop Details</a></li>
+                  <li><a href="./add-vet-shop.html">Add Vet Shop</a></li>
+                  <li><a href="./vets.html">Vets</a></li>
+                  <li><a href="#">Vet Details</a></li>
+                  <li><a href="./add-vets.html">Add Vet</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Medical Assistance  -->
+            <!-- pet Services  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" id="idEight" name="menubtn" data-toggle="collapse" href="#collapseSeven"
+                aria-expanded="true" aria-controls="collapseSeven">
+                <span class="material-icons icon-align"> pets </span><span class="align-inline">Pet Services</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseSeven">
+                <ul>
+                  <li><a href="./pet-services.html">Pet Services</a></li>
+                  <li>
+                    <a href="./add-pet-services.html">Add Pet Services</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- pet Services  -->
+            <!-- Orders  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" id="idNine" name="menubtn" data-toggle="collapse" href="#collapseEight"
+                aria-expanded="true" aria-controls="collapseEight">
+                <span class="material-icons icon-align"> shopping_cart </span><span class="align-inline">Orders</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseEight">
+                <ul>
+                  <li><a href="./orders.html">Order Overview</a></li>
+                  <li><a href="./order-details.html">Order Details</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Orders  -->
+            <!-- Users  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" id="idTen" name="menubtn" data-toggle="collapse" href="#collapseNine"
+                aria-expanded="true" aria-controls="collapseNine">
+                <span class="material-icons icon-align"> person </span><span class="align-inline">Users</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseNine">
+                <ul>
+                  <li>
+                    <a href="./user-list.html">User List</a>
+                  </li>
+                  <li><a href="./user-details.html">User Details</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Users  -->
 
-                        <!-- Roles  -->
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" id="idEleven" name="menubtn" data-toggle="collapse"
-                                href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
-                                <span class="material-icons icon-align"> engineering </span><span
-                                    class="align-inline">Roles</span>
-                            </a>
-                            <div class="collapse collaps-menu" id="collapseTen">
-                                <ul>
-                                    <li><a href="./roles.html">Roles</a></li>
-                                    <li><a href="#">Permissions</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- Roles  -->
-                        <!-- Settings  -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" id="idTwelve"><span class="material-icons icon-align">
-                                    construction
-                                </span><span class="align-inline">Settings</span></a>
-                        </li>
-                        <!-- Settings  -->
-                    </ul>
+            <!-- Roles  -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" id="idEleven" name="menubtn" data-toggle="collapse" href="#collapseTen"
+                aria-expanded="true" aria-controls="collapseTen">
+                <span class="material-icons icon-align"> engineering </span><span class="align-inline">Roles</span>
+              </a>
+              <div class="collapse collaps-menu" id="collapseTen">
+                <ul>
+                  <li><a href="./roles.html">Roles</a></li>
+                  <li><a href="#">Permissions</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Roles  -->
+            <!-- Settings  -->
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="idTwelve"><span class="material-icons icon-align"> construction
+                </span><span class="align-inline">Settings</span></a>
+            </li>
+            <!-- Settings  -->
+          </ul>
+        </div>
+      </div>
+      <!-- Sidebar End  -->
+      <!-- Main Content Start -->
+      <div class="main-content">
+        <div class="main-top">
+          <div class="main-top-left">
+            <button type="button" class="btn btn-primary plus-btn" data-toggle="modal" data-target="#exampleModal">
+              <!-- <i class="fas fa-plus"></i> Add -->
+              <span class="material-icons add-icon"> add </span>Add
+            </button>
+          </div>
+          <div class="main-top-right">
+            <div class="search-and-notification">
+              <div class="search">
+                <div class="mysearch-box" id="mysearch-box">
+                  <input type="text" class="myinput" placeholder="Search here..." />
+                  <span class="search-btn">
+                    <img src="./assets/images/search.svg" alt="" /></span>
                 </div>
-            </div>
-            <!-- Sidebar End  -->
-            <!-- Main Content Start -->
-            <div class="main-content">
-                <div class="main-top">
-                    <div class="main-top-left">
-                        <button type="button" class="btn btn-primary plus-btn" data-toggle="modal"
-                            data-target="#exampleModal">
-                            <!-- <i class="fas fa-plus"></i> Add -->
-                            <span class="material-icons add-icon"> add </span>Add
-                        </button>
-                    </div>
-                    <div class="main-top-right">
-                        <div class="search-and-notification">
-                            <div class="search">
-                                <div class="mysearch-box" id="mysearch-box">
-                                    <input type="text" class="myinput" placeholder="Search here...">
-                                    <span class="search-btn"> <img src="./assets/images/search.svg" alt="" /></span>
-                                </div>
-                            </div>
-                            <div class="notification">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item dropdown mx-1 no-arrow">
-                                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="./assets/images/notification.svg" alt="" />
-                                            <span class="notification-counter">4</span>
-                                        </a>
-                                        <!-- <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+              </div>
+              <div class="notification">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown mx-1 no-arrow">
+                    <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="./assets/images/notification.svg" alt="" />
+                      <span class="notification-counter">4</span>
+                    </a>
+                    <!-- <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                        
                       </div> -->
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="right-divider"></div>
-                        <div class="user-profile">
-                            <div class="menu-dropdown">
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        <img src="./assets/images/Ellipse 1.png" alt="" />
-                                        Welcome, <span>Christina</span>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">Dashboard</a>
-                                        <a class="dropdown-item" href="#">Dashboard</a>
-                                        <a class="dropdown-item" href="#">Dashboard</a>
-                                        <button type="button" class="btn btn-primary logout-btn">
-                                            logout
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Dashboard Top  -->
-                <div class="dashboard-top">
-                    <div class="dashboard-top-left">
-                        <div class="image">
-                            <img src="./assets/images/dashboard/Ellipse 7.png" alt="">
-                        </div>
-                        <div class="welcome">
-                            <h5>Welcome, <span>Christina</span></h5>
-                            <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV
-                                quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for
-                                quick jigs vex! Fox nymphs grab quick-jived </p>
-                        </div>
-                    </div>
-                    <div class="dashboard-top-right">
-                        <img src="./assets/images/dashboard/cute-dog-icon-pdv-01.png" alt="">
-                    </div>
-                </div>
-                <!-- Dashboard Top  -->
-                <div class="main-middle">
-                    <div class="add-products shelter-filter">
-                        <h3>Overview</h3>
-                        <form action="">
-                            <div class="form-group">
-                                <select id="inputState" class="form-control">
-                                    <option selected>This week</option>
-                                    <option>Last week</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <!-- Dashboard Middle Chart  -->
-                <div class="dashboard-chart-container">
-                    <div class="chart-top">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="chart-one chart-container">
-                                    <h5>Orders</h5>
-                                    <h1 class="up-number">2054</h1>
-                                    <h6><span class="up">20% <i class="fa fa-caret-up up-arrow"
-                                                aria-hidden="true"></i></span> from the last week</h6>
-                                    <canvas id="Order" width="400" height="400"></canvas>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="chart-two chart-container">
-                                    <h5>Revenue</h5>
-                                    <h1 class="up-number">R 10,252</h1>
-                                    <h6><span class="up">20% <i class="fa fa-caret-up up-arrow"
-                                                aria-hidden="true"></i></span> from the last week</h6>
-                                    <canvas id="revenue" width="400" height="400"></canvas>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="chart-two chart-container">
-                                    <h5>Traffic</h5>
-                                    <h1 class="down-number">20,584</h1>
-                                    <h6><span class="down">2% <i class="fa fa-caret-up down-arrow"
-                                                aria-hidden="true"></i></span> from the last week</h6>
-                                    <canvas id="traffic" width="400" height="400"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chart-bottom">
-                        <div class="row">
-                            <div class="col-md-8"></div>
-                            <div class="col-md-4">
-                                <!-- Doghnut Chart  -->
-                                <div class="chart">
-                                    <h5>Top Product Categories</h5>
-                                    <h2><span>45%</span> Treats</h2>
-                                    <canvas id="mydChart" height="250px"></canvas>
-                                </div>
-                                <!-- Doghnut Chart  -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Dashboard Middle Chart  -->
-
-
-
-
-
-
-
-
-
-
-                <!-- Dashboard Bottom Table  -->
-                <div class="dashboard-bottom-table">
-                    <div class="dashboard-section">
-
-                        <div class="animal-list">
-                            <div class="animal-list-header">
-                                <div class="animal-list-header-left">
-                                    <h5>Top Products</h5>
-                                </div>
-                                <div class="animal-list-header-right dashboard-select">
-                                    <form action="">
-                                        <div class="form-group">
-                                            <select id="dashboard-select" class="form-control">
-                                                <option selected>This week</option>
-                                                <option>Last week</option>
-                                            </select>
-                                        </div>
-                                    </form>
-
-                                </div>
-                            </div>
-                            <div class="dashboard-bottom-body">
-                                <div class="animal-table">
-                                    <table class="table dashboard-table">
-                                        <thead>
-                                            <tr>
-
-                                                <th scope="col" class="borderleft bottomborder first-td-width">Product
-                                                </th>
-                                                <th scope="col" class="bottomborder">Category</th>
-                                                <th scope="col" class="bottomborder">Dealer</th>
-                                                <th scope="col" class="bottomborder">Price</th>
-                                                <th scope="col" class="bottomborder">Sold</th>
-                                                <th scope="col" class="borderright bottomborder">Profit</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-
-                                                <td class="borderleft first-td-width">
-                                                    <div class="type-categories-brand">
-                                                        <div class="left">
-                                                            <img src="./assets/images/dashboard/1.png" alt="">
-                                                        </div>
-                                                        <div class="right">
-                                                            <p>The Pets Company Dog
-                                                                Poop Scooper</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td><span class="category">Utility</span></td>
-
-                                                <td><span class="dealer">S.K. Enterprices</span></td>
-                                                <td><span class="price">R 58.00</span></td>
-                                                <td><span class="dealer">45</span></td>
-                                                <td><span class="price">R 25232.00</span></td>
-
-                                            </tr>
-                                            <tr>
-
-                                                <td class="borderleft first-td-width">
-                                                    <div class="type-categories-brand">
-                                                        <div class="left">
-                                                            <img src="./assets/images/dashboard/2.png" alt="">
-                                                        </div>
-                                                        <div class="right">
-                                                            <p>Jerry's Pet Products Super
-                                                                Soft Dual Round Dog/Cat Bed</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td><span class="category">Utility</span></td>
-
-                                                <td><span class="dealer">Cloudtails</span></td>
-                                                <td><span class="price">R 25.00</span></td>
-                                                <td><span class="dealer">58</span></td>
-                                                <td><span class="price">R 5252.00</span></td>
-
-                                            </tr>
-                                            <tr>
-
-                                                <td class="borderleft first-td-width">
-                                                    <div class="type-categories-brand">
-                                                        <div class="left">
-                                                            <img src="./assets/images/dashboard/3.png" alt="">
-                                                        </div>
-                                                        <div class="right">
-                                                            <p>Drools Chicken and Egg Adult
-                                                                Dog Food</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td><span class="category">Food</span></td>
-
-                                                <td><span class="dealer">Hiputee</span></td>
-                                                <td><span class="price">R 36.00</span></td>
-                                                <td><span class="dealer">125</span></td>
-                                                <td><span class="price">R 85758.00</span></td>
-
-                                            </tr>
-                                            <tr>
-
-                                                <td class="borderleft first-td-width">
-                                                    <div class="type-categories-brand">
-                                                        <div class="left">
-                                                            <img src="./assets/images/dashboard/4.png" alt="">
-                                                        </div>
-                                                        <div class="right">
-                                                            <p>Pedigree Dentastix Medium
-                                                                Breed</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td><span class="category">Treat</span></td>
-
-                                                <td><span class="dealer">S.K. Enterprices</span></td>
-                                                <td><span class="price">R 14.00</span></td>
-                                                <td><span class="dealer">15</span></td>
-                                                <td><span class="price">R 3452.00</span></td>
-
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Dashboard Bottom Table  -->
-
-
-
-                <!-- Footer Start -->
-                <div class="dashboard-footer">
-                    <p>Copyright 2020 | Furever Home.</p>
-                </div>
-                <!-- Footer End -->
+                  </li>
+                </ul>
+              </div>
             </div>
-            <!-- Main Content End -->
+            <div class="right-divider"></div>
+            <div class="user-profile">
+              <div class="menu-dropdown">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/images/Ellipse 1.png" alt="" />
+                    Welcome, <span>Christina</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Dashboard</a>
+                    <a class="dropdown-item" href="#">Dashboard</a>
+                    <a class="dropdown-item" href="#">Dashboard</a>
+                    <button type="button" class="btn btn-primary logout-btn">
+                      logout
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Page Wrapper  -->
-    </main>
+        <!-- Dashboard Top  -->
+        <div class="dashboard-top">
+          <div class="dashboard-top-left">
+            <div class="image">
+              <img src="./assets/images/dashboard/Ellipse 7.png" alt="" />
+            </div>
+            <div class="welcome">
+              <h5>Welcome, <span>Christina</span></h5>
+              <p>
+                The quick, brown fox jumps over a lazy dog. DJs flock by when
+                MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds
+                jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick
+                jigs vex! Fox nymphs grab quick-jived
+              </p>
+            </div>
+          </div>
+          <div class="dashboard-top-right">
+            <img src="./assets/images/dashboard/cute-dog-icon-pdv-01.png" alt="" />
+          </div>
+        </div>
+        <!-- Dashboard Top  -->
+        <div class="main-middle">
+          <div class="add-products shelter-filter">
+            <h3>Overview</h3>
+            <form action="">
+              <div class="form-group">
+                <select id="inputState" class="form-control">
+                  <option selected>This week</option>
+                  <option>Last week</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
 
-    <!-- Jquery Js-->
-    <!-- Chart  -->
+        <!-- Dashboard Middle Chart  -->
+        <div class="dashboard-chart-container">
+          <div class="chart-top">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="chart-one chart-container">
+                  <h5>Orders</h5>
+                  <h1 class="up-number">2054</h1>
+                  <h6>
+                    <span class="up">20%
+                      <i class="fa fa-caret-up up-arrow" aria-hidden="true"></i></span>
+                    from the last week
+                  </h6>
+                  <canvas id="Order" width="400" height="400"></canvas>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="chart-two chart-container">
+                  <h5>Revenue</h5>
+                  <h1 class="up-number">R 10,252</h1>
+                  <h6>
+                    <span class="up">20%
+                      <i class="fa fa-caret-up up-arrow" aria-hidden="true"></i></span>
+                    from the last week
+                  </h6>
+                  <canvas id="revenue" width="400" height="400"></canvas>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="chart-two chart-container">
+                  <h5>Traffic</h5>
+                  <h1 class="down-number">20,584</h1>
+                  <h6>
+                    <span class="down">2%
+                      <i class="fa fa-caret-up down-arrow" aria-hidden="true"></i></span>
+                    from the last week
+                  </h6>
+                  <canvas id="traffic" width="400" height="400"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chart-bottom">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="chart-four chart-container">
+                  <div class="add-products shelter-filter chart-bottom-select dashboard-revenue-select">
+                    <h3>Revenue/Order</h3>
+                    <form action="">
+                      <div class="form-group">
+                        <select id="inputState" class="form-control">
+                          <option selected>This week</option>
+                          <option>Last week</option>
+                        </select>
+                      </div>
+                    </form>
+                  </div>
 
+                  <canvas id="traffic-multi" width="400" height="200"></canvas>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <!-- Doghnut Chart  -->
+                <div class="chart">
+                  <h5>Top Product Categories</h5>
+                  <h2><span>45%</span> Treats</h2>
+                  <canvas id="mydChart" height="250px"></canvas>
+                </div>
+                <!-- Doghnut Chart  -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dashboard Middle Chart  -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <!-- Chart  -->
-    <!-- Bootstrap Js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <!-- counter up  -->
-    <script src="./js/jquery.counterup.min.js"></script>
-    <script src="./js/jquery.waypoints.min.js"></script>
-    <!-- counter up  -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <!--AOS Js-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!--Owl Carouse js-->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- Custom Js-->
-    <script src="js/custom.js"></script>
+        <!-- Dashboard Bottom Table  -->
+        <div class="dashboard-bottom-table">
+          <div class="dashboard-section">
+            <div class="animal-list">
+              <div class="animal-list-header">
+                <div class="animal-list-header-left">
+                  <h5>Top Products</h5>
+                </div>
+                <div class="animal-list-header-right dashboard-select">
+                  <form action="">
+                    <div class="form-group">
+                      <select id="dashboard-select" class="form-control">
+                        <option selected>This week</option>
+                        <option>Last week</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="dashboard-bottom-body">
+                <div class="animal-table">
+                  <table class="table dashboard-table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="borderleft bottomborder first-td-width">
+                          Product
+                        </th>
+                        <th scope="col" class="bottomborder">Category</th>
+                        <th scope="col" class="bottomborder">Dealer</th>
+                        <th scope="col" class="bottomborder">Price</th>
+                        <th scope="col" class="bottomborder">Sold</th>
+                        <th scope="col" class="borderright bottomborder">
+                          Profit
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="borderleft first-td-width">
+                          <div class="type-categories-brand">
+                            <div class="left">
+                              <img src="./assets/images/dashboard/1.png" alt="" />
+                            </div>
+                            <div class="right">
+                              <p>The Pets Company Dog Poop Scooper</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span class="category">Utility</span></td>
 
-    <script>
-        //  Chart 
-        var ctx = document.getElementById('mydChart').getContext('2d');
-        var chartd = new Chart(ctx, {
-            // The type of chart we want to create
-            type: 'doughnut',
+                        <td><span class="dealer">S.K. Enterprices</span></td>
+                        <td><span class="price">R 58.00</span></td>
+                        <td><span class="dealer">45</span></td>
+                        <td><span class="price">R 25232.00</span></td>
+                      </tr>
+                      <tr>
+                        <td class="borderleft first-td-width">
+                          <div class="type-categories-brand">
+                            <div class="left">
+                              <img src="./assets/images/dashboard/2.png" alt="" />
+                            </div>
+                            <div class="right">
+                              <p>
+                                Jerry's Pet Products Super Soft Dual Round
+                                Dog/Cat Bed
+                              </p>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span class="category">Utility</span></td>
 
-            // The data for our dataset
-            data: {
-                labels: ['Treats', 'Food', 'Toys'],
-                datasets: [{
-                    label: "Score",
-                    data: [45, 20, 35],
-                    backgroundColor: [
-                        "#F36BCB",
-                        "#8D49E6",
-                        "#10ADFF"
-                    ]
-                }]
+                        <td><span class="dealer">Cloudtails</span></td>
+                        <td><span class="price">R 25.00</span></td>
+                        <td><span class="dealer">58</span></td>
+                        <td><span class="price">R 5252.00</span></td>
+                      </tr>
+                      <tr>
+                        <td class="borderleft first-td-width">
+                          <div class="type-categories-brand">
+                            <div class="left">
+                              <img src="./assets/images/dashboard/3.png" alt="" />
+                            </div>
+                            <div class="right">
+                              <p>Drools Chicken and Egg Adult Dog Food</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span class="category">Food</span></td>
+
+                        <td><span class="dealer">Hiputee</span></td>
+                        <td><span class="price">R 36.00</span></td>
+                        <td><span class="dealer">125</span></td>
+                        <td><span class="price">R 85758.00</span></td>
+                      </tr>
+                      <tr>
+                        <td class="borderleft first-td-width">
+                          <div class="type-categories-brand">
+                            <div class="left">
+                              <img src="./assets/images/dashboard/4.png" alt="" />
+                            </div>
+                            <div class="right">
+                              <p>Pedigree Dentastix Medium Breed</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span class="category">Treat</span></td>
+
+                        <td><span class="dealer">S.K. Enterprices</span></td>
+                        <td><span class="price">R 14.00</span></td>
+                        <td><span class="dealer">15</span></td>
+                        <td><span class="price">R 3452.00</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dashboard Bottom Table  -->
+
+        <!-- Footer Start -->
+        <div class="dashboard-footer">
+          <p>Copyright 2020 | Furever Home.</p>
+        </div>
+        <!-- Footer End -->
+      </div>
+      <!-- Main Content End -->
+    </div>
+    <!-- Page Wrapper  -->
+  </main>
+
+  <!-- Jquery Js-->
+  <!-- Chart  -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <!-- Chart  -->
+  <!-- Bootstrap Js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <!-- counter up  -->
+  <script src="./js/jquery.counterup.min.js"></script>
+  <script src="./js/jquery.waypoints.min.js"></script>
+  <!-- counter up  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <!--AOS Js-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--Owl Carouse js-->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- Custom Js-->
+  <script src="js/custom.js"></script>
+
+  <script>
+    //  Chart
+    var ctx = document.getElementById("mydChart").getContext("2d");
+    var chartd = new Chart(ctx, {
+      // The type of chart we want to create
+      type: "doughnut",
+
+      // The data for our dataset
+      data: {
+        labels: ["Treats", "Food", "Toys"],
+        datasets: [{
+          label: "Score",
+          data: [45, 20, 35],
+          backgroundColor: ["#F36BCB", "#8D49E6", "#10ADFF"],
+        }, ],
+      },
+
+      // Configuration options go here
+      options: {
+        tooltips: {
+          backgroundColor: "#330C27",
+          bodyFontColor: "#fff",
+          titleFontColor: "#fff",
+          bodyFontSize: '12',
+          displayColors: false,
+        },
+        responsive: true,
+        cutoutPercentage: 65,
+        title: {
+          display: false,
+          position: "top",
+          text: "Top Products",
+          fontSize: 18,
+          fontColor: "#111",
+        },
+        legend: {
+          display: true,
+          position: "top",
+          labels: {
+            fontColor: "#1E3E59",
+            fontSize: 16,
+            padding: 10,
+          },
+        },
+      },
+    });
+    //  Chart
+
+    // Line Chart Order
+    const CHART = document.getElementById("Order");
+    let lineChart = new Chart(CHART, {
+      type: "line",
+      options: {
+        tooltips: {
+          backgroundColor: "#fff",
+          bodyFontColor: "#93AACC",
+          titleFontColor: "#15BCBE",
+          bodyFontSize: '12',
+          displayColors: false,
+        },
+        legend: {
+          display: false,
+        },
+        scales: {
+          yAxes: [{
+            scaleLabel: {
+              display: false,
             },
+            ticks: {
+              display: false,
+            },
+            gridLines: {
+              display: false,
+            },
+          }, ],
+          xAxes: [{
+            ticks: {
+              suggestedMin: 0,
+              display: false,
+              suggestedMax: 11.12 * 2,
+              stepSize: 1, //interval between ticks
+            },
+            gridLines: {
 
-            // Configuration options go here
-            options: {
-                responsive: true,
-                cutoutPercentage: 65,
-                title: {
-                    display: false,
-                    position: "top",
-                    text: "Top Products",
-                    fontSize: 18,
-                    fontColor: "#111"
-                },
-                legend: {
-                    display: true,
-                    position: "top",
-                    labels: {
-                        fontColor: "#1E3E59",
-                        fontSize: 16,
-                        padding: 10
-                    }
-                }
-            }
-        });
-        //  Chart
+              color: "#CEE4F5",
+            },
+          }, ],
+        },
+      },
+      data: {
+        labels: [
+          "january",
+          "February",
+          "March",
+          "April",
+          "May",
+          "june",
+          "July",
+          "August",
+          "September",
+        ],
+        datasets: [{
+          label: "First",
+          fill: true,
+          lineTension: 0.00001,
+          backgroundColor: "rgba(206, 228,245,0.4)",
+          borderColor: "#2ECF98",
+          borderWidth: 5,
+          borderCapStyle: "butt",
+          borderDash: [],
+          borderDashOffset: 0.0,
+          borderJoinStyle: "miter",
+          pointBorderColor: "#fff",
+          pointBackgroundColor: "#15BBCB",
+          pointBorderWidth: 2,
+          pointHoverRadius: 10,
+          pointHoverBackgroundColor: "rgba(76,192,192,1)",
+          pointHoverBorderWidth: 2,
+          pointRadius: 7,
+          pointHitRadius: 8,
+          data: [10, 15, 13, 20, 18, 25, 20, 27, 20],
+        }, ],
+      },
+    });
+    // Line Chart  Order
 
-        // Line Chart Order
-        const CHART = document.getElementById("Order");
-        let lineChart = new Chart(CHART, {
-            type: 'line',
-            data: {
-                labels: ["january", 'February', 'March'],
-                datasets: [{
-                    label: "First",
-                    fill: false,
-                    lineTension: 0.1,
-                    backgroundColor: "rgba(75, 192,192,0.4)",
-                    borderColor: "rgba(75,192,192,1)",
-                    borderCapStyle: 'butt',
-                    borderDash: [],
-                    borderDashOffset: 0.0,
-                    borderJoinStyle: 'miter',
-                    pointBorderColor: "rgba(76,192,192,1)",
-                    pointBackgroundColor: '#fff',
-                    pointBorderWidth: 1,
-                    pointHoverRadius: 5,
-                    pointHoverBackgroundColor: "rgba(76,192,192,1)",
-                    pointHoverBorderWidth: 2,
-                    pointRadius: 1,
-                    pointHitRadius: 10,
-                    data: [65, 59, 80],
+    // Line Chart Revenue
+    const CHART1 = document.getElementById("revenue");
+    let lineChart1 = new Chart(CHART1, {
+      type: "line",
+      options: {
+        tooltips: {
+          backgroundColor: "#fff",
+          bodyFontColor: "#93AACC",
+          titleFontColor: "#15BCBE",
+          bodyFontSize: '12',
+          displayColors: false,
+        },
+        legend: {
+          display: false,
+        },
+        scales: {
+          yAxes: [{
+            scaleLabel: {
+              display: false,
+            },
+            ticks: {
+              display: false,
+            },
+            gridLines: {
+              display: false,
+            },
+          }, ],
+          xAxes: [{
+            ticks: {
+              suggestedMin: 0,
+              display: false,
+              suggestedMax: 11.12 * 2,
+              stepSize: 1, //interval between ticks
+            },
+            gridLines: {
+              zeroLineColor: "#CEE4F5",
+              color: "#CEE4F5",
+            },
+          }, ],
+        },
+      },
+      data: {
+        labels: [
+          "january",
+          "February",
+          "March",
+          "April",
+          "May",
+          "june",
+          "July",
+          "August",
+          "September",
+        ],
+        datasets: [{
+          label: "First",
+          fill: true,
+          lineTension: 0.00001,
+          backgroundColor: "rgba(206, 228,245,0.4)",
+          borderColor: "#2ECF98",
+          borderWidth: 5,
+          borderCapStyle: "butt",
+          borderDash: [],
+          borderDashOffset: 0.0,
+          borderJoinStyle: "miter",
+          pointBorderColor: "#fff",
+          pointBackgroundColor: "#15BBCB",
+          pointBorderWidth: 2,
+          pointHoverRadius: 10,
+          pointHoverBackgroundColor: "rgba(76,192,192,1)",
+          pointHoverBorderWidth: 2,
+          pointRadius: 7,
+          pointHitRadius: 8,
+          data: [10, 15, 13, 20, 18, 25, 20, 27, 20],
+        }, ],
+      },
+    });
+    // Line Chart Revenue
 
-                }]
-            }
-        });
-        // Line Chart  Order
+    // Line Chart Traffic
+    const CHART2 = document.getElementById("traffic");
+    let lineChart2 = new Chart(CHART2, {
+      type: "line",
+      options: {
+        tooltips: {
+          backgroundColor: "#fff",
+          bodyFontColor: "#93AACC",
+          titleFontColor: "#15BCBE",
+          bodyFontSize: '12',
+          displayColors: false,
+        },
+        legend: {
+          display: false,
+        },
+        scales: {
+          yAxes: [{
+            scaleLabel: {
+              display: false,
+            },
+            ticks: {
+              display: false,
+            },
+            gridLines: {
+              display: false,
+            },
+          }, ],
+          xAxes: [{
+            ticks: {
+              suggestedMin: 0,
+              display: false,
+              suggestedMax: 11.12 * 2,
+              stepSize: 1, //interval between ticks
+            },
+            gridLines: {
+              color: "#CEE4F5",
+            },
+          }, ],
+        },
+      },
+      data: {
+        labels: [
+          "january",
+          "February",
+          "March",
+          "April",
+          "May",
+          "june",
+          "July",
+          "August",
+          "September",
+        ],
+        datasets: [{
+          label: "First",
+          fill: true,
+          lineTension: 0.00001,
+          backgroundColor: "rgba(252, 217,225,0.4)",
+          borderColor: "#EB805F",
+          borderWidth: 7,
+          borderCapStyle: "butt",
+          borderDash: [],
+          borderDashOffset: 0.0,
+          borderJoinStyle: "miter",
+          pointBorderColor: "#fff",
+          pointBackgroundColor: "#F25F7A",
+          pointBorderWidth: 2,
+          pointHoverRadius: 7,
+          pointHoverBackgroundColor: "rgba(236, 123,98,1)",
+          pointHoverBorderWidth: 2,
+          pointRadius: 7,
+          pointHitRadius: 8,
+          data: [10, 15, 13, 20, 18, 23, 20, 25, 20],
+        }, ],
+      },
+    });
+    // Line Chart Traffic
+    // Line Chart Traffic-multi
+    const CHART3 = document.getElementById("traffic-multi");
+    let lineChart3 = new Chart(CHART3, {
+      type: "line",
 
-        // Line Chart Revenue 
-        const CHART1 = document.getElementById("revenue");
-        let lineChart1 = new Chart(CHART1, {
-            type: 'line',
-            data: {
-                labels: ["january", 'February', 'March'],
-                datasets: [{
-                    label: "First",
-                    fill: false,
-                    lineTension: 0.1,
-                    backgroundColor: "rgba(75, 192,192,0.4)",
-                    borderColor: "rgba(75,192,192,1)",
-                    borderCapStyle: 'butt',
-                    borderDash: [],
-                    borderDashOffset: 0.0,
-                    borderJoinStyle: 'miter',
-                    pointBorderColor: "rgba(76,192,192,1)",
-                    pointBackgroundColor: '#fff',
-                    pointBorderWidth: 1,
-                    pointHoverRadius: 5,
-                    pointHoverBackgroundColor: "rgba(76,192,192,1)",
-                    pointHoverBorderWidth: 2,
-                    pointRadius: 1,
-                    pointHitRadius: 10,
-                    data: [65, 59, 80],
-
-                }]
-            }
-        });
-        // Line Chart Revenue 
-
-        // Line Chart Traffic 
-        const CHART2 = document.getElementById("traffic");
-        let lineChart2 = new Chart(CHART2, {
-            type: 'line',
-            data: {
-                labels: ["january", 'February', 'March'],
-                datasets: [{
-                    label: "First",
-                    fill: false,
-                    lineTension: 0.1,
-                    backgroundColor: "rgba(75, 192,192,0.4)",
-                    borderColor: "rgba(75,192,192,1)",
-                    borderCapStyle: 'butt',
-                    borderDash: [],
-                    borderDashOffset: 0.0,
-                    borderJoinStyle: 'miter',
-                    pointBorderColor: "rgba(76,192,192,1)",
-                    pointBackgroundColor: '#fff',
-                    pointBorderWidth: 1,
-                    pointHoverRadius: 5,
-                    pointHoverBackgroundColor: "rgba(76,192,192,1)",
-                    pointHoverBorderWidth: 2,
-                    pointRadius: 1,
-                    pointHitRadius: 10,
-                    data: [65, 59, 80],
-
-                }]
-            }
-        });
-        // Line Chart Traffic 
-    </script>
+      options: {
+        tooltips: {
+          backgroundColor: "#fff",
+          bodyFontColor: "#93AACC",
+          titleFontColor: "#15BCBE",
+          bodyFontSize: '12',
+          displayColors: false,
+        },
+        legend: {
+          display: "true",
+          position: "bottom",
+          fontColor: '#1E3E59',
+          usePointStyle: false,
+          labels: {
+            fontColor: '#1E3E59',
+          }
+        },
+        scales: {
+          yAxes: [{
+            scaleLabel: {
+              display: false,
+            },
+            ticks: {
+              stepSize: 2,
+            },
+            gridLines: {
+              borderDash: [8, 8],
+              color: "#CEE4F5",
+            },
+          }, ],
+          xAxes: [{
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 11.12 * 2,
+              stepSize: 10, //interval between ticks
+            },
+            gridLines: {
+              color: "#CEE4F5",
+              borderDash: [8, 8],
+            },
+          }, ],
+        },
+      },
+      data: {
+        labels: ["Mon", "Tue", "Wed", "Thu", "Fir", "Sat", "Sun"],
+        datasets: [{
+            label: "Revenue",
+            fill: true,
+            lineTension: 0.5,
+            showLine: true,
+            backgroundColor: "rgba(24, 157, 208, .2)",
+            borderColor: "#03CCF1",
+            borderWidth: 10,
+            borderCapStyle: "butt",
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: "miter",
+            pointBorderColor: "rgba(236, 123,98,1)",
+            pointBackgroundColor: "rgba(236, 123,98)",
+            pointBorderWidth: 5,
+            pointHoverRadius: 10,
+            pointHoverBackgroundColor: "rgba(236, 123,98,1)",
+            pointHoverBorderWidth: 2,
+            pointRadius: 0,
+            pointHitRadius: 10,
+            data: [13, 12, 13, 15, 14, 12, 11],
+          },
+          {
+            label: "Orders",
+            fill: true,
+            lineTension: 0.5,
+            backgroundColor: "rgba(113, 30, 222, .2)",
+            borderColor: "#FB0394",
+            borderWidth: 10,
+            borderCapStyle: "butt",
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: "miter",
+            pointBorderColor: "rgba(76,192,192,1)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 5,
+            pointHoverRadius: 10,
+            pointHoverBackgroundColor: "rgba(76,192,192,1)",
+            pointHoverBorderWidth: 2,
+            pointRadius: 0,
+            pointHitRadius: 10,
+            data: [11, 13, 14, 13, 12, 14, 12],
+          },
+        ],
+      },
+    });
+    // Line Chart Traffic-multi
+  </script>
 </body>
 
 </html>
